@@ -31,7 +31,7 @@
                 "storage" : "64 GB",
                 "display" : [ {
                         "resolusi" : "2560x1440",
-                        "kecepatan_refresh" : "75Hz"
+                        "kecepatan_refresh" : "75Hz" 
                     }],
                 "baterai" : "4000Mah",
                 "fitur" : ["tanpa membutuhkan komputer/smartphone", "menjalajahi dunia virtual"]
