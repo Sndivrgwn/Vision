@@ -1,0 +1,41 @@
+[
+    {
+        "id" : 1,
+        "nama_produk" : "Apple Vision Pro",
+        "spesifikasi" : [
+            {
+                "prosesor" : "Apple M2",
+                "grafik" : "Apple R1",
+                "os" : "Vision OS",
+                "memory" : "16 GB",
+                "storage" : "256 GB - 1 TB",
+                "display" : [ {
+                        "resolusi" : "3660x3200",
+                        "kecepatan_refresh" : "100Hz",
+                        "tipe_layar" : "Dual Micro-OLED"
+                    }],
+                "baterai" : "2 - 2.5 Jam",
+                "fitur" : ["Berbagai macam sensor, salah satunya sensor deteksi pergerakan tangan", "Audio spasial yang memberikan pengalaman seperti di bioskop", "minim latensi"]
+            }
+        ]
+    },
+    {
+        "id" : 2, 
+        "nama_produk": "Lenovo Mirage Solo",
+        "spesifikasi": [
+            {
+                "prosesor" : "Qualcomm Snapdragon 835",
+                "grafik" : "none",
+                "os" : "",
+                "memory" : "4 GB",
+                "storage" : "64 GB",
+                "display" : [ {
+                        "resolusi" : "2560x1440",
+                        "kecepatan_refresh" : "75Hz"
+                    }],
+                "baterai" : "4000Mah",
+                "fitur" : ["tanpa membutuhkan komputer/smartphone", "menjalajahi dunia virtual"]
+            }
+        ]
+    }
+]
