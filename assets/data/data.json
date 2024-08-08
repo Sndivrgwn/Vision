@@ -28,7 +28,7 @@
                 "grafik" : "none",
                 "os" : "",
                 "memory" : "4 GB",
-                "storage" : "64 GB",
+                "storage" : "64 GB", 
                 "display" : [ {
                         "resolusi" : "2560x1440",
                         "kecepatan_refresh" : "75Hz" 
