@@ -745,7 +745,7 @@ body {
   }
   #wandibackKomponen {
     height: 100%;
-    background-image: url('./img/backKomponen.png');
+    background-image: url('/assets/img/backKomponen.png');
     /* background-size: cover; */
     background-repeat: no-repeat;
   }
