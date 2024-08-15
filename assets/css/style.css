@@ -138,7 +138,7 @@ body {
 #frame2 .rectangle {
     height: 85vh;
     position: absolute;
-    width: 140vh;
+    width: 145vh;
     border-radius: 30px;
     background-color: #fff;
     padding: 2rem;
@@ -203,7 +203,7 @@ body {
 
 #frame2 .rectangle .parent-content .left-content .button .btn1 {
     background-color: #004fce;
-    width: 43vh;
+    width: 27vh;
     color: #fff;
 }
 
@@ -213,7 +213,7 @@ body {
 }
 
 #frame2 .rectangle .parent-content .right-content {
-    margin-left: 0.5rem;
+    margin-left: 4vh;
 }
 
 #frame2 .rectangle .parent-content .right-content .box {
@@ -387,7 +387,7 @@ body {
 }
 
 #frame4 {
-    height: 100vh;
+    height: 120vh;
     background-color: #fff;
     padding-top: 5vh;
 }
@@ -414,3 +414,352 @@ body {
     font-size: 3vh;
     padding-top: 3vh;
 }
+
+#frame4 .parent-card {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: auto auto auto;
+    scale: 0.9;
+    gap: 2rem;
+}
+
+#frame4 .parent-card .card {
+    border: 1px solid black;
+    background-color: #fdfdfd;
+    padding: 3vh;
+    border-radius: 30px;
+}
+
+#frame4 .parent-card .card .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#frame4 .parent-card .card .card-head .label {
+    font-size: 22px;
+    background-color: #004fce;
+    color: white;
+    padding: 1vh 2vh;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+#frame4 .parent-card .card .card-head .date {
+    font-size: 20px;
+    padding-top: 1.3vh;
+}
+
+#frame4 .parent-card .card .card-footer {
+    display: flex;
+    justify-content: start;
+    background-color: transparent;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+#frame4 .parent-card .card .card-footer img {
+    width: 40px;
+    height: 40px;
+}
+
+#frame4 .parent-card .card .card-footer p {
+    font-size: 20px;
+    padding-top: 0.3rem;
+}
+
+#frame4 .parent-card .center {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#frame5 {
+    background-color: #004fce;
+    height: 108vh;
+    position: relative;
+    padding-top: 5vh;
+}
+
+#frame5 .text-behind {
+    position: absolute;
+}
+
+#frame5 .text-behind .benefit {
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 21vw;
+    color: #c1c1c1;
+    opacity: 0.3;
+}
+
+#frame5 .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#frame5 .top .icon-left {
+    margin-left: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#frame5 .top .icon-right {
+    margin-right: 4vh;
+}
+
+#frame5 .top .icon-left .top {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    background-color: #fff;
+    margin-left: 3.5vh;
+}
+
+#frame5 .top .icon-left .bottom {
+    width: 5.5vh;
+    height: 4.5vh;
+    border-radius: 1vh;
+    background-color: orange;
+}
+
+#frame5 .text h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 9vh;
+    margin-top: 3vh;
+}
+
+#frame5 .top .icon-right .top {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    background-color: #fff;
+}
+
+#frame5 .center {
+    display: flex;
+    justify-content: space-between;
+}
+
+#frame5 .center .left .rectangle {
+    position: relative;
+    width: 70vh;
+    margin-top: 7vh;
+    height: 60vh;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    background: linear-gradient(#fff, #002A67);
+}
+
+#frame5 .center .left .rectangle .image {
+    position: absolute;
+    left: 0vh;
+    top: -9vh;
+}
+
+#frame5 .center .left .rectangle .image img {
+    width: 42vw;
+}
+
+#frame5 .center .right .info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4vh;
+    scale: 0.8;
+    margin-left: 6vh;
+}
+
+#frame5 .center .right .info .card {
+    padding: 5vh;
+    position: relative;
+}
+
+#frame5 .center .right .info .card .icon {
+    position: absolute;
+    border-radius: 50vh;
+    width: 3vh;
+    height: 3vh;
+    background-color: #2C4E80;
+}
+
+#frame5 .center .right .info .card .content i {
+    color: #fff;
+    font-size: 4vh;
+    background-color: #2C4E80;
+    border-radius: 50vh;
+    padding: 2vh;
+    margin-bottom: 3vh;
+}
+
+#frame5 .center .right .info .card .content h1 {
+    font-size: 3.5vh;
+    font-weight: 700;
+}
+
+#frame5 .center .right .info .card .content p {
+    font-size: 2.4vh;
+}
+
+#frame5 .center .right .info .item-top-left {
+    border-top-right-radius: 20vh;
+}
+
+#frame5 .center .right .info .item-top-left .icon {
+    right: 2vh;
+    bottom: 2vh;
+}
+
+#frame5 .center .right .info .item-top-right {
+    border-top-left-radius: 20vh;
+    text-align: right;
+}
+
+#frame5 .center .right .info .item-top-right .icon {
+    left: 2vh;
+    bottom: 2vh;
+}
+
+#frame5 .center .right .info .item-bottom-left {
+    border-bottom-right-radius: 20vh;
+    
+}
+
+#frame5 .center .right .info .item-bottom-left .icon {
+    right: 2vh;
+    top: 2vh;
+}
+
+#frame5 .center .right .info .item-bottom-right {
+    border-bottom-left-radius: 20vh;
+    text-align: right;
+}
+
+#frame5 .center .right .info .item-bottom-right .icon {
+    left: 2vh;
+    top: 2vh;
+}
+
+#frame5 .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#frame5 .bottom .icon-right {
+    margin-left: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#frame5 .bottom .icon-right {
+    margin-right: 4vh;
+}
+
+
+#frame5 .bottom .icon-right .bottom {
+    width: 5.5vh;
+    height: 4.5vh;
+    border-radius: 1vh;
+    background-color: orange;
+    margin-left: -3.5vh;
+}
+
+#frame5 .bottom .icon-right .top {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    background-color: #fff;
+}
+
+#frame5 .bottom .icon-left .top {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    background-color: #fff;
+    margin-left: 7vh;
+    margin-top: 5.3vh;
+}
+
+#adaaja #wandiPerbandingan {
+    width: 40vw;
+    font-size: 50px;
+  }
+  #wandiForm {
+    border: none;
+    background-color: #d1d1d1;
+    width: 25vw;
+  }
+  #wandiForm1 {
+    border: none;
+    background-color: #d1d1d1;
+    width: 34vw;
+  }
+  #gambartesting {
+    height: 15vh;
+    width: 100%;
+  }
+  #adaaja {
+    width: 30vw;
+  }
+  #buttonbandingkan {
+    margin-top: 1.7px;
+  }
+  #buttonbandingkantext {
+    font-size: 14px;
+    width: 7.8vw;
+    height: max-content;
+  }
+  #footer {
+    width: 100%;
+    margin-top: 7rem;
+  }
+  .btn {
+    color: #ffffff;
+    background-color: #004fce;
+  }
+  #wandidekorasi1 {
+    width: 5vw;
+    height: 2vh;
+    background-color: #ffb324;
+  }
+  #wandidekorasi2 {
+    width: 7vw;
+    height: 2vh;
+    background-color: #ffa500;
+  }
+  #wandiPengertianFooter {
+    width: 25vw;
+  }
+  #wandiInputFooter {
+    width: 20vw;
+    background-color: #d1d1d1;
+  }
+  #wandiButtonFooter{
+    position: absolute;
+    left: 67.2%;
+  }
+  #wandiGambarFooter{
+    width: 27vw;
+  }
+  #wandibackKomponen {
+    height: 100%;
+    background-image: url('./img/backKomponen.png');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+  }
+  #wandiDekorasiKomponen1{
+    background-color: #ffa500;
+    width: 6vw;
+    height: 3vh;
+  }
+  #wandiDekorasiKomponen2{
+    background-color: #ffa500;
+    width: 6vw;
+    height: 3vh;
+  }
+  #wandiKomponenTengah{
+    height: 30vh;
+    width: 30vw;
+  }
