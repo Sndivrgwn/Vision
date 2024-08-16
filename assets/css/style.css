@@ -1,765 +1,775 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&display=swap");
 
 body {
-    background-color: #fff;
-    font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 #frame1 {
-    height: 100vh;
-    position: relative;
+  height: 100vh;
+  position: relative;
 }
 
 #frame1 .parent-content {
-    display: flex;
+  display: flex;
 }
 
 #frame1 .sub-title {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
 }
 
 #frame1 .title {
-    font-weight: bold;
-    font-size: 80px;
+  font-weight: bold;
+  font-size: 80px;
 }
 
 #frame1 .btn-hp {
-    padding: 0.5vh 0vh 0.5vh 0vh;
+  padding: 0.5vh 0vh 0.5vh 0vh;
 }
 
-#frame1 .btn-hp1, .btn-hp2 {
-    border-radius: 20px;
-    font-weight: bold;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    transition: 0.3s ease-in;
+#frame1 .btn-hp1,
+.btn-hp2 {
+  border-radius: 20px;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: 0.3s ease-in;
 }
 
-#frame1 .btn-hp1:hover, .btn-hp2:hover {
-    filter: brightness(90%);
+#frame1 .btn-hp1:hover,
+.btn-hp2:hover {
+  filter: brightness(90%);
 }
 
 #frame1 .btn-hp1 {
-    background-color: #004fce;
-    color: #fff;
+  background-color: #004fce;
+  color: #fff;
 }
 
 #frame1 .btn-hp2 {
-    background-color: orange;
+  background-color: orange;
 }
 
 #frame1 .left-content {
-    margin-left: 1rem;
-    margin-top: 2rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
 }
 
 #frame1 .parent-content .left-content hr {
-    width: 100%;
+  width: 100%;
 }
 
 #frame1 .parent-content .left-content .preview {
-    display: flex;
+  display: flex;
 }
 
-#frame1 .parent-content .left-content .preview .item1, .item2, .item3 {
-    width: 150px;
+#frame1 .parent-content .left-content .preview .item1,
+.item2,
+.item3 {
+  width: 150px;
 }
 
-#frame1 .parent-content .left-content .preview .item1 img, .item2 img, .item3 img {
-    width: 150px;
+#frame1 .parent-content .left-content .preview .item1 img,
+.item2 img,
+.item3 img {
+  width: 150px;
 }
 
-#frame1 .parent-content .left-content .preview .item1 .teks1 , .item2 .teks2, .item3 .teks3 {
-    background-color: #d9d9d9;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-left: 0.35rem;
-    cursor: default;
+#frame1 .parent-content .left-content .preview .item1 .teks1,
+.item2 .teks2,
+.item3 .teks3 {
+  background-color: #d9d9d9;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 0.35rem;
+  cursor: default;
 }
 
 #frame1 .parent-content .left-content .preview .item3 .teks3 {
-    width: 100%;
-    margin-left: 0;
+  width: 100%;
+  margin-left: 0;
 }
 
 #frame1 .parent-content .left-content .icon-scroll {
-    background-color: #004fce;
-    padding: 0.7rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    border-radius: 20px;
-    cursor: pointer;
+  background-color: #004fce;
+  padding: 0.7rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 #frame1 .parent-content .right-content {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #frame1 .parent-content .right-content .rectangle .teks-vision {
-    font-family: "Saira Stencil One", sans-serif;
-    transform: rotate(-90deg);
-    left: -1vh;
-    bottom:  32vh;
-    z-index: -1;
+  font-family: "Saira Stencil One", sans-serif;
+  transform: rotate(-90deg);
+  left: -1vh;
+  bottom: 32vh;
+  z-index: -1;
 }
 
 #frame1 .parent-content .right-content .rectangle .teks-vision .vision {
-    font-size: 28vh;
-    color: #fff;
+  font-size: 28vh;
+  color: #fff;
 }
 
 #frame1 .parent-content .right-content .rectangle {
-    height: 100vh;
-    width: 60vh;
-    background: #004fce;
-    z-index: 1;
+  height: 100vh;
+  width: 60vh;
+  background: #004fce;
+  z-index: 1;
 }
 
 #frame1 .parent-content .right-content .rectangle .orang {
-    width: 90vh;
-    position: absolute;
-    margin-left: -18vw;
-    bottom: 0vh;
-    z-index: 999;
+  width: 90vh;
+  position: absolute;
+  margin-left: -18vw;
+  bottom: 0vh;
+  z-index: 999;
 }
 
 #frame2 {
-    background:  #f6f6f6;
-    height: 100vh;
-    position: relative;
+  background: #f6f6f6;
+  height: 100vh;
+  position: relative;
 }
 
 #frame2 .rectangle {
-    height: 85vh;
-    position: absolute;
-    width: 145vh;
-    border-radius: 30px;
-    background-color: #fff;
-    padding: 2rem;
-    border: 1px solid black;
+  height: 85vh;
+  position: absolute;
+  width: 145vh;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid black;
 }
 
 #frame2 .rectangle .parent-content {
-    display: flex;
+  display: flex;
 }
 
 #frame2 .rectangle .parent-content .left-content .image-content {
-    position: relative;
+  position: relative;
 }
 
 #frame2 .rectangle .parent-content .left-content .image-content img {
-    width: 63vh;
-    height: 58vh;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    object-fit: cover;
+  width: 63vh;
+  height: 58vh;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  object-fit: cover;
 }
 
 #frame2 .rectangle .parent-content .left-content .image-content .circle {
-    height: 5vh;
-    width: 5vh;
-    position: absolute;
-    top: 20px;
-    border-radius: 50%;
-    right: 7vh;
-    background-color: #111;
-    opacity: 70%;
+  height: 5vh;
+  width: 5vh;
+  position: absolute;
+  top: 20px;
+  border-radius: 50%;
+  right: 7vh;
+  background-color: #111;
+  opacity: 70%;
 }
 
 #frame2 .rectangle .parent-content .left-content .button {
-    display: flex;  
-    gap: 0.5rem;
-    transform: scale(0.9);
-    margin-left: -22px;
-    margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  transform: scale(0.9);
+  margin-left: -22px;
+  margin-top: 1rem;
 }
 
 #frame2 .rectangle .parent-content .left-content .button button {
-    font-family: "Poppins", sans-serif;
-    border-radius: 20px;
-    padding: 1vh 3vh 1vh 3vh;
-    font-size: 2.5vh;
-    border: none;
-    font-weight: 500;
-    margin-top: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  padding: 1vh 3vh 1vh 3vh;
+  font-size: 2.5vh;
+  border: none;
+  font-weight: 500;
+  margin-top: 1.5rem;
 }
 
-#frame2 .rectangle .parent-content .left-content .button .fa-angle-right, #frame3 .middle .parent-card .card button .fa-angle-right {
-    background-color: transparent;
-    border: 1px solid black;
-    width: 18px;
-    font-size: 12px;
-    border-radius: 20px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-left: 0.5rem;
+#frame2 .rectangle .parent-content .left-content .button .fa-angle-right,
+#frame3 .middle .parent-card .card button .fa-angle-right {
+  background-color: transparent;
+  border: 1px solid black;
+  width: 18px;
+  font-size: 12px;
+  border-radius: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 0.5rem;
 }
 
 #frame2 .rectangle .parent-content .left-content .button .btn1 {
-    background-color: #004fce;
-    width: 27vh;
-    color: #fff;
+  background-color: #004fce;
+  width: 27vh;
+  color: #fff;
 }
 
 #frame2 .rectangle .parent-content .left-content .button .btn2 {
-    background-color: orange;
-    width: 25vh;
+  background-color: orange;
+  width: 25vh;
 }
 
 #frame2 .rectangle .parent-content .right-content {
-    margin-left: 4vh;
+  margin-left: 4vh;
 }
 
 #frame2 .rectangle .parent-content .right-content .box {
-    width: 65vh;
+  width: 65vh;
 }
 
 #frame2 .rectangle .parent-content .right-content .box .title-box {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    background-color: #004fce;
-    text-align: center;
-    color: #fff;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: #004fce;
+  text-align: center;
+  color: #fff;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 
 #frame2 .rectangle .parent-content .right-content .box .title-box h1 {
-    font-size: 3vh;
-    font-weight: bold;
+  font-size: 3vh;
+  font-weight: bold;
 }
 
 #frame2 .rectangle .parent-content .right-content .box .body-box {
-    padding: 1rem;
-    background-color: #fafafa;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    position: relative;
+  padding: 1rem;
+  background-color: #fafafa;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
 }
 
 #frame2 .rectangle .parent-content .right-content .box .body-box p {
-    line-height: 2;
-    font-size: 2.2vh;
+  line-height: 2;
+  font-size: 2.2vh;
 }
 #frame2 .rectangle .parent-content .right-content .box .body-box .swicth {
-    right: 2rem;
-    bottom: 1rem;
-    position: absolute;
-    display: flex;
-    gap: 0.5rem;
+  right: 2rem;
+  bottom: 1rem;
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
 }
 
 #frame2 .rectangle .parent-content .right-content .box .body-box .swicth i {
-    background-color: #d1d1d1;
-    padding: 0.3rem;
-    border-radius: 2rem;
+  background-color: #d1d1d1;
+  padding: 0.3rem;
+  border-radius: 2rem;
 }
 
 #frame2 .rectangle .parent-content .right-content .mini-image {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 #frame2 .rectangle .parent-content .right-content .mini-image .image img {
-    width: 31vh;
+  width: 31vh;
 }
 
 #frame2 .rectangle .parent-content .right-content .mini-image .image {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 #frame3 {
-    height: 115vh;
-    background-color: #fff;
+  height: 115vh;
+  background-color: #fff;
 }
 
 #frame3 .topbar {
-    height: 20vh;
-    background: #fff;
-    border-bottom-right-radius: 100px;
-    text-align: center;
-    padding-top: 2rem;
-    border-bottom-left-radius: 100px;
+  height: 20vh;
+  background: #fff;
+  border-bottom-right-radius: 100px;
+  text-align: center;
+  padding-top: 2rem;
+  border-bottom-left-radius: 100px;
 }
 
 #frame3 .topbar h1 {
-    font-size: 7vh;
-    font-weight: bold;
-    padding-top: 3vh;
+  font-size: 7vh;
+  font-weight: bold;
+  padding-top: 3vh;
 }
 
 #frame3 .top {
-    display: flex;
-    margin-top: 3rem;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
 }
 
 #frame3 .top h1 {
-    font-size: 3vh;
-    font-weight: bold;
+  font-size: 3vh;
+  font-weight: bold;
 }
 
 #frame3 .top i {
-    font-size: 4.5vh;
-    padding: 0.5rem;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    border-radius: 50%;
-    background-color: #d1d1d1;
+  font-size: 4.5vh;
+  padding: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 50%;
+  background-color: #d1d1d1;
 }
 
 #frame3 .midlle {
-    position: relative;
+  position: relative;
 }
 
 #frame3 .middle .text-back {
-    position: absolute;
-    font-family: "Saira Stencil One", sans-serif;
-    font-size: 19vw;
-    color: #eaeaea;
-    opacity: 0.3;
-    left: 10px;
+  position: absolute;
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 19vw;
+  color: #eaeaea;
+  opacity: 0.3;
+  left: 10px;
 }
 
 #frame3 .middle .parent-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20vh;
 }
 
 #frame3 .middle .parent-card .card {
-    background-color: transparent;
-    border: none;
-    text-align: center;
+  background-color: transparent;
+  border: none;
+  text-align: center;
 }
 
 #frame3 .middle .parent-card .card img {
-    width: 35vh;
+  width: 35vh;
 }
 
-#frame3 .middle .parent-card .card h1{
-    font-size: 3vh;
-    font-weight: bold;
+#frame3 .middle .parent-card .card h1 {
+  font-size: 3vh;
+  font-weight: bold;
 }
 
 #frame3 .middle .parent-card .card p {
-    font-size: 2.2vh;
+  font-size: 2.2vh;
 }
 
 #frame3 .middle .parent-card .card button {
-    border: none;
-    background-color: #004fce;
-    width: 60%;
-    color: #fff;
-    border-radius: 20px;
-    font-weight: bold;
-    padding: 0.3rem 1rem 0.3rem 1rem;
+  border: none;
+  background-color: #004fce;
+  width: 60%;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 0.3rem 1rem 0.3rem 1rem;
 }
 
-#frame3 .bottom .parent .side-left .top, .side-right .top {
-    width: 8vh;
-    height: 3vh;
-    background-color: orange;
-    border-radius: 10vh;
+#frame3 .bottom .parent .side-left .top,
+.side-right .top {
+  width: 8vh;
+  height: 3vh;
+  background-color: orange;
+  border-radius: 10vh;
 }
 
-#frame3 .bottom .parent .side-left .bottom, .side-right .bottom {
-    width: 15vh;
-    height: 3vh;
-    border-radius: 10vh;
-    background-color: orange;
-    margin-top: 1rem;
+#frame3 .bottom .parent .side-left .bottom,
+.side-right .bottom {
+  width: 15vh;
+  height: 3vh;
+  border-radius: 10vh;
+  background-color: orange;
+  margin-top: 1rem;
 }
 
 #frame3 .bottom .parent .side-left .bottom {
-    margin-left: 2vh;
+  margin-left: 2vh;
 }
 
 #frame3 .bottom .parent .side-right .bottom {
-    margin-left: -9vh;
+  margin-left: -9vh;
 }
 
 #frame4 {
-    height: 120vh;
-    background-color: #fff;
-    padding-top: 5vh;
+  height: 120vh;
+  background-color: #fff;
+  padding-top: 5vh;
 }
 
 #frame4 .line {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-#frame4 .line .left, .line .center, .line .right {
-    height: 3vh;
-    width: 100%;
-    background-color: #004fce;
-    filter: brightness(0.8);
+#frame4 .line .left,
+.line .center,
+.line .right {
+  height: 3vh;
+  width: 100%;
+  background-color: #004fce;
+  filter: brightness(0.8);
 }
 
 #frame4 .line .center {
-    filter: brightness(1);
-    height: 4vh;
+  filter: brightness(1);
+  height: 4vh;
 }
 
 #frame4 .review {
-    font-family: "Poppins", sans-serif;
-    font-size: 3vh;
-    padding-top: 3vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+  padding-top: 3vh;
 }
 
 #frame4 .parent-card {
-    display: grid;
-    margin-top: 2rem;
-    grid-template-columns: auto auto auto;
-    scale: 0.9;
-    gap: 2rem;
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: auto auto auto;
+  scale: 0.9;
+  gap: 2rem;
 }
 
 #frame4 .parent-card .card {
-    border: 1px solid black;
-    background-color: #fdfdfd;
-    padding: 3vh;
-    border-radius: 30px;
+  border: 1px solid black;
+  background-color: #fdfdfd;
+  padding: 3vh;
+  border-radius: 30px;
 }
 
 #frame4 .parent-card .card .card-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
 #frame4 .parent-card .card .card-head .label {
-    font-size: 22px;
-    background-color: #004fce;
-    color: white;
-    padding: 1vh 2vh;
-    border-radius: 30px;
-    font-weight: 600;
+  font-size: 22px;
+  background-color: #004fce;
+  color: white;
+  padding: 1vh 2vh;
+  border-radius: 30px;
+  font-weight: 600;
 }
 
 #frame4 .parent-card .card .card-head .date {
-    font-size: 20px;
-    padding-top: 1.3vh;
+  font-size: 20px;
+  padding-top: 1.3vh;
 }
 
 #frame4 .parent-card .card .card-footer {
-    display: flex;
-    justify-content: start;
-    background-color: transparent;
-    gap: 10px;
-    padding-top: 20px;
+  display: flex;
+  justify-content: start;
+  background-color: transparent;
+  gap: 10px;
+  padding-top: 20px;
 }
 
 #frame4 .parent-card .card .card-footer img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 #frame4 .parent-card .card .card-footer p {
-    font-size: 20px;
-    padding-top: 0.3rem;
+  font-size: 20px;
+  padding-top: 0.3rem;
 }
 
 #frame4 .parent-card .center {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 #frame5 {
-    background-color: #004fce;
-    height: 108vh;
-    position: relative;
-    padding-top: 5vh;
+  background-color: #004fce;
+  height: 108vh;
+  position: relative;
+  padding-top: 5vh;
 }
 
 #frame5 .text-behind {
-    position: absolute;
+  position: absolute;
 }
 
 #frame5 .text-behind .benefit {
-    font-family: "Saira Stencil One", sans-serif;
-    font-size: 21vw;
-    color: #c1c1c1;
-    opacity: 0.3;
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 21vw;
+  color: #c1c1c1;
+  opacity: 0.3;
 }
 
 #frame5 .top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #frame5 .top .icon-left {
-    margin-left: 4vh;
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
+  margin-left: 4vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 #frame5 .top .icon-right {
-    margin-right: 4vh;
+  margin-right: 4vh;
 }
 
 #frame5 .top .icon-left .top {
-    width: 4vh;
-    height: 4vh;
-    border-radius: 1vh;
-    background-color: #fff;
-    margin-left: 3.5vh;
+  width: 4vh;
+  height: 4vh;
+  border-radius: 1vh;
+  background-color: #fff;
+  margin-left: 3.5vh;
 }
 
 #frame5 .top .icon-left .bottom {
-    width: 5.5vh;
-    height: 4.5vh;
-    border-radius: 1vh;
-    background-color: orange;
+  width: 5.5vh;
+  height: 4.5vh;
+  border-radius: 1vh;
+  background-color: orange;
 }
 
 #frame5 .text h1 {
-    color: #fff;
-    font-weight: 700;
-    font-size: 9vh;
-    margin-top: 3vh;
+  color: #fff;
+  font-weight: 700;
+  font-size: 9vh;
+  margin-top: 3vh;
 }
 
 #frame5 .top .icon-right .top {
-    width: 4vh;
-    height: 4vh;
-    border-radius: 1vh;
-    background-color: #fff;
+  width: 4vh;
+  height: 4vh;
+  border-radius: 1vh;
+  background-color: #fff;
 }
 
 #frame5 .center {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #frame5 .center .left .rectangle {
-    position: relative;
-    width: 70vh;
-    margin-top: 7vh;
-    height: 60vh;
-    border-top-right-radius: 5vh;
-    border-bottom-right-radius: 5vh;
-    background: linear-gradient(#fff, #002A67);
+  position: relative;
+  width: 70vh;
+  margin-top: 7vh;
+  height: 60vh;
+  border-top-right-radius: 5vh;
+  border-bottom-right-radius: 5vh;
+  background: linear-gradient(#fff, #002a67);
 }
 
 #frame5 .center .left .rectangle .image {
-    position: absolute;
-    left: 0vh;
-    top: -9vh;
+  position: absolute;
+  left: 0vh;
+  top: -9vh;
 }
 
 #frame5 .center .left .rectangle .image img {
-    width: 42vw;
+  width: 42vw;
 }
 
 #frame5 .center .right .info {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 4vh;
-    scale: 0.8;
-    margin-left: 6vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4vh;
+  scale: 0.8;
+  margin-left: 6vh;
 }
 
 #frame5 .center .right .info .card {
-    padding: 5vh;
-    position: relative;
+  padding: 5vh;
+  position: relative;
 }
 
 #frame5 .center .right .info .card .icon {
-    position: absolute;
-    border-radius: 50vh;
-    width: 3vh;
-    height: 3vh;
-    background-color: #2C4E80;
+  position: absolute;
+  border-radius: 50vh;
+  width: 3vh;
+  height: 3vh;
+  background-color: #2c4e80;
 }
 
 #frame5 .center .right .info .card .content i {
-    color: #fff;
-    font-size: 4vh;
-    background-color: #2C4E80;
-    border-radius: 50vh;
-    padding: 2vh;
-    margin-bottom: 3vh;
+  color: #fff;
+  font-size: 4vh;
+  background-color: #2c4e80;
+  border-radius: 50vh;
+  padding: 2vh;
+  margin-bottom: 3vh;
 }
 
 #frame5 .center .right .info .card .content h1 {
-    font-size: 3.5vh;
-    font-weight: 700;
+  font-size: 3.5vh;
+  font-weight: 700;
 }
 
 #frame5 .center .right .info .card .content p {
-    font-size: 2.4vh;
+  font-size: 2.4vh;
 }
 
 #frame5 .center .right .info .item-top-left {
-    border-top-right-radius: 20vh;
+  border-top-right-radius: 20vh;
 }
 
 #frame5 .center .right .info .item-top-left .icon {
-    right: 2vh;
-    bottom: 2vh;
+  right: 2vh;
+  bottom: 2vh;
 }
 
 #frame5 .center .right .info .item-top-right {
-    border-top-left-radius: 20vh;
-    text-align: right;
+  border-top-left-radius: 20vh;
+  text-align: right;
 }
 
 #frame5 .center .right .info .item-top-right .icon {
-    left: 2vh;
-    bottom: 2vh;
+  left: 2vh;
+  bottom: 2vh;
 }
 
 #frame5 .center .right .info .item-bottom-left {
-    border-bottom-right-radius: 20vh;
-    
+  border-bottom-right-radius: 20vh;
 }
 
 #frame5 .center .right .info .item-bottom-left .icon {
-    right: 2vh;
-    top: 2vh;
+  right: 2vh;
+  top: 2vh;
 }
 
 #frame5 .center .right .info .item-bottom-right {
-    border-bottom-left-radius: 20vh;
-    text-align: right;
+  border-bottom-left-radius: 20vh;
+  text-align: right;
 }
 
 #frame5 .center .right .info .item-bottom-right .icon {
-    left: 2vh;
-    top: 2vh;
+  left: 2vh;
+  top: 2vh;
 }
 
 #frame5 .bottom {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #frame5 .bottom .icon-right {
-    margin-left: 4vh;
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
+  margin-left: 4vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 #frame5 .bottom .icon-right {
-    margin-right: 4vh;
+  margin-right: 4vh;
 }
-
 
 #frame5 .bottom .icon-right .bottom {
-    width: 5.5vh;
-    height: 4.5vh;
-    border-radius: 1vh;
-    background-color: orange;
-    margin-left: -3.5vh;
+  width: 5.5vh;
+  height: 4.5vh;
+  border-radius: 1vh;
+  background-color: orange;
+  margin-left: -3.5vh;
 }
 
 #frame5 .bottom .icon-right .top {
-    width: 4vh;
-    height: 4vh;
-    border-radius: 1vh;
-    background-color: #fff;
+  width: 4vh;
+  height: 4vh;
+  border-radius: 1vh;
+  background-color: #fff;
 }
 
 #frame5 .bottom .icon-left .top {
-    width: 4vh;
-    height: 4vh;
-    border-radius: 1vh;
-    background-color: #fff;
-    margin-left: 7vh;
-    margin-top: 5.3vh;
+  width: 4vh;
+  height: 4vh;
+  border-radius: 1vh;
+  background-color: #fff;
+  margin-left: 7vh;
+  margin-top: 5.3vh;
 }
 
 #adaaja #wandiPerbandingan {
-    width: 40vw;
-    font-size: 50px;
-  }
-  #wandiForm {
-    border: none;
-    background-color: #d1d1d1;
-    width: 25vw;
-  }
-  #wandiForm1 {
-    border: none;
-    background-color: #d1d1d1;
-    width: 34vw;
-  }
-  #gambartesting {
-    height: 15vh;
-    width: 100%;
-  }
-  #adaaja {
-    width: 30vw;
-  }
-  #buttonbandingkan {
-    margin-top: 1.7px;
-  }
-  #buttonbandingkantext {
-    font-size: 14px;
-    width: 7.8vw;
-    height: max-content;
-  }
-  #footer {
-    width: 100%;
-    margin-top: 7rem;
-  }
-  .btn {
-    color: #ffffff;
-    background-color: #004fce;
-  }
-  #wandidekorasi1 {
-    width: 5vw;
-    height: 2vh;
-    background-color: #ffb324;
-  }
-  #wandidekorasi2 {
-    width: 7vw;
-    height: 2vh;
-    background-color: #ffa500;
-  }
-  #wandiPengertianFooter {
-    width: 25vw;
-  }
-  #wandiInputFooter {
-    width: 20vw;
-    background-color: #d1d1d1;
-  }
-  #wandiButtonFooter{
-    position: absolute;
-    left: 67.2%;
-  }
-  #wandiGambarFooter{
-    width: 27vw;
-  }
-  #wandibackKomponen {
-    height: 100%;
-    background-image: url('/assets/img/backKomponen.png');
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-  }
-  #wandiDekorasiKomponen1{
-    background-color: #ffa500;
-    width: 6vw;
-    height: 3vh;
-  }
-  #wandiDekorasiKomponen2{
-    background-color: #ffa500;
-    width: 6vw;
-    height: 3vh;
-  }
-  #wandiKomponenTengah{
-    height: 30vh;
-    width: 30vw;
-  }
+  width: 40vw;
+  font-size: 50px;
+}
+#wandiForm {
+  border: none;
+  background-color: #d1d1d1;
+  width: 25vw;
+}
+#wandiForm1 {
+  border: none;
+  background-color: #d1d1d1;
+  width: 34vw;
+}
+#gambartesting {
+  height: 15vh;
+  width: 100%;
+}
+#adaaja {
+  width: 30vw;
+}
+#buttonbandingkan {
+  margin-top: 1.7px;
+}
+#buttonbandingkantext {
+  font-size: 14px;
+  width: 7.8vw;
+  height: max-content;
+}
+#footer {
+  width: 100%;
+  margin-top: 7rem;
+}
+.btn {
+  color: #ffffff;
+  background-color: #004fce;
+}
+#wandidekorasi1 {
+  width: 5vw;
+  height: 2vh;
+  background-color: #ffb324;
+}
+#wandidekorasi2 {
+  width: 7vw;
+  height: 2vh;
+  background-color: #ffa500;
+}
+#wandiPengertianFooter {
+  width: 25vw;
+}
+#wandiInputFooter {
+  width: 20vw;
+  background-color: #d1d1d1;
+}
+#wandiButtonFooter {
+  position: absolute;
+  left: 67.2%;
+}
+#wandiGambarFooter {
+  width: 27vw;
+}
+#wandibackKomponen {
+  height: 100vh;
+  background-image: url("/assets/img/backKomponen.png");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+#wandiDekorasiKomponen1 {
+  background-color: #ffa500;
+  width: 6vw;
+  height: 3vh;
+}
+#wandiDekorasiKomponen2 {
+  background-color: #ffa500;
+  width: 6vw;
+  height: 3vh;
+}
+#wandiKomponenTengah {
+  height: 30vh;
+  width: 30vw;
+}
