@@ -746,6 +746,10 @@ body {
   width: 6vw;
   height: 3vh;
 }
+#frame6 .isiFrame6 .row .col .row .col img{
+  width: 90%;
+  height: 80%;
+}
 .isiFrame6 .row .col #wandiKomponenTengah {
   height: 30vh;
   width: 30vw;
@@ -792,6 +796,9 @@ body {
 #frame7 .btn {
     color: #ffffff;
     background-color: #004fce;
+}
+#frame7 .row .col .gambarBanding img{
+  width: 80%;
 }
 #footer {
     width: 100%;
