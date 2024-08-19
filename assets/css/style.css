@@ -7,8 +7,11 @@ body {
 }
 
 #frame1 {
-  height: 100vh;
+  padding-bottom: 5%;
   position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 865px;
 }
 
 #frame1 .parent-content {
@@ -17,13 +20,13 @@ body {
 
 #frame1 .sub-title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   margin: 0;
 }
 
 #frame1 .title {
   font-weight: bold;
-  font-size: 80px;
+  font-size: 100px;
 }
 
 #frame1 .btn-hp {
@@ -55,7 +58,7 @@ body {
 
 #frame1 .left-content {
   margin-left: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #frame1 .parent-content .left-content hr {
@@ -69,23 +72,23 @@ body {
 #frame1 .parent-content .left-content .preview .item1,
 .item2,
 .item3 {
-  width: 150px;
+  width: 200px;
 }
 
 #frame1 .parent-content .left-content .preview .item1 img,
 .item2 img,
 .item3 img {
-  width: 150px;
+  width: 200px;
 }
 
 #frame1 .parent-content .left-content .preview .item1 .teks1,
 .item2 .teks2,
 .item3 .teks3 {
   background-color: #d9d9d9;
-  font-size: 14px;
+  font-size: 16px;
+  width: 100%;
   font-weight: bold;
   margin-top: 1rem;
-  margin-left: 0.35rem;
   cursor: default;
 }
 
@@ -118,21 +121,21 @@ body {
 }
 
 #frame1 .parent-content .right-content .rectangle .teks-vision .vision {
-  font-size: 28vh;
+  font-size: 238px;
   color: #fff;
 }
 
 #frame1 .parent-content .right-content .rectangle {
-  height: 100vh;
-  width: 60vh;
+  height: 865px;
+  width: 500px;
   background: #004fce;
   z-index: 1;
 }
 
 #frame1 .parent-content .right-content .rectangle .orang {
-  width: 90vh;
+  width: 170%;
   position: absolute;
-  margin-left: -18vw;
+  margin-left: -80%;
   bottom: 0vh;
   z-index: 999;
 }
@@ -147,9 +150,9 @@ body {
   height: 85vh;
   position: absolute;
   width: 145vh;
-  border-radius: 30px;
+  border-radius: 3vh;
   background-color: #fff;
-  padding: 2rem;
+  padding: 3vh;
   border: 1px solid black;
 }
 
@@ -164,8 +167,8 @@ body {
 #frame2 .rectangle .parent-content .left-content .image-content img {
   width: 63vh;
   height: 58vh;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-top-right-radius: 3vh;
+  border-bottom-right-radius: 3vh;
   object-fit: cover;
 }
 
@@ -173,9 +176,9 @@ body {
   height: 5vh;
   width: 5vh;
   position: absolute;
-  top: 20px;
+  top: 3vh;
   border-radius: 50%;
-  right: 7vh;
+  right: 4vh;
   background-color: #111;
   opacity: 70%;
 }
@@ -185,29 +188,29 @@ body {
   gap: 0.5rem;
   transform: scale(0.9);
   margin-left: -22px;
-  margin-top: 1rem;
+  margin-top: 1vh;
 }
 
 #frame2 .rectangle .parent-content .left-content .button button {
   font-family: "Poppins", sans-serif;
-  border-radius: 20px;
+  border-radius: 3vh;
   padding: 1vh 3vh 1vh 3vh;
   font-size: 2.5vh;
   border: none;
   font-weight: 500;
-  margin-top: 1.5rem;
+  margin-top: 5vh;
 }
 
 #frame2 .rectangle .parent-content .left-content .button .fa-angle-right,
 #frame3 .middle .parent-card .card button .fa-angle-right {
   background-color: transparent;
-  border: 1px solid black;
-  width: 18px;
-  font-size: 12px;
-  border-radius: 20px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-left: 0.5rem;
+  border: 1px solid white;
+  width: 3vh;
+  font-size: 2vh;
+  border-radius: 2vh;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+  margin-left: 0.5vh;
 }
 
 #frame2 .rectangle .parent-content .left-content .button .btn1 {
@@ -221,6 +224,10 @@ body {
   width: 25vh;
 }
 
+#frame2 .rectangle .parent-content .left-content .button .btn2 .fa-angle-right{
+  border-color: black;
+}
+
 #frame2 .rectangle .parent-content .right-content {
   margin-left: 4vh;
 }
@@ -230,13 +237,13 @@ body {
 }
 
 #frame2 .rectangle .parent-content .right-content .box .title-box {
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
   background-color: #004fce;
   text-align: center;
   color: #fff;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
+  border-top-right-radius: 3vh;
+  border-top-left-radius: 3vh;
 }
 
 #frame2 .rectangle .parent-content .right-content .box .title-box h1 {
@@ -267,6 +274,7 @@ body {
 #frame2 .rectangle .parent-content .right-content .box .body-box .swicth i {
   background-color: #d1d1d1;
   padding: 0.3rem;
+  font-size: 2vh;
   border-radius: 2rem;
 }
 
@@ -293,7 +301,7 @@ body {
   background: #fff;
   border-bottom-right-radius: 100px;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 2vh;
   border-bottom-left-radius: 100px;
 }
 
@@ -305,7 +313,7 @@ body {
 
 #frame3 .top {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 3vh;
   justify-content: space-between;
 }
 
@@ -315,10 +323,10 @@ body {
 }
 
 #frame3 .top i {
-  font-size: 4.5vh;
-  padding: 0.5rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
+  font-size: 4vh;
+  padding: 0.5vh;
+  padding-left: 0.8vh;
+  padding-right: 0.8vh;
   border-radius: 50%;
   background-color: #d1d1d1;
 }
@@ -332,12 +340,12 @@ body {
   font-family: "Saira Stencil One", sans-serif;
   font-size: 19vw;
   color: #eaeaea;
-  opacity: 0.3;
-  left: 10px;
+  opacity: 0.6;
+  left: 10vh;
 }
 
 #frame3 .middle .parent-card {
-  display: flex;
+  display: flex;    
   justify-content: center;
   align-items: center;
   gap: 20vh;
@@ -367,9 +375,10 @@ body {
   background-color: #004fce;
   width: 60%;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 20vh;
   font-weight: bold;
-  padding: 0.3rem 1rem 0.3rem 1rem;
+  font-size: 2.2vh;
+  padding: 1vh 0.4vh 1vh 0.4vh;
 }
 
 #frame3 .bottom .parent .side-left .top,
@@ -386,7 +395,7 @@ body {
   height: 3vh;
   border-radius: 10vh;
   background-color: orange;
-  margin-top: 1rem;
+  margin-top: 1vh;
 }
 
 #frame3 .bottom .parent .side-left .bottom {
@@ -395,6 +404,10 @@ body {
 
 #frame3 .bottom .parent .side-right .bottom {
   margin-left: -9vh;
+}
+
+#frame3 .bottom .parent b, #frame3 .bottom .parent i {
+  font-size: 2vh;
 }
 
 #frame4 {
@@ -430,17 +443,18 @@ body {
 
 #frame4 .parent-card {
   display: grid;
-  margin-top: 2rem;
+  margin-top: 2vh;
   grid-template-columns: auto auto auto;
   scale: 0.9;
-  gap: 2rem;
+  gap: 2vh;
 }
 
 #frame4 .parent-card .card {
   border: 1px solid black;
   background-color: #fdfdfd;
   padding: 3vh;
-  border-radius: 30px;
+  border-radius: 5vh;
+  height: 100%;
 }
 
 #frame4 .parent-card .card .card-head {
@@ -450,41 +464,53 @@ body {
 }
 
 #frame4 .parent-card .card .card-head .label {
-  font-size: 22px;
+  font-size: 2.2vh;
   background-color: #004fce;
   color: white;
   padding: 1vh 2vh;
-  border-radius: 30px;
+  border-radius: 30vh;
   font-weight: 600;
 }
 
 #frame4 .parent-card .card .card-head .date {
-  font-size: 20px;
+  font-size: 2.2vh;
   padding-top: 1.3vh;
+}
+
+#frame4 .parent-card .card .card-body h1 {
+  font-size: 5vh;
+}
+
+#frame4 .parent-card .card .card-body p {
+  font-size: 2.3vh;
+}
+
+#frame4 .parent-card .card .card-body ul li {
+  font-size: 2.3vh;
 }
 
 #frame4 .parent-card .card .card-footer {
   display: flex;
   justify-content: start;
   background-color: transparent;
-  gap: 10px;
-  padding-top: 20px;
+  gap: 2vh;
+  padding-top: 3vh;
 }
 
 #frame4 .parent-card .card .card-footer img {
-  width: 40px;
-  height: 40px;
+  width: 5.5vh;
+  height: 5.5vh;
 }
 
 #frame4 .parent-card .card .card-footer p {
-  font-size: 20px;
-  padding-top: 0.3rem;
+  font-size: 2.3vh;
+  padding-top: 0.9vh;
 }
 
 #frame4 .parent-card .center {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2vh;
 }
 
 #frame5 {
