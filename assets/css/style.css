@@ -222,11 +222,19 @@ body {
   background-color: #004fce;
   width: 220px;
   color: #fff;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  transition: ease 0.3s;
 }
 
 #frame2 .rectangle .parent-content .left-content .button .btn2 {
   background-color: orange;
   width: 220px;
+  transition: ease 0.3s;
+}
+
+#frame2 .rectangle .parent-content .left-content .button .btn1:hover, .button .btn2:hover {
+  filter: brightness(90%);
 }
 
 #frame2 .rectangle .parent-content .left-content .button .btn2 .fa-angle-right{
@@ -278,8 +286,9 @@ body {
 }
 
 #frame2 .rectangle .parent-content .right-content .box .body-box .swicth i {
-  background-color: #d1d1d1;
-  padding: 0.3rem;
+  background-color: orange;
+  padding: 0.4rem;
+  font-size: 16px;
   font-size: var(--button);
   border-radius: 2rem;
 }
@@ -289,7 +298,10 @@ body {
 }
 
 #frame2 .rectangle .parent-content .right-content .mini-image .image img {
-  width: 45%;
+  width: 240px;
+  height: 240px;
+  border-radius: 30px;
+  object-fit: cover;
 }
 
 #frame2 .rectangle .parent-content .right-content .mini-image .image {
@@ -330,11 +342,7 @@ body {
 
 #frame3 .top i {
   font-size: 4vh;
-  padding: 0.5vh;
-  padding-left: 0.8vh;
-  padding-right: 0.8vh;
   border-radius: 50%;
-  background-color: #d1d1d1;
 }
 
 #frame3 .midlle {
@@ -385,6 +393,11 @@ body {
   font-weight: bold;
   font-size: 2.2vh;
   padding: 1vh 0.4vh 1vh 0.4vh;
+  transition: ease 0.3s;
+}
+
+#frame3 .middle .parent-card .card button:hover {
+  filter: brightness(90%);
 }
 
 #frame3 .middle .parent-card .card button i {

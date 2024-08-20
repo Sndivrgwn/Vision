@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vision</title>
+    <title>Vision</title>   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
     ">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
 </head>
 <body>
     <!-- homepage -->
@@ -50,7 +51,7 @@
                 </div>
                 <hr>
                 <center>
-                    <i class="fa-solid fa-angles-down icon-scroll text-light"></i>
+                    <a href="#scroll"><i class="fa-solid fa-angles-down icon-scroll text-light"></i></a>
                 </center>
             </div>
 
@@ -68,7 +69,7 @@
     <!-- end homepage -->
         <!-- page2 -->
         <section id="frame2">
-            <div class="rectangle top-50 start-50 translate-middle ">
+            <div class="rectangle top-50 start-50 translate-middle " id="scroll">
                 <div class="parent-content">
                     <div class="left-content">
                         <div class="image-content">
@@ -86,18 +87,18 @@
                                 <h1>Mengenal VR</h1>
                             </div>
                             <div class="body-box">
-                                <p>Virtual Reality atau biasa kita sebut VR adalah suatu  teknologi yang memungkinkan manusia untuk melihat dunia yang berbeda. Tidak seperti di dunia nyata, VR memberikan kita pengalaman yang berbeda dan menarik bagi penggunanya</p>
+                                <p id="paragraph">Virtual Reality atau biasa kita sebut VR adalah suatu  teknologi yang memungkinkan manusia untuk melihat dunia yang berbeda. Tidak seperti di dunia nyata, VR memberikan kita pengalaman yang berbeda dan menarik bagi penggunanya</p>
                                 <div class="swicth">
-                                    <i class="fa-solid fa-angles-left"></i>
-                                    <i class="fa-solid fa-angles-right"></i>
+                                    <i class="fa-solid fa-angles-left" id="prev"></i>
+                                    <i class="fa-solid fa-angles-right" id="next"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="mini-image">
-                            <div class="image">
-                                <img src="assets/img/image 8.png" alt="">
-                                <img src="assets/img/image 9.png" alt="">
-                            </div>
+                                <div class="image">
+                                    <img src="assets/img/vr/vr1.png" id="vrLeft" alt="">
+                                    <img src="assets/img/vr/vr2.png" id="vrRight" alt="">
+                                </div>
                             <hr>
                         </div>
                     </div>
@@ -111,7 +112,7 @@
             </div>
             <div class="top container-fluid ps-5 pe-5">
                 <h1>Lihat VR yang tersedia di dunia</h1>
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-solid fa-circle-info"></i>
             </div>
             <div class="middle">
                 <h1 class="text-back">UGGULAN</h1>
