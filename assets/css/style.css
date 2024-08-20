@@ -527,7 +527,7 @@ body {
 
 #frame5 {
   background-color: #004fce;
-  height: 880px;
+  height: calc(100%);
   position: relative;
   padding-top: 4%;
 }
@@ -693,6 +693,7 @@ body {
 
 #frame5 .bottom {
   display: flex;
+  padding: 3% 0;
   justify-content: space-between;
 }
 
