@@ -31,7 +31,6 @@ body {
 #frame1 .title {
   font-weight: bold;
   font-size: var(--title);
-  width: 90%;
 }
 
 #frame1 .btn-hp {
@@ -149,14 +148,14 @@ body {
 
 #frame2 {
   background: #f6f6f6;
-  height: 100vh;
+  height: 850px;
   position: relative;
 }
 
 #frame2 .rectangle {
-  height: 90vh;
+  height: 80%;
   position: absolute;
-  width: 160vh;
+  width: 80%;
   border-radius: 30px;
   background-color: #fff;
   padding: 2%;
@@ -172,20 +171,20 @@ body {
 }
 
 #frame2 .rectangle .parent-content .left-content .image-content img {
-  width: 70vh;
-  height: 60vh;
+  width: 550px;
+  height: 480px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   object-fit: cover;
 }
 
 #frame2 .rectangle .parent-content .left-content .image-content .circle {
-  height: 5vh;
-  width: 5vh;
+  height: 40px;
+  width: 40px;
   position: absolute;
-  top: 3vh;
+  top: 4%;
   border-radius: 50%;
-  right: 3vh;
+  right: 4%;
   background-color: #111;
   opacity: 70%;
 }
@@ -202,8 +201,7 @@ body {
   font-family: "Poppins", sans-serif;
   border-radius: 30px;
   padding: 1% 3%;
-  font-size: 2.7vh;
-  width: 35vh;
+  font-size: var(--button);
   border: none;
   font-weight: 600;
 }
@@ -213,7 +211,7 @@ body {
   background-color: transparent;
   border: 1px solid white;
   width: 11%;
-  font-size: 2.3vh;
+  font-size: var(--paragraph);
   border-radius: 30px;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -222,6 +220,7 @@ body {
 
 #frame2 .rectangle .parent-content .left-content .button .btn1 {
   background-color: #004fce;
+  width: 220px;
   color: #fff;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -230,6 +229,7 @@ body {
 
 #frame2 .rectangle .parent-content .left-content .button .btn2 {
   background-color: orange;
+  width: 220px;
   transition: ease 0.3s;
 }
 
@@ -246,7 +246,7 @@ body {
 }
 
 #frame2 .rectangle .parent-content .right-content .box {
-  width: 70vh;
+  width: 100%;
 }
 
 #frame2 .rectangle .parent-content .right-content .box .title-box {
@@ -260,7 +260,7 @@ body {
 }
 
 #frame2 .rectangle .parent-content .right-content .box .title-box h1 {
-  font-size: 3vh;
+  font-size: var(--sub-title);
   font-weight: bold;
 }
 
@@ -270,12 +270,12 @@ body {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   position: relative;
-  height: 35vh;
+  height: 230px;
 }
 
 #frame2 .rectangle .parent-content .right-content .box .body-box p {
   line-height: 2;
-  font-size: calc(2.3vh);
+  font-size: calc(var(--paragraph) + 2px);
 }
 #frame2 .rectangle .parent-content .right-content .box .body-box .swicth {
   right: 2rem;
@@ -288,8 +288,8 @@ body {
 #frame2 .rectangle .parent-content .right-content .box .body-box .swicth i {
   background-color: orange;
   padding: 0.4rem;
-  font-size: 2vh;
-  cursor: pointer;
+  font-size: 16px;
+  font-size: var(--button);
   border-radius: 2rem;
 }
 
@@ -298,8 +298,8 @@ body {
 }
 
 #frame2 .rectangle .parent-content .right-content .mini-image .image img {
-  width: 33vh;
-  height: 33vh;
+  width: 240px;
+  height: 240px;
   border-radius: 30px;
   object-fit: cover;
 }
@@ -402,7 +402,6 @@ body {
 
 #frame3 .middle .parent-card .card button i {
   width: 14% !important;
-  font-size: 2vh !important;
 }
 
 #frame3 .bottom .parent .side-left .top,
