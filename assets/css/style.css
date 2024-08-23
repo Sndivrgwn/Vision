@@ -72,6 +72,10 @@ body {
   width: 100%;
 }
 
+#frame1 .parent-content .left-content .parent-preview {
+  width: 60%;
+}
+
 #frame1 .parent-content .left-content .preview {
   display: flex;
 }
@@ -79,13 +83,13 @@ body {
 #frame1 .parent-content .left-content .preview .item1,
 .item2,
 .item3 {
-  width: 200px;
+  width: 100%;
 }
 
 #frame1 .parent-content .left-content .preview .item1 img,
 .item2 img,
 .item3 img {
-  width: 200px;
+  width: 100%;
 }
 
 #frame1 .parent-content .left-content .preview .item1 .teks1,
