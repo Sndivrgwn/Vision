@@ -9,6 +9,12 @@
         "os": "Vision OS",
         "memory": "16 GB",
         "storage": "256 GB - 1 TB",
+        "color": "putih",
+        "berat": "0.5 kg",
+        "lebar": "16 x 9 x 25 cm",
+        "vga": "RTX 4090",
+        "overal": "72%",
+        "img": "../assets/img/img-bandingkan/vision-pro.png",
         "display": [
           {
             "resolusi": "3840x2160",
@@ -16,7 +22,7 @@
             "tipe_layar": "Dual Micro-OLED"
           }
         ],
-        "baterai": "2 - 2.5 Jam",
+        "baterai": "2-2.5 Jam",
         "fitur": [
           "Pelacakan mata",
           "Pelacakan tangan",
@@ -38,6 +44,12 @@
         "os": "Android 8.0 (Oreo)",
         "memory": "4 GB",
         "storage": "64 GB",
+        "color": "putih",
+        "berat": "1.2 kg",
+        "lebar": "16 x 9 x 25 cm",
+        "vga": "RX 7900X",
+        "overal": "78%",
+        "img": "../assets/img/img-bandingkan/lenovo.png",
         "display": [
           {
             "resolusi": "2560x1440",
@@ -67,7 +79,13 @@
         "grafik": "Adreno 740",
         "os": "Meta Horizon OS",
         "memory": "8 GB",
-        "storage": ["128 GB", "512 GB"],
+        "storage": "128 GB - 512 GB",
+        "color": "putih",
+        "berat": "1.2 kg",
+        "lebar": "16 x 9 x 25 cm",
+        "vga": "RTX 4090",
+        "overal": "80%",
+        "img": "../assets/img/img-bandingkan/Meta3.png",
         "display": [
           {
             "resolusi": "2064x2208",
@@ -96,6 +114,12 @@
         "os": "Andorid 11",
         "memory": "8 GB",
         "storage": "128 GB",
+        "color": "hitam",
+        "berat": "0.4 kg",
+        "lebar": "16 x 9 x 25 cm",
+        "vga": "RX 7900X",
+        "overal": "78%",
+        "img": "../assets/img/img-bandingkan/htc.png",
         "display": [
           {
             "resolusi": "2448x2448",
@@ -124,6 +148,12 @@
         "os": "Pico OS",
         "memory": "8 GB",
         "storage": "256 GB",
+        "color": "putih",
+        "berat": "0.6 kg",
+        "lebar": "16 x 9 x 25 cm",
+        "vga": "RTX 4090",
+        "overal": "72%",
+        "img": "../assets/img/img-bandingkan/pico4.png",
         "display": [
           {
             "resolusi": "2160x2160",
@@ -153,6 +183,12 @@
         "os": "Meta OS",
         "memory": "12 GB",
         "storage": "256 GB",
+        "color": "hitam",
+        "berat": "0.3 kg",
+        "lebar": "16 x 9 x 25 cm",
+        "vga": "RX 7900X",
+        "overal": "75%",
+        "img": "../assets/img/img-bandingkan/metapro.png",
         "display": [
           {
             "resolusi": "1800x1920",

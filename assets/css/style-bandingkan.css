@@ -1,0 +1,99 @@
+:root {
+    /* primary putih */
+    --primary: #ffffff;
+    /* secondary biru */
+    --secondary: #004fce;
+    /* Ternary kuning */
+    --Ternary: FFA500;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar - bandingkan start*/
+nav.navbar {
+    width: 320px;
+    border-radius: 60px;
+    border: var(--primary);
+    background-color: var(--primary);
+    padding: 0.2rem;
+    margin: 1rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+}
+
+a.nav-link {
+    font-size: 12px;
+}
+/* Navbar - bandingkan end*/
+
+
+/* Content - bandingkan start */
+div.konten-items {
+    width: 48.6%;
+    }
+
+
+div.konten-items img.position-absolute {
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+
+button.btn-mode {
+  background-color: var(--secondary);
+  border: black 1px solid;
+}
+
+button.btn-mode:hover {
+  background-color: var(--secondary);
+}
+
+div#circle-btn-mata.active, #circle-btn-tangan.active, #circle-btn-giro.active {
+  right: 0;
+}
+
+div.container-desain {
+background-color: var(--secondary);
+}
+
+.add-banding {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.add-banding button {
+  background-color: var(--secondary);
+}
+.add-banding button:hover {
+  background-color: #004fcefa;
+}
+
+
+.sticky {
+  position: relative;
+}
+
+
+#optionaddBanding {
+    display: none;
+    background-color: var(--secondary);
+    
+  }
+  #optionaddBanding.active {
+    display: block;
+  }
+
+/* Content - bandingkan end */
+
+/* footer - bandingkan start */
+button.button-footer-panduan {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+/* footer - bandingkan end */
