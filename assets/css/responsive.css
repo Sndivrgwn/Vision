@@ -487,6 +487,11 @@
     font-size: calc(1.7vh);
   }
 
+  #frame3 .top h1 {
+    font-size: 2vh;
+    width: 50%;
+  }
+
   #frame5 .center .right .info {
     display: grid;
     grid-template-columns: auto;
@@ -494,5 +499,58 @@
     scale: 0.8;
     margin-top: 4%;
     margin-left: 5%;
+  }
+
+  #frame3 .middle .parent-card .card h1 {
+    font-size: 2vh;
+    font-weight: bold;
+  }
+  
+  #frame3 .middle .parent-card .card p {
+    font-size: 1.7vh;
+  }
+  
+  #frame3 .middle .parent-card .card button {
+    border: none;
+    background-color: #004fce;
+    width: 50%;
+    color: #fff;
+    border-radius: 20vh;
+    font-weight: bold;
+    font-size: 1.7vh;
+    padding: 1vh 0.2vh 1vh 0.2vh;
+    transition: ease 0.3s;
+  }
+
+  #frame3 .bottom .parent b, #frame3 .bottom .parent i {
+    font-size: 1.3vh;
+  }
+
+  #frame3 .bottom .parent center {
+    margin-left: 20%;
+    margin-bottom: 5%;
+  }
+  
+  #frame3 .middle .parent-card .card button i {
+    width: 15% !important;
+    font-size: 1.6vh !important;
+  }
+
+  #frame3 .bottom .parent .side-left .top,
+  .side-right .top {
+    width: 4vh;
+    height: 2vh;
+  }
+
+  #frame3 .bottom .parent .side-left .bottom,
+  .side-right .bottom {
+    width: 5vh;
+    display: none;
+    height: 2vh;
+    margin-top: 3vh;
+  }
+  
+  #frame3 .bottom .parent .side-right .bottom {
+    margin-left: -5vh;
   }
 }
