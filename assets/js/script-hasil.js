@@ -1,23 +1,23 @@
 function fetchData() {
-    fetch("../assets/data/data.js")
-      .then((response) => response.json())
-      .then((data) => {
-        renderData(data);
-      })
-      .catch((error) => {
-        console.error("Terjadi kesalahan:", error);
-      });
-  }
-  
-  function renderData(data) {
-    let isiHTML = "";
-  
-    data.forEach((item, index) => {
-      if (index < 1) {
-        let spesifikasiHTML = "";
-        item.spesifikasi.forEach((spec, i) => {
-          if (i < 1) {
-            spesifikasiHTML += `           
+  fetch("../assets/data/data.js")
+    .then((response) => response.json())
+    .then((data) => {
+      renderData(data);
+    })
+    .catch((error) => {
+      console.error("Terjadi kesalahan:", error);
+    });
+}
+
+function renderData(data) {
+  let isiHTML = "";
+
+  data.forEach((item, index) => {
+    if (index < 1) {
+      let spesifikasiHTML = "";
+      item.spesifikasi.forEach((spec, i) => {
+        if (i < 1) {
+          spesifikasiHTML += `           
             <div class="d-flex justify-content-center  align-items-start gap-4">
                <div
                  class="w-50 ms-5 gap-4 d-flex justify-content-center align-items-center flex-column"
@@ -31,14 +31,18 @@ function fetchData() {
                    </div>
                    <div class="kobtainer d-flex justify-content-between gap-2">
                      <div class="judul-text text-start">
-                       <p class="fs-2 m-0 fw-semibold">${data[index + 0].spesifikasi[0].storage}</p>
+                       <p class="fs-2 m-0 fw-semibold">${
+                         data[index + 0].spesifikasi[0].storage
+                       }</p>
                        <p style="font-size: 10px">
                          NVME 4X4, ULTRA SPEED READ & WRITE
                        </p>
                      </div>
                      <p class="fs-2 fw-semibold">V</p>
                      <div class="judul-text text-end">
-                       <p class="fs-2 m-0 fw-semibold">${data[index + 1].spesifikasi[0].storage}</p>
+                       <p class="fs-2 m-0 fw-semibold">${
+                         data[index + 1].spesifikasi[0].storage
+                       }</p>
                        <p style="font-size: 10px">
                          NVME 4X4, ULTRA SPEED READ & WRITE
                        </p>
@@ -82,8 +86,12 @@ function fetchData() {
                              <div class="text-start">
                                <p>72 POINT</p>
                                <div class="bg-white my-2 me-4 rounded-pill">
-                                 <div class="d-flex rounded-pill justify-content-center text-white bg-danger align-content-center text-center" style="width: ${data[index + 0].spesifikasi[0].overal};">
-                                   <p class="p-0 m-0" >${data[index + 0].spesifikasi[0].overal}</p>
+                                 <div class="d-flex rounded-pill justify-content-center text-white bg-danger align-content-center text-center" style="width: ${
+                                   data[index + 0].spesifikasi[0].overal
+                                 };">
+                                   <p class="p-0 m-0" >${
+                                     data[index + 0].spesifikasi[0].overal
+                                   }</p>
                                  </div>
                                </div>
                              </div>
@@ -104,8 +112,12 @@ function fetchData() {
                              <div class="text-start">
                                <p>78 POINT</p>
                                <div class="bg-white my-2 me-4 rounded-pill">
-                                 <div class="d-flex rounded-pill justify-content-center text-white bg-info align-content-center text-center" style="width: ${data[index + 1].spesifikasi[0].overal};">
-                                   <p class="p-0 m-0" >${data[index + 1].spesifikasi[0].overal}</p>
+                                 <div class="d-flex rounded-pill justify-content-center text-white bg-info align-content-center text-center" style="width: ${
+                                   data[index + 1].spesifikasi[0].overal
+                                 };">
+                                   <p class="p-0 m-0" >${
+                                     data[index + 1].spesifikasi[0].overal
+                                   }</p>
                                  </div>
                                </div>
                              </div>
@@ -126,17 +138,25 @@ function fetchData() {
                            class="d-flex flex-column justify-content-center align-items-start gap-1"
                          >
                            <div class="kotak-name-m text-center rounded-pill">
-                             <p class="px-3 m-0 text-white">${data[index + 0].nama_produk}</p>
+                             <p class="px-3 m-0 text-white">${
+                               data[index + 0].nama_produk
+                             }</p>
                            </div>
-                           <p>LION PRO LI-THIU 20.000 MAH + ${data[index + 0].spesifikasi[0].baterai}</p>
+                           <p>LION PRO LI-THIU 20.000 MAH + ${
+                             data[index + 0].spesifikasi[0].baterai
+                           }</p>
                          </div>
                          <div
                            class="d-flex flex-column justify-content-center align-items-start gap-1"
                          >
                            <div class="kotak-name-b text-center rounded-pill">
-                             <p class="px-3 m-0 text-white">${data[index + 1].nama_produk}</p>
+                             <p class="px-3 m-0 text-white">${
+                               data[index + 1].nama_produk
+                             }</p>
                            </div>
-                           <p>LION PRO LI-THIU 20.000 MAH + ${data[index + 1].spesifikasi[0].baterai}</p>
+                           <p>LION PRO LI-THIU 20.000 MAH + ${
+                             data[index + 1].spesifikasi[0].baterai
+                           }</p>
                          </div>
                        </div>
                        <div
@@ -154,17 +174,31 @@ function fetchData() {
                                class="d-flex flex-column justify-content-center align-items-end gap-1"
                              >
                                <div class="kotak-name-m text-center rounded-pill">
-                                 <p class="px-3 m-0 text-white">${data[index + 0].nama_produk}</p>
+                                 <p class="px-3 m-0 text-white">${
+                                   data[index + 0].nama_produk
+                                 }</p>
                                </div>
-                               <p>${data[index + 0].spesifikasi[0].display[0].tipe_layar}, ${data[index + 0].spesifikasi[0].display[0].kecepatan_refresh}</p>
+                               <p>${
+                                 data[index + 0].spesifikasi[0].display[0]
+                                   .tipe_layar
+                               }, ${
+            data[index + 0].spesifikasi[0].display[0].kecepatan_refresh
+          }</p>
                              </div>
                              <div
                                class="d-flex flex-column justify-content-center align-items-end gap-1"
                              >
                                <div class="kotak-name-b text-center rounded-pill">
-                                 <p class="px-3 m-0 text-white">${data[index + 1].nama_produk}</p>
+                                 <p class="px-3 m-0 text-white">${
+                                   data[index + 1].nama_produk
+                                 }</p>
                                </div>
-                               <p>${data[index + 1].spesifikasi[0].display[0].tipe_layar}, ${data[index + 1].spesifikasi[0].display[0].kecepatan_refresh}</p>
+                               <p>${
+                                 data[index + 1].spesifikasi[0].display[0]
+                                   .tipe_layar
+                               }, ${
+            data[index + 1].spesifikasi[0].display[0].kecepatan_refresh
+          }</p>
                              </div>
                            </div>
                          </div>
@@ -183,12 +217,16 @@ function fetchData() {
                          <tr>
                            <th scope="col" style="background-color: #efefef">
                              <div class="kotak-name-m text-center rounded-pill">
-                               <p class="px-3 m-0 text-white">${data[index + 0].nama_produk}</p>
+                               <p class="px-3 m-0 text-white">${
+                                 data[index + 0].nama_produk
+                               }</p>
                              </div>
                            </th>
                            <th scope="col" style="background-color: #efefef">
                              <div class="kotak-name-b text-center rounded-pill">
-                               <p class="px-3 m-0 text-white">${data[index + 1].nama_produk}</p>
+                               <p class="px-3 m-0 text-white">${
+                                 data[index + 1].nama_produk
+                               }</p>
                              </div>
                            </th>
                          </tr>
@@ -255,21 +293,29 @@ function fetchData() {
                      <div class="row px-4 pb-3 pt-4">
                        <div class="col d-flex justify-content-center">
                          <div class="kotak-name-m text-center rounded-pill">
-                           <p class="px-3 py-2 m-0 text-white">${data[index + 0].nama_produk}</p>
+                           <p class="px-3 py-2 m-0 text-white">${
+                             data[index + 0].nama_produk
+                           }</p>
                          </div>
                        </div>
                        <div class="col d-flex justify-content-center ">
                          <div class="kotak-name-b text-center rounded-pill">
-                           <p class="px-3 py-2 m-0 text-white">${data[index + 1].nama_produk}</p>
+                           <p class="px-3 py-2 m-0 text-white">${
+                             data[index + 1].nama_produk
+                           }</p>
                          </div>
                        </div>
                      </div>
                      <div class="row px-4 py-2" style="background-color: #C1C1C1;">
                        <div class="col">
-                         <p class="m-0">${data[index + 0].spesifikasi[0].prosesor}</p>
+                         <p class="m-0">${
+                           data[index + 0].spesifikasi[0].prosesor
+                         }</p>
                        </div>
                        <div class="col">
-                         <p class="m-0">${data[index + 0].spesifikasi[0].prosesor}</p>
+                         <p class="m-0">${
+                           data[index + 0].spesifikasi[0].prosesor
+                         }</p>
                        </div>
                      </div>
                      <div class="row px-4 pt-3 pb-5">
@@ -329,34 +375,48 @@ function fetchData() {
                              </div>
                              <div
                                class="bg-danger py-1 px-4 rounded-pill d-flex justify-content-center text-center align-items-center">
-                               <p class="m-0 text-white">${data[index + 0].nama_produk}</p>
+                               <p class="m-0 text-white">${
+                                 data[index + 0].nama_produk
+                               }</p>
                              </div>
                            </div>
                            <div class="d-flex px-5 justify-content-center align-items-center">
                              <div class="row gx-5 gy-3 p-5 d-flex justify-content-center align-items-center">
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 0].spesifikasi[0].fitur[0]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 0].spesifikasi[0].fitur[0]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex  p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 0].spesifikasi[0].fitur[1]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 0].spesifikasi[0].fitur[1]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 0].spesifikasi[0].fitur[2]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 0].spesifikasi[0].fitur[2]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 0].spesifikasi[0].fitur[3]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 0].spesifikasi[0].fitur[3]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="uncheck" class="border rounded p-2 me-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 0].spesifikasi[0].fitur[4]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 0].spesifikasi[0].fitur[4]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 0].spesifikasi[0].fitur[5]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 0].spesifikasi[0].fitur[5]
+                                 }</p>
                                </div> 
                              </div>
                            </div>
@@ -368,34 +428,48 @@ function fetchData() {
                              </div>
                              <div
                                class="bg-info py-1 px-4 rounded-pill d-flex justify-content-center text-center align-items-center">
-                               <p class="m-0 text-white">${data[index + 1].nama_produk}</p>
+                               <p class="m-0 text-white">${
+                                 data[index + 1].nama_produk
+                               }</p>
                              </div>
                            </div>
                            <div class="d-flex px-5 justify-content-center align-items-center">
                              <div class="row gx-5 p-5 gy-3 d-flex justify-content-center align-items-center">
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 1].spesifikasi[0].fitur[0]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 1].spesifikasi[0].fitur[0]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex  p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 1].spesifikasi[0].fitur[1]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 1].spesifikasi[0].fitur[1]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 1].spesifikasi[0].fitur[2]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 1].spesifikasi[0].fitur[2]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 1].spesifikasi[0].fitur[3]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 1].spesifikasi[0].fitur[3]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="uncheck" class="border rounded p-2 me-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 1].spesifikasi[0].fitur[4]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 1].spesifikasi[0].fitur[4]
+                                 }</p>
                                </div>
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
-                                 <p class="mb-0 fw-semibold">${data[index + 1].spesifikasi[0].fitur[5]}</p>
+                                 <p class="mb-0 fw-semibold">${
+                                   data[index + 1].spesifikasi[0].fitur[5]
+                                 }</p>
                                </div> 
                              </div>
                            </div>
@@ -417,10 +491,10 @@ function fetchData() {
                </div>
              </div>
             `;
-          }
-        });
-    
-        isiHTML += `
+        }
+      });
+
+      isiHTML += `
         <div>
           <div
             class="title fs-2 text-center d-flex justify-content-center align-items-center gap-2 text-uppercase fw-semibold"
@@ -432,15 +506,15 @@ function fetchData() {
           ${spesifikasiHTML}
         </div>
         `;
-      }
-    });
-  
-    const containerIsi = document.getElementById("content");
-    if (containerIsi) {
-      containerIsi.innerHTML = isiHTML;
-    } else {
-      console.error("Data ID 'data-container' tidak ditemukan");
     }
+  });
+
+  const containerIsi = document.getElementById("content");
+  if (containerIsi) {
+    containerIsi.innerHTML = isiHTML;
+  } else {
+    console.error("Data ID 'data-container' tidak ditemukan");
   }
-  
-  window.onload = fetchData;
+}
+
+window.onload = fetchData;
