@@ -31,6 +31,7 @@ nav.navbar {
 a.nav-link {
   font-size: 12px;
 }
+
 /* Navbar - panduan end*/
 
 /* Content - panduan start */
@@ -41,11 +42,6 @@ div.icon-panduan-title {
 }
 
 /* Carousell - panduan */
-
-img.img-carousel-panduan {
-  width: 75%;
-  border-radius: 10px;
-}
 
 img.btn-carousel-panduan {
   transform: rotate(180deg);
@@ -85,6 +81,7 @@ div.kotak-biru-kiri {
 div.kotak-biru-kanan {
   background-color: var(--secondary);
 }
+
 /* Content - panduan end */
 
 /* footer */
@@ -92,4 +89,305 @@ div.kotak-biru-kanan {
 button.button-footer-panduan {
   background-color: var(--secondary);
   color: var(--primary);
+}
+
+/* responsive */
+@media only screen and (min-width: 1920px) {
+
+  /* content responsive */
+  .title h1 {
+    font-size: 80px;
+  }
+
+  img.img-carousel-panduan {
+    width: 80%;
+  }
+
+  div.kotak-biru-kiri {
+    width: 15px;
+    height: 15px;
+    left: 15vh;
+    top: 0;
+  }
+
+  div.kotak-biru-kanan {
+    width: 15px;
+    height: 50px;
+    right: 15vh;
+    bottom: 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 36px;
+  }
+
+  p.paragraft-carousel-panduan {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+
+  /* content responsive */
+  .tittle h1 {
+    font-size: 64px;
+  }
+
+  img.img-carousel-panduan {
+    width: 75%;
+    border-radius: 10px;
+  }
+
+  div.kotak-biru-kiri {
+    width: 15px;
+    height: 15px;
+    left: 20vh;
+    top: 0;
+  }
+
+  div.kotak-biru-kanan {
+    width: 15px;
+    height: 50px;
+    right: 20vh;
+    bottom: 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  /* content responsive */
+  div.kotak-biru-kiri {
+    width: 15px;
+    height: 15px;
+    left: 15vh;
+    top: 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+
+  div.kotak-biru-kanan {
+    width: 15px;
+    height: 50px;
+    right: 15vh;
+    bottom: 0;
+  }
+
+  .carousel-caption {
+    height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  .carousel-caption::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .carousel-caption::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .carousel-caption::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+
+  /* content responsive */
+  div.kotak-biru-kiri {
+    width: 15px;
+    height: 15px;
+    left: 10vh;
+    top: 0;
+  }
+
+  p.paragraft-carousel-panduan {
+    font-size: 10px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 16px;
+  }
+
+  div.kotak-biru-kanan {
+    width: 15px;
+    height: 50px;
+    right: 10vh;
+    bottom: 0;
+  }
+
+  .carousel-caption {
+    height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  .carousel-caption::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .carousel-caption::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .carousel-caption::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 779px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 500px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 500px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 500px;
+  }
+
+  div.kotak-biru-kiri {
+    display: none;
+  }
+
+  p.paragraft-carousel-panduan {
+    font-size: 10px;
+    color: black;
+    width: 100%;
+  }
+
+  .carousel-caption h5 {
+    position: top;
+    bottom: 0;
+    font-size: 16px;
+    color: black;
+  }
+
+  div.kotak-biru-kanan {
+    display: none;
+  }
+
+  .carousel-caption {
+    position: relative;
+    overflow-y: none;
+    scrollbar-width: none;
+    bottom: 0;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 650px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 450px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 450px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 550px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 450px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 450px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 450px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 400px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 400px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 350px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 370px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 370px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 370px;
+  }
+
+  div.kotak-biru-kiri {
+    display: none;
+  }
+
+  p.paragraft-carousel-panduan {
+    font-size: 10px;
+    color: black;
+    width: 100%;
+  }
+
+  .carousel-caption h5 {
+    position: top;
+    bottom: 0;
+    font-size: 16px;
+    color: black;
+  }
+
+  div.kotak-biru-kanan {
+    display: none;
+  }
+
+  .carousel-caption {
+    position: relative;
+    overflow-y: none;
+    scrollbar-width: none;
+    bottom: 0;
+    height: 250px;
+  }
 }
