@@ -1,0 +1,393 @@
+:root {
+  /* primary putih */
+  --primary: #ffffff;
+  /* secondary biru */
+  --secondary: #004fce;
+  /* Ternary kuning */
+  --Ternary: FFA500;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* style vision - panduan */
+
+/* Navbar - panduan start*/
+nav.navbar {
+  width: 320px;
+  border-radius: 60px;
+  border: var(--primary);
+  background-color: var(--primary);
+  padding: 0.2rem;
+  margin: 1rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+}
+
+a.nav-link {
+  font-size: 12px;
+}
+
+/* Navbar - panduan end*/
+
+/* Content - panduan start */
+
+/* Title - panduan */
+div.icon-panduan-title {
+  margin-top: -3.3rem;
+}
+
+/* Carousell - panduan */
+
+img.btn-carousel-panduan {
+  transform: rotate(180deg);
+}
+
+p.paragraft-carousel-panduan {
+  width: 40%;
+  font-size: 14px;
+}
+
+div.carousel-indicators {
+  position: absolute;
+  bottom: -50px;
+  gap: 0.2rem;
+}
+
+div.carousel-indicators button.active {
+  background-color: var(--secondary);
+  width: 250px;
+  height: 15px;
+  border-radius: 10px;
+  border-color: var(--primary);
+}
+
+div.carousel-indicators button {
+  background-color: var(--primary);
+  width: 75px;
+  height: 15px;
+  border-radius: 10px;
+  border-color: var(--secondary);
+}
+
+div.kotak-biru-kiri {
+  background-color: var(--secondary);
+}
+
+div.kotak-biru-kanan {
+  background-color: var(--secondary);
+}
+
+/* Content - panduan end */
+
+/* footer */
+
+button.button-footer-panduan {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+/* responsive */
+@media only screen and (min-width: 1920px) {
+
+  /* content responsive */
+  .title h1 {
+    font-size: 80px;
+  }
+
+  img.img-carousel-panduan {
+    width: 80%;
+  }
+
+  div.kotak-biru-kiri {
+    width: 15px;
+    height: 15px;
+    left: 15vh;
+    top: 0;
+  }
+
+  div.kotak-biru-kanan {
+    width: 15px;
+    height: 50px;
+    right: 15vh;
+    bottom: 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 36px;
+  }
+
+  p.paragraft-carousel-panduan {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+
+  /* content responsive */
+  .tittle h1 {
+    font-size: 64px;
+  }
+
+  img.img-carousel-panduan {
+    width: 75%;
+    border-radius: 10px;
+  }
+
+  div.kotak-biru-kiri {
+    width: 15px;
+    height: 15px;
+    left: 20vh;
+    top: 0;
+  }
+
+  div.kotak-biru-kanan {
+    width: 15px;
+    height: 50px;
+    right: 20vh;
+    bottom: 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  /* content responsive */
+  div.kotak-biru-kiri {
+    width: 15px;
+    height: 15px;
+    left: 15vh;
+    top: 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+
+  div.kotak-biru-kanan {
+    width: 15px;
+    height: 50px;
+    right: 15vh;
+    bottom: 0;
+  }
+
+  .carousel-caption {
+    height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  .carousel-caption::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .carousel-caption::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .carousel-caption::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+
+  /* content responsive */
+  div.kotak-biru-kiri {
+    width: 15px;
+    height: 15px;
+    left: 10vh;
+    top: 0;
+  }
+
+  p.paragraft-carousel-panduan {
+    font-size: 10px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 16px;
+  }
+
+  div.kotak-biru-kanan {
+    width: 15px;
+    height: 50px;
+    right: 10vh;
+    bottom: 0;
+  }
+
+  .carousel-caption {
+    height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  .carousel-caption::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .carousel-caption::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .carousel-caption::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 779px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 500px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 500px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 500px;
+  }
+
+  div.kotak-biru-kiri {
+    display: none;
+  }
+
+  p.paragraft-carousel-panduan {
+    font-size: 10px;
+    color: black;
+    width: 100%;
+  }
+
+  .carousel-caption h5 {
+    position: top;
+    bottom: 0;
+    font-size: 16px;
+    color: black;
+  }
+
+  div.kotak-biru-kanan {
+    display: none;
+  }
+
+  .carousel-caption {
+    position: relative;
+    overflow-y: none;
+    scrollbar-width: none;
+    bottom: 0;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 650px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 450px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 450px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 550px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 450px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 450px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 450px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 400px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 400px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 350px) {
+
+  /* content responsive */
+  .carousel {
+    position: relative;
+    height: 370px;
+  }
+
+  .carousel-inner {
+    position: relative;
+    height: 370px;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 370px;
+  }
+
+  div.kotak-biru-kiri {
+    display: none;
+  }
+
+  p.paragraft-carousel-panduan {
+    font-size: 10px;
+    color: black;
+    width: 100%;
+  }
+
+  .carousel-caption h5 {
+    position: top;
+    bottom: 0;
+    font-size: 16px;
+    color: black;
+  }
+
+  div.kotak-biru-kanan {
+    display: none;
+  }
+
+  .carousel-caption {
+    position: relative;
+    overflow-y: none;
+    scrollbar-width: none;
+    bottom: 0;
+    height: 250px;
+  }
+}

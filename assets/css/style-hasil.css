@@ -1,0 +1,31 @@
+/* content */
+div.stroge,
+div.vga,
+div.baterai-screen,
+div.memory,
+div.os,
+div.fitur {
+  background-color: #efefef;
+}
+
+div.kotak-name-b {
+  background-color: #43a0c8;
+}
+div.kotak-name-m {
+  background-color: #ff3333;
+}
+
+div.ovel-screen {
+  width: 120px;
+  height: 150px;
+  background-color: #d9d9d9;
+  border-top-right-radius: 100px;
+}
+
+.tbody tr {
+  background-color: #d9d9d9;
+  width: 100%;
+  display: flex;
+  justify-content: between;
+  align-items: center;
+}
