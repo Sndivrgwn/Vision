@@ -9,6 +9,11 @@
   width: 100%;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .nav ul li {
   list-style-type: none;
   font-weight: bold;
