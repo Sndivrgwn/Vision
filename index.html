@@ -17,14 +17,17 @@
     <section id="frame1" >
         <!-- navbar -->
         <nav class="navbar nav text-dark p-2 pt-5">
-            <ul class="d-flex justify-content-center align-items-center gap-4 w-auto bg-white p-2 ps-4 pe-4 rounded rounded-5">
+            <div class="nav-button" id="navButton">
+                ☰
+            </div>
+            <ul class="nav-content d-flex justify-content-center align-items-center gap-4 w-auto bg-white p-2 ps-4 pe-4 rounded rounded-5">
                 <li class="nav-item active">Beranda</li>
-                <li class="nav-item">VR</li>
-                <li class="nav-item">Bandingkan</li>
-                <li class="nav-item">Panduan</li>
+                <li class="nav-item"><a href="page-extra/page-bandingkan.html">Bandingkan</a></li>
+                <li class="nav-item"><a href="page-extra/page-panduan.html">Panduan</a></li>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </ul>
         </nav>
+        
         <!-- end navbar -->
         <!-- content homepage -->
         <div class="parent-content">
@@ -80,8 +83,8 @@
                             <div class="circle"></div>
                         </div>
                         <div class="button">
-                            <button class="btn1">Panduan VR <i class="fa-solid fa-angle-right"></i></button>
-                            <button class="btn2">Manfaat VR <i class="fa-solid fa-angle-right"></i></button>
+                            <button class="btn1 text-light"><a href="page-extra/page-panduan.html" class="text-light">Panduan VR <i class="fa-solid fa-angle-right"></i></a></button>
+                            <button class="btn2"><a href="#frame5">Manfaat VR <i class="fa-solid fa-angle-right"></i></a></button>
                         </div>
                     </div>
                     <div class="right-content">
@@ -115,7 +118,10 @@
             </div>
             <div class="top container-fluid ps-5 pe-5">
                 <h1>Lihat VR yang tersedia di dunia</h1>
-                <i class="fa-solid fa-circle-info"></i>
+                <div class="icon-container">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="tooltip-text">Menampilkan 3 VR unggulan saat ini</span>
+                </div>
             </div>
             <div class="middle">
                 <h1 class="text-back">UGGULAN</h1>
@@ -125,7 +131,7 @@
                         <h1>VRONE PLUS</h1>
                         <p>VRONE</p>
                         <center>
-                            <button>Lihat VR <i class="fa-solid fa-angle-right"></i></button>
+                            <button><a class="text-light" href="page-extra/page-spec.html">Lihat VR <i class="fa-solid fa-angle-right"></i></a></button>
                         </center>
                     </div>
                     <div class="card">
@@ -150,7 +156,7 @@
                 <div class="parent d-flex justify-content-between">
                     <div class="side-left">
                         <div class="top"></div>
-                        <div class\="bottom"></div>
+                        <div class="bottom"></div>
                     </div>
                     <div class="quote mt-5 me-5">
                         <center>
@@ -352,26 +358,26 @@
                   <!-- dawadaw -->
                    <div class="row row-cols-2 mx-5">
                     <div class="col">
-                      <img src="assets/img/controller.png" class="border rounded-4" id="kotakKomponen1">
+                      <img src="assets/img/controller.png" class="border rounded-4">
                     </div>
                     <div class="col">
-                      <img src="assets/img/komponen.png" class="border rounded-4" id="kotakKomponen2">
+                      <img src="assets/img/komponen.png" class="border rounded-4">
                     </div>
                     <div class="col">
-                      <img src="assets/img/ikatKepala.png" class="border rounded-4 mt-3" id="kotakKomponen3">
+                      <img src="assets/img/ikatKepala.png" class="border rounded-4 mt-3">
                     </div>
                     <div class="col">
-                      <img src="assets/img/mesin.jpeg" class="border rounded-4 mt-3" id="kotakKomponen4">
+                      <img src="assets/img/mesin.jpeg" class="border rounded-4 mt-3">
                     </div>
                    </div>
                   <!-- dawadaw -->
                 </div>
                 <div class="col my-auto">
-                  <img src="assets/img/vrkomponen.png" width="50%" id="isiTengahKomponen">
+                  <img src="assets/img/vrkomponen.png" id="wandiKomponenTengah">
                 </div>
                 <div class="col float-start my-auto">
-                  <p id="judulIsiTextKomponen" class="fw-semibold fs-4">Kacamata VR</p>
-                  <p id="isiTextKomponen">Layar pada VR adalah salah satu komponen yang sangat penting, karena dengan layar VR kita dapat melihat duina virtual yang digabungkan dengan dunia nyata. Layar pada VR ada beberapa tipe, salah satunya layar tipe amoled yang memberikan tampilan lebih berwarna, tajam dan beresolusi tinggi </p>
+                  <p class="fw-semibold fs-4">Kacamata VR</p>
+                  <p>Layar pada VR adalah salah satu komponen yang sangat penting, karena dengan layar VR kita dapat melihat duina virtual yang digabungkan dengan dunia nyata. Layar pada VR ada beberapa tipe, salah satunya layar tipe amoled yang memberikan tampilan lebih berwarna, tajam dan beresolusi tinggi </p>
                 </div>
               </div>
             </div>
@@ -485,5 +491,6 @@
           </div>
           <!-- End Halaman -->
            <script src="assets/js/script.js"></script>
+           <script src="assets/js/img-slide.js"></script>
 </body>
 </html>

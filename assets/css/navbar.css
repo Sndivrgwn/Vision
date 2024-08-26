@@ -9,6 +9,11 @@
   width: 100%;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .nav ul li {
   list-style-type: none;
   font-weight: bold;
@@ -16,4 +21,8 @@
 
 .nav ul .active {
   border-bottom: 2px solid orange;
+}
+
+.nav-button {
+  display: none;
 }

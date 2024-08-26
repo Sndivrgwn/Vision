@@ -297,21 +297,38 @@ body {
   border-radius: 2rem;
 }
 
-#frame2 .rectangle .parent-content .right-content .mini-image {
-  margin-top: 2rem;
-}
+  #frame2 .rectangle .parent-content .right-content .mini-image {
+    margin-top: 2rem;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
 
-#frame2 .rectangle .parent-content .right-content .mini-image .image img {
-  width: 33vh;
-  height: 33vh;
-  border-radius: 30px;
-  object-fit: cover;
-}
-
-#frame2 .rectangle .parent-content .right-content .mini-image .image {
+  #frame2 .rectangle .parent-content .right-content .mini-image .image img {
+    width: 33vh;
+    height: 33vh;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #frame2 .rectangle .parent-content .right-content .mini-image .image {
   display: flex;
   gap: 7%;
 }
+
+.image-slide-left {
+  transform: translateX(-100%);
+}
+
+.image-slide-right {
+  transform: translateX(100%);
+}
+
+.image-active {
+  transform: translateX(0);
+} 
+
 
 #frame3 {
   height: 115vh;
@@ -344,10 +361,51 @@ body {
   font-weight: bold;
 }
 
-#frame3 .top i {
+#frame3 .top .icon-container i {
   font-size: 4vh;
   border-radius: 50%;
 }
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%; /* Mengatur jarak tooltip dari ikon */
+  left: -50%; /* Menempatkan tooltip di posisi standar */
+  transform: translateX(-50%); /* Menjaga tooltip tetap di tengah */
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 2vh;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Ujung segitiga di bawah tooltip */
+  right: 25%; /* Menempatkan ujung segitiga sekitar -45 derajat dari ikon */
+  transform: rotate(-45deg); /* Memutar segitiga kecil agar berposisi miring */
+  border-width: 7px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.icon-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 
 #frame3 .midlle {
   position: relative;
