@@ -22,3 +22,7 @@ a {
 .nav ul .active {
   border-bottom: 2px solid orange;
 }
+
+.nav-button {
+  display: none;
+}
