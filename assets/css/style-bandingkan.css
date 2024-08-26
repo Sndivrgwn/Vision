@@ -29,6 +29,7 @@ nav.navbar {
 a.nav-link {
   font-size: 12px;
 }
+
 /* Navbar - bandingkan end*/
 
 /* Content - bandingkan start */
@@ -69,6 +70,7 @@ div.container-desain {
 .add-banding button {
   background-color: var(--secondary);
 }
+
 .add-banding button:hover {
   background-color: #004fcefa;
 }
@@ -81,6 +83,7 @@ div.container-desain {
   display: none;
   background-color: var(--secondary);
 }
+
 #optionaddBanding.active {
   display: block;
 }
@@ -92,4 +95,153 @@ button.button-footer-panduan {
   background-color: var(--secondary);
   color: var(--primary);
 }
+
 /* footer - bandingkan end */
+
+@media only screen and (min-width: 1920px) {
+
+  .filter {
+    width: 25%;
+  }
+
+  #data-container {
+    width: 75%;
+  }
+  .konten {
+    margin: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1919px) {
+  .filter {
+    width: 25%;
+  }
+
+  #data-container {
+    width: 75%;
+  }
+  
+  .konten {
+    margin: 3rem;
+  }
+
+}
+@media only screen and (max-width: 1366px) {
+  .filter {
+    width: 25%;
+  }
+
+  #data-container {
+    width: 75%;
+  }
+  
+  .konten {
+    margin: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 1300px) {
+  .filter {
+    width: 20%;
+  }
+
+  #data-container {
+    width: 80%;
+  }
+
+  .konten-items h4 {
+    font-size: 20px;
+  }
+
+  .spek p {
+    font-size: 10px;
+  }
+  .konten {
+    margin: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 1215px) {
+  .filter {
+    width: 100%;
+  }
+
+  .konten-bandingkan {
+    flex-direction: column;
+  }
+
+  #data-container {
+    width: 100%;
+  }
+
+  .konten-items h4 {
+    font-size: 20px;
+  }
+
+  .spek p {
+    font-size: 10px;
+  }
+  .konten {
+    margin: 0;
+  }
+
+  #data-container {
+    width: 100%;
+  }
+
+  div.konten-items {
+    margin: 2rem;
+    width: 100%;
+    margin: 1rem;
+  }
+  .konten {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #data-container {
+    width: 100%;
+  }
+
+  div.konten-items {
+    margin: 2rem;
+    width: 100%;
+    margin: 1rem;
+  }
+  .konten {
+    margin: 0;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  #data-container {
+    width: 100%;
+  }
+
+  div.konten-items {
+    margin: 2rem;
+    width: 100%;
+    margin: 1rem;
+  }
+  .konten {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #data-container {
+    width: 100%;
+  }
+
+  div.konten-items {
+    margin: 2rem;
+    width: 100%;
+    margin: 1rem;
+  }
+  .konten {
+    margin: 0;
+  }
+
+}

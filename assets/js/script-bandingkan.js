@@ -11,7 +11,6 @@ function fetchData() {
 
 function renderData(data) {
   let dataHTML = "";
-  let isiHTML = "";
   let filterModeColorSet = new Set();
   let filterModeBeratSet = new Set();
   let filterModeBateraiSet = new Set();
@@ -67,7 +66,7 @@ function renderData(data) {
 
     dataHTML += `
         <div class="konten-items rounded-2 border position-relative d-flex justify-content-center align-items-center">
-          <img class="position-absolute top-0 start-0" width="30px" onclick="btnName('${item.nama_produk}')" src="../assets/icon/plus-bandingkan.png" alt="${item.nama_produk}">      
+          <img class="position-absolute top-0 start-0" width="30px" onclick="btnName('<b> ${item.id}.</b>  ${item.nama_produk} ')" src="../assets/icon/plus-bandingkan.png" alt="${item.nama_produk}">      
           ${imgHTML}
           <div class="w-75 m-3 text-start">
             <h4 class="fw-semibold mb-4">${item.nama_produk}</h4>
@@ -193,18 +192,23 @@ function btnName(id) {
       .join("");
     produkListElement.innerHTML = produkListHTML;
   } else {
-    console.error("Element with ID 'optionaddBanding' not found");
+    console.error("Data ID 'optionaddBanding' tidak ditemukan");
   }
+}
+
+
+
+function toggleBanding() {
+  const optionaddBanding = document.getElementById("optionaddBanding");
+  optionaddBanding.classList.toggle("active");
+
+  
+
 }
 
 function sliderBtn(id) {
   const sliderBtn = document.getElementById(id);
   sliderBtn.classList.toggle("active");
-}
-
-function toggleBanding() {
-  const optionaddBanding = document.getElementById("optionaddBanding");
-  optionaddBanding.classList.toggle("active");
 }
 
 const bandingElement = document.getElementById("add-banding");

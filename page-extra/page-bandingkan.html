@@ -46,8 +46,8 @@
       <!-- Navbar - Bandingkan end -->
 
       <!-- Content - Bandingkan start -->
-      <div class="d-flex justify-content-center position-relative gap-2 m-5">
-        <div class="filter w-25 d-flex flex-column gap-3">
+      <div class="konten-bandingkan d-flex justify-content-center position-relative gap-2 m-5">
+        <div class="filter d-flex flex-column gap-3">
           <div class="w-100 container-desain p-3 rounded-2">
             <h1 class="fs-4 fw-semibold mb-2 text-white">Desain</h1>
             <div class="gap-1 d-flex flex-column">
@@ -139,12 +139,12 @@
             </div>
           </div>
         </div>
-        <div class="w-75 d-flex flex-wrap ms-5 gap-4" id="data-container">
+        <div class="konten d-flex flex-wrap gap-4" id="data-container">
           <!-- data informasi -->
         </div>
       </div>
       <div
-        class="add-banding d-flex justify-content-center m-5 flex-column align-items-end"
+        class="add-banding d- flex justify-content-center flex-column align-items-end"
         id="add-banding"
       >
         <div
@@ -152,14 +152,14 @@
           class="p-1 w-100 rounded-top-2 text-center text-white"
         ></div>
         <button
-          onclick="toggleBanding()"
-          class="btn rounded-bottom-2 rounded-top-0 d-flex justify-content-between gap-2 align-content-center p-2"
-        >
-          <img src="../assets/icon/angle-up.png" width="20px" alt="" />
-          <a href="page-hasil.html" class="m-0 text-white text-decoration-none"
-            >Bandingkan produk</a
-          >
-        </button>
+        onclick="toggleBanding()"
+        class="btn rounded-bottom-2 rounded-top-0 d-flex justify-content-between gap-2 align-content-center p-2"
+      >
+        <img src="../assets/icon/angle-up.png" width="20px" alt="" />
+        <a id="productLink" href="#" class="m-0 text-white text-decoration-none">
+          Bandingkan produk
+        </a>
+      </button>
       </div>
 
       <!-- Content - Bandingkan end -->
