@@ -39,8 +39,8 @@
   }
 
   #frame2 .rectangle {
-    width: 130vh;
-    height: 80vh;
+    width: 160vh;
+    height: 90vh;
   }
 
   #frame2 .rectangle .parent-content .left-content .image-content img {
@@ -68,7 +68,7 @@
   }
 
   #frame2 .rectangle .parent-content .right-content .box {
-    width: 55vh;
+    width: 77vh;
   }
 
   #frame2 .rectangle .parent-content .right-content .box .body-box p {
@@ -90,8 +90,8 @@
   }
 
   #frame2 .rectangle .parent-content .right-content .mini-image .image img {
-    width: 25vh;
-    height: 25vh;
+    width: 35vh;
+    height: 35vh;
     border-radius: 30px;
     object-fit: cover;
   }
@@ -129,6 +129,66 @@
     width: 100%;
   }
 
+}
+
+@media screen and (max-height: 1024px) and (max-width: 1280px) {
+  #frame2 .rectangle {
+    width: 130vh;
+    height: 80vh;
+  }
+
+  #frame2 .rectangle .parent-content .left-content .image-content img {
+    width: 60vh;
+    height: 60vh;
+  }
+
+    
+  #frame2 .rectangle .parent-content .left-content .image-content .circle {
+    height: 5vh;
+    width: 5vh;
+    position: absolute;
+    top: 2vw;
+    right: 3vw;
+  }
+
+  #frame2 .rectangle .parent-content .left-content .button button {
+    width: 20vw;
+    font-size: 2.2vh;
+  }
+
+    #frame2 .rectangle .parent-content .left-content .button .fa-angle-right,
+  #frame3 .middle .parent-card .card button .fa-angle-right {
+    font-size: 2vh;
+  }
+
+  #frame2 .rectangle .parent-content .right-content .box {
+    width: 40vw;
+  }
+
+  #frame2 .rectangle .parent-content .right-content .box .body-box p {
+    font-size: calc(2vh);
+  }
+
+  #frame2 .rectangle .parent-content .right-content .box .title-box h1 {
+    font-size: 2.5vh;
+    font-weight: bold;
+  }
+
+  #frame2 .rectangle .parent-content .right-content .box .body-box {
+    padding: 1rem;
+    background-color: #fafafa;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    height: 30vh;
+  }
+
+  #frame2 .rectangle .parent-content .right-content .mini-image .image img {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 30px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 1152px) {
@@ -216,8 +276,33 @@
     object-fit: cover;
   }
 
+  #frame3 .bottom .parent center .quotes {
+    font-size: 2vh;
+    display: block;
+    width: 70%;
+  }
+
+  #frame3 .topbar h1 {
+    font-size: 4.3vh;
+    font-weight: bold;
+    padding-top: 3vh;
+  }
+
   #frame3 .middle .parent-card {
-    gap: 10vh;
+    gap: 5vh;
+  }
+
+  #frame3 .middle .parent-card .card img {
+    width: 30vh;
+  }
+  
+  #frame3 .middle .parent-card .card h1 {
+    font-size: 2.5vh;
+    font-weight: bold;
+  }
+  
+  #frame3 .middle .parent-card .card p {
+    font-size: 2vh;
   }
 
   #frame5 .center .left .rectangle {
@@ -414,8 +499,8 @@
 
   #frame3 .middle .text-back {
     font-size: 25vh;
-    left: -30%;
-    top: 225%;
+    left: -25vh;
+    top: 250vh;
     transform: rotate(90deg);
     width: 100%;
   }
@@ -502,6 +587,38 @@
     padding-top: 0;
   }
   
+}
+
+@media screen and (max-width: 620px) {
+  #frame2 .rectangle .parent-content .right-content .mini-image .image #vrRight {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 878px) and (max-width: 620px) {
+  #frame2 .rectangle .parent-content .right-content .box .body-box p {
+    line-height: 2;
+    font-size: calc(1.8vh);
+  }
+
+  #frame3 .top h1 {
+    width: 70%;
+  }
+
+  #frame3 .middle .text-back {
+    font-size: 25vh;
+    left: -20vh;
+    top: 245vh;
+    transform: rotate(90deg);
+    width: 100%;
+  }
+}
+
+@media screen and (min-height: 1171px) and (max-width: 620px) {
+  #frame3 .middle .text-back {
+    left: -20vh;
+    top: 215vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -592,21 +709,33 @@
     width: 90%;
   }
 
-    #frame1 .parent-content .left-content .preview .item1 img,
-  .item2 img,
-  .item3 img {
-    width: 112px;
+  #frame1 .parent-content .left-content .preview .item1 img {
+    display: block;
+    width: 44vh;
+    height: 10vh;
+    object-fit: cover;
   }
 
-  #frame1 .parent-content .left-content .preview .item1 .teks1,
-  .item2 .teks2,
-  .item3 .teks3 {
+
+    #frame1 .parent-content .left-content .preview
+  .item2 img,
+  .item3 img {
+    display: none;
+  }
+
+  #frame1 .parent-content .left-content .preview .item1 .teks1 {
     background-color: #d9d9d9;
     font-size: var(--paragraph);
     width: 100%;
     font-weight: bold;
     margin-top: 1rem;
     cursor: default;
+  }
+
+  #frame1 .parent-content .left-content .preview
+  .item2 .teks2,
+  .item3 .teks3 {
+    display: none;
   }
 
   #frame2 .rectangle .parent-content .left-content .image-content img {
@@ -777,27 +906,39 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width:  460px) {
+  #frame1 .parent-content .left-content .preview .item1 img {
+    display: block;
+    width: 42vh;
+    height: 10vh;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 440px) {
   #frame1 .btn-hp1,
   #frame1 .btn-hp2 {
     font-size: 16px;
   }
 
+  #frame1 .parent-content .left-content .preview .item1 img {
+    display: block;
+    width: 40vh;
+    height: 10vh;
+    object-fit: cover;
+  }
+
   #frame1 .parent-content .left-content .parent-preview {
     width: 90%;
   }
+}
 
-    #frame1 .parent-content .left-content .preview .item1 img,
-  .item2 img,
-  .item3 img {
-    width: 100px;
-  }
-
-  #frame1 .parent-content .left-content .preview .item1 .teks1,
-  .item2 .teks2,
-  .item3 .teks3 {
-    width: 100px;
-    font-size: 12px;
+@media screen and (max-width: 420px) {
+  #frame1 .parent-content .left-content .preview .item1 img {
+    display: block;
+    width: 38vh;
+    height: 10vh;
+    object-fit: cover;
   }
 }
 
@@ -820,18 +961,6 @@
     width: 94%;
   }
 
-    #frame1 .parent-content .left-content .preview .item1 img,
-  .item2 img,
-  .item3 img {
-    width: 100px;
-  }
-
-  #frame1 .parent-content .left-content .preview .item1 .teks1,
-  .item2 .teks2,
-  .item3 .teks3 {
-    width: 100px;
-    font-size: 11px;
-  }
 
   #frame2 .rectangle .parent-content .right-content .box .body-box p {
     line-height: 2;
