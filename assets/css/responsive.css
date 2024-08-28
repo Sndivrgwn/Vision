@@ -590,6 +590,43 @@
 }
 
 @media screen and (max-width: 620px) {
+  #frame1 .title {
+    width: 80%;
+  }
+
+  #frame1 .parent-content .left-content .parent-preview {
+    width: 90%;
+  }
+
+  #frame1 .parent-content .left-content .preview .item1 img {
+    display: block;
+    width: auto;
+    height: 10vh;
+    object-fit: cover;
+  }
+
+    #frame1 .parent-content .left-content .preview
+  .item2 img,
+  .item3 img {
+    display: none;
+  }
+
+  #frame1 .parent-content .left-content .preview .item1 .teks1 {
+    background-color: #d9d9d9;
+    font-size: var(--paragraph);
+    width: 100%;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: default;
+  }
+
+  #frame1 .parent-content .left-content .preview
+  .item2 .teks2,
+  .item3 .teks3 {
+    display: none;
+  }
+
+  
   #frame2 .rectangle .parent-content .right-content .mini-image .image #vrRight {
     display: none;
   }
@@ -625,6 +662,10 @@
 
   body {
     margin: 0;
+    --title: 60px;
+    --sub-title: 18px;
+    --button: 16px;
+    --paragraph: 14px;
   }
   
   .nav {
@@ -691,18 +732,18 @@
   }
 
   #frame1 .title {
-    font-size: 60px;
+    font-size: var(--title);
     width: 100%;
   }
 
   #frame1 .sub-title {
-    font-size: 18px;
+    font-size: var(--sub-title);
     margin-top: 5rem;
   }
 
   #frame1 .btn-hp1, #frame1
   .btn-hp2 {
-    font-size: 18px;
+    font-size: var(--sub-title);
   }
 
   #frame1 .parent-content .left-content .parent-preview {
@@ -748,7 +789,7 @@
   }
 
   #frame2 .rectangle .parent-content .left-content .button button {
-    font-size: 1.7vh;
+    font-size: var(--sub-title);
     width: 100%;
     margin-left: 4%;
   }
@@ -766,21 +807,25 @@
     background-color: transparent;
     border: 1px solid white;
     width: 13%;
-    font-size: 1.8vh;
+    font-size: var(--sub-title);
   }
 
   #frame2 .rectangle .parent-content .right-content .box .title-box h1 {
-    font-size: 2vh;
+    font-size: var(--sub-title);
     font-weight: bold;
   }
 
   #frame2 .rectangle .parent-content .right-content .box .body-box p {
     line-height: 2;
-    font-size: calc(1.7vh);
+    font-size: var(--paragraph);
+  }
+
+  #frame3 .topbar h1 {
+    font-size: var(--title - 15px);
   }
 
   #frame3 .top h1 {
-    font-size: 2vh;
+    font-size: var(--sub-title);
     width: 50%;
   }
 
@@ -794,12 +839,12 @@
   }
 
   #frame3 .middle .parent-card .card h1 {
-    font-size: 2vh;
+    font-size: var(--sub-title);
     font-weight: bold;
   }
   
   #frame3 .middle .parent-card .card p {
-    font-size: 1.7vh;
+    font-size: var(--button);
   }
   
   #frame3 .middle .parent-card .card button {
@@ -809,13 +854,9 @@
     color: #fff;
     border-radius: 20vh;
     font-weight: bold;
-    font-size: 1.7vh;
+    font-size: var(--sub-title);
     padding: 1vh 0.2vh 1vh 0.2vh;
     transition: ease 0.3s;
-  }
-
-  #frame3 .bottom .parent b, #frame3 .bottom .parent i {
-    font-size: 1.3vh;
   }
 
   #frame3 .bottom .parent center {
@@ -825,7 +866,7 @@
   
   #frame3 .middle .parent-card .card button i {
     width: 15% !important;
-    font-size: 1.6vh !important;
+    font-size: var(--sub-title) !important;
   }
 
   #frame3 .bottom .parent .side-left .top,
@@ -852,10 +893,21 @@
         top: 250%;
   }
 
+  #frame3 .bottom .parent center .quotes {
+    font-size: 1.5vh;
+    display: block;
+    width: 90%;
+  }
+
 
   #frame4 {
     margin-bottom: 25%;
   }
+
+  #frame4 .review h1 {
+    font-size: calc(var(--title) - 25px);
+}
+
 
   #frame5 {
     padding-bottom: 5%;
@@ -866,10 +918,14 @@
     border: 1px solid #fafafa;
   }
 
+  #frame5 .icon {
+    display: none;
+  }
+
   #frame5 .center .right .info .item-top-right {
     border-radius: 10px;
     border: 1px solid #fafafa;
-    text-align: right;
+    text-align: left;
   }
 
   #frame5 .center .right .info .item-bottom-left {
@@ -882,12 +938,14 @@
   }
   
   #frame5 .center .right .info .item-bottom-right {
-    text-align: right;
+    text-align: left;
     border-radius: 10px;
     border: 1px solid #fafafa;
   }
 
   #frame5 .text h1 {
+    text-align: center;
+    font-size: calc(var(--title) - 25px);
     text-align: center;
   }
 
@@ -904,6 +962,8 @@
     width: 45px;
     height: 35px; 
   }
+
+
 }
 
 @media screen and (max-width:  460px) {
@@ -916,6 +976,18 @@
 }
 
 @media screen and (max-width: 440px) {
+  body {
+    margin: 0;
+    --title: 50px;
+    --sub-title: 18px;
+    --button: 16px;
+    --paragraph: 14px;
+  }
+
+  #frame1 .title {
+    font-size: 50px;
+  }
+
   #frame1 .btn-hp1,
   #frame1 .btn-hp2 {
     font-size: 16px;
@@ -931,6 +1003,8 @@
   #frame1 .parent-content .left-content .parent-preview {
     width: 90%;
   }
+
+
 }
 
 @media screen and (max-width: 420px) {
