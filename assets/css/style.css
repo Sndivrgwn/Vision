@@ -823,26 +823,29 @@ body {
   width: 6vw;
   height: 3vh;
 }
-#frame6 .isiFrame6 .row .col .row .col img{
+#frame6 .isiFrame6 .row .col .row-cols-2 .col .border{
   width: 90%;
   height: 80%;
 }
-.isiFrame6 .row .col #wandiKomponenTengah {
-  height: 30vh;
-  width: 30vw;
+#frame6 .isiFrame6 .row .col #isiTengahKomponen {
+  height: 25vh;
+  width: 20vw;
 }
 #frame7 .row .col #judulPerbandingan {
   width: 40vw;
   font-size: 50px;
 }
-#kelompokForm #bandingkanForm {
+#frame7 .row .col #kelompokForm input {
   border: none;
-  background-color: #d1d1d1;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ADA7A7;
+  font-weight: 500;
+}
+#kelompokForm #bandingkanForm {
   width: 25vw;
 }
 #kelompokForm #bandingkanForm1 {
-  border: none;
-  background-color: #d1d1d1;
   width: 34vw;
 }
 #frame7 #gambartesting {
