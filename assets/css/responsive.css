@@ -850,6 +850,19 @@
   margin-left: 0 !important;
 }
 
+#footer .col #wandiPengertianFooter {
+  display: none;
+}
+
+#footer .fbutton {
+  margin-left: -15%;
+}
+
+#footer .col .d-flex #wandiButtonFooter {
+  position: absolute;
+  left: 50%;
+}
+
 }
 
 @media screen and (max-height: 878px) and (max-width: 620px) {
