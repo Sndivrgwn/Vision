@@ -834,6 +834,7 @@ body {
   background-color: #ffa500;
   width: 6vw;
   height: 3vh;
+  margin-left: 3rem;
 }
 #frame6 .isiFrame6 .row .col .row-cols-2 .col .border{
   width: 90%;
@@ -870,6 +871,9 @@ body {
 #frame7 .row .col #kelompokForm #buttonbandingkankiri {
   font-size: 14px;
   width: 7.8vw;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
   height: max-content;
 }
 #frame7 .row .adaaja #dekorasiBandingkan1 {
