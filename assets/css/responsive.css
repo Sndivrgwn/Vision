@@ -672,7 +672,7 @@
   }
 
   #frame1 {
-    height: 100vh;
+    height: 110vh;
   }
 
   #frame1 .parent-content .left-content .parent-preview {
@@ -737,6 +737,30 @@
   .item3 .teks3 {
     display: none;
   }
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.preview {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.item1 img,
+.item1 .teks1 {
+  transition: opacity 0.5s ease-in-out; 
+  opacity: 1; 
+}
+
+.hidden {
+  opacity: 0; 
+}
+
+
 
   #frame2 .rectangle .parent-content .right-content .box .title-box h1 {
     font-size: calc(var(--sub-title) + 4px);

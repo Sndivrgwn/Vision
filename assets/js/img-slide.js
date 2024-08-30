@@ -69,3 +69,58 @@ prevBtn.addEventListener('click', function() {
 });
 
 displayContent(currentIndex, 'next');
+
+const slides = [
+    {
+      imgSrc: 'assets/img/Group 139.png',
+      text: 'Kacamata VR'
+    },
+    {
+      imgSrc: 'assets/img/download 2.png',
+      text: 'Dunia Berbeda'
+    },
+    {
+      imgSrc: 'assets/img/images 2.png',
+      text: 'Pengalaman Baru'
+    }
+  ];
+  
+  let i = 0;
+  const imageElement = document.querySelector('.item1 img');
+  const textElement = document.querySelector('.item1 .teks1');
+  
+  
+  const mediaQuery = window.matchMedia('(max-width: 620px)');
+
+  function updateSlide() {
+    if (mediaQuery.matches) {
+      imageElement.classList.add('hidden');
+      textElement.classList.add('hidden');
+  
+      setTimeout(() => {
+        imageElement.src = slides[i].imgSrc;
+        textElement.textContent = slides[i].text;
+  
+        setTimeout(() => {
+          imageElement.classList.remove('hidden');
+          textElement.classList.remove('hidden');
+        }, 10); // Memberi sedikit jeda agar transisi berjalan dengan benar
+  
+        i = (i + 1) % slides.length;
+      }, 500); // Waktu ini harus sesuai dengan durasi transisi di CSS (0.5s)
+    }
+  }
+  
+  function handleScreenSizeChange(e) {
+    if (e.matches) {
+      slideInterval = setInterval(updateSlide, 2000);
+    } else {
+      clearInterval(slideInterval);
+    }
+  }
+  
+  let slideInterval;
+  handleScreenSizeChange(mediaQuery);
+  mediaQuery.addEventListener('change', handleScreenSizeChange);
+  
+  

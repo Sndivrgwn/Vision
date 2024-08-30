@@ -117,6 +117,7 @@ body {
   cursor: pointer;
 }
 
+
 #frame1 .parent-content .right-content {
   position: absolute;
   top: 0;
@@ -150,6 +151,17 @@ body {
   bottom: 0vh;
   z-index: 999;
 }
+
+.item1 img,
+.item1 .teks1 {
+  transition: opacity 0.5s ease-in-out; 
+  opacity: 1; 
+}
+
+.hidden {
+  opacity: 0; 
+}
+
 
 #frame2 {
   background: #f6f6f6;
