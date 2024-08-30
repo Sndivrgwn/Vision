@@ -1,3 +1,9 @@
+@media screen and (max-width: 1600px) {
+  body {
+    --button: 16px;
+  }
+}
+
 @media screen and (max-width: 1400px)  {
   body {
     --title: 80px;
@@ -190,6 +196,10 @@
     object-fit: cover;
   }
 
+  #frame4 {
+    height: 960px;
+  }
+
   #frame7 .row .col #kelompokForm #buttonbandingkankiri {
     font-size: 12px;
   }
@@ -303,6 +313,10 @@
   #frame3 .middle .parent-card .card h1 {
     font-size: 2.5vh;
     font-weight: bold;
+  }
+
+  #frame4 {
+    height: 1020px;
   }
   
   #frame3 .middle .parent-card .card p {
@@ -452,6 +466,10 @@
   
   #frame3 .middle .parent-card .card p {
     font-size: 2vh;
+  }
+
+  #frame4 {
+    height: 100%;
   }
 
   #frame5 .center .left .rectangle {
@@ -608,6 +626,40 @@
     padding-top: 0;
   }
   
+  #frame5 .text h1 {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #frame5 .icon {
+    display: none;
+}
+
+#frame5 .center .right .info .item-top-left {
+ border-radius: 10px;
+ border: 1px solid #fafafa;
+}
+#frame5 .center .right .info .item-top-right {
+ border-radius: 10px;
+ border: 1px solid #fafafa;
+ text-align: left;
+}
+
+#frame5 .center .right .info .item-bottom-left {
+ border-radius: 10px;
+ border: 1px solid #fafafa;
+}
+
+#frame5 .center .right .info .item-bottom-right {
+ text-align: left;
+ border-radius: 10px;
+ border: 1px solid #fafafa;
+}
+#frame5 .text-behind {
+ display: none;
+}
+
   #frame7 .row .col #kelompokForm #buttonbandingkankiri {
     margin-left: 1px;
     margin-right: 1px;
@@ -635,8 +687,23 @@
 }
 
 @media screen and (max-width: 620px) {
+  body {
+    --title : 60px;
+    --sub-title: 18px;
+    --paragraph: 16px;
+  }
+
   #frame1 .title {
     width: 80%;
+    font-size: var(--title);
+  }
+
+  #frame1 .sub-title {
+    font-size: var(--sub-title);
+  }
+
+  #frame1 btn a {
+    font-size: var(--sub-title);
   }
 
   #frame1 .parent-content .left-content .parent-preview {
@@ -671,29 +738,129 @@
     display: none;
   }
 
-  
+  #frame2 .rectangle .parent-content .right-content .box .title-box h1 {
+    font-size: calc(var(--sub-title) + 4px);
+    font-weight: bold;
+}
+
+#frame2 .rectangle .parent-content .right-content .box .body-box {
+  height: 28vh;
+}
+
   #frame2 .rectangle .parent-content .right-content .mini-image .image #vrRight {
     display: none;
   }
+
+  #frame2 .rectangle .parent-content .right-content .box .body-box p {
+    line-height: 2;
+    font-size: var(--paragraph);
+  }
+
+  #frame2 .rectangle .parent-content .left-content .button button {
+    font-size: var(--sub-title);
+    width: 40%;
+  }
+
+  #frame3 .topbar h1 {
+    font-size: calc(var(--title) - 20px);
+  }
+  #frame3 .top h1 {
+    width: 50%;
+    font-size: calc(var(--sub-title) + 4px);
+  }
+
+  #frame3 .middle .parent-card .card h1 {
+    font-size: calc(var(--sub-title) + 4px);
+    font-weight: bold;
+  }
+
+  #frame3 .middle .parent-card .card p {
+    font-size: var(--paragraph);
+  }
+
+  #frame3 .middle .parent-card .card button {
+    font-size: var(--sub-title);
+}
+
+#frame3 .quote center {
+  margin: auto;
+  margin-left: 5%;
+}
+
+#frame3 .bottom .parent center .quotes {
+  font-size: var(--paragraph);
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+#frame3 .bottom .parent .side-left .bottom, .side-right .bottom {
+  width: 5vh;
+  height: 2vh;
+}
+
+#frame3 .bottom .parent .side-right .bottom {
+  margin-left: -3vh;
+}
+
+.side-left .bottom {
+  margin-left: 3vh;
+}
+
+#frame3 .bottom .parent .side-left .top, .side-right .top {
+  width: 3vh;
+  height: 2vh;
+}
+
+#frame4 .review h1 {
+  font-size: calc(var(--title) - 20px);
+}
+
+#frame4 .parent-card .card .card-body h1 {
+  font-size: calc(var(--sub-title) + var(--paragraph));
+}
+
+#frame4 .parent-card .card .card-body p {
+  font-size: var(--paragraph);
+}
+
+#frame4 ul li {
+  font-size: var(--paragraph);
+}
+
+#frame4 .parent-card .card .card-footer p {
+  font-size: var(--paragraph);
+  padding-top: 0;
+  margin-top: 1%;
+}
+
+#frame5 .text h1 {
+  font-size: calc(var(--title) - 20px);
+  width: 90%;
+  margin-top: 4%;
+}
+
+#frame5 .center .right .info .card .content p {
+  font-size: var(--paragraph);
+  width: 100%;
+}
+
+#footer .row, #footer .row .ms-5 {
+  display: block;
+  margin-left: 0 !important;
+}
+
 }
 
 @media screen and (max-height: 878px) and (max-width: 620px) {
-  #frame2 .rectangle .parent-content .right-content .box .body-box p {
-    line-height: 2;
-    font-size: calc(1.8vh);
-  }
-
-  #frame3 .top h1 {
-    width: 70%;
-  }
 
   #frame3 .middle .text-back {
     font-size: 25vh;
     left: -20vh;
-    top: 245vh;
+    top: 260vh;
     transform: rotate(90deg);
     width: 100%;
-  }
+}
 }
 
 @media screen and (min-height: 1171px) and (max-width: 620px) {
@@ -719,15 +886,15 @@
     scale: 0.7;
   }
 
+  
+  #frame5 .icon {
+       display: none;
+  }
+  
   #frame5 .center .right .info .item-top-left {
     border-radius: 10px;
     border: 1px solid #fafafa;
   }
-
-  #frame5 .icon {
-       display: none;
-  }
-
   #frame5 .center .right .info .item-top-right {
     border-radius: 10px;
     border: 1px solid #fafafa;
@@ -739,22 +906,21 @@
     border: 1px solid #fafafa;
   }
 
-  #frame5 .text-behind {
-    display: none;
-  }
-  
   #frame5 .center .right .info .item-bottom-right {
     text-align: left;
     border-radius: 10px;
     border: 1px solid #fafafa;
   }
+  #frame5 .text-behind {
+    display: none;
+  }
+  
 
   #frame5 .text h1 {
     text-align: center;
-    font-size: calc(var(--title) - 35px);
-    width: 80%;
+    width: 100%;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     text-align: center;
   }
 
@@ -868,7 +1034,7 @@
 
   #frame1 .parent-content .left-content .preview .item1 img {
     display: block;
-    width: 44vh;
+    width: 80vw;
     height: 10vh;
     object-fit: cover;
   }
@@ -946,7 +1112,7 @@
   }
 
   #frame3 .topbar h1 {
-    font-size: var(--title - 15px);
+    font-size: calc(var(--title) - 30px);
   }
 
   #frame3 .top h1 {
@@ -1019,9 +1185,9 @@
   }
 
   #frame3 .bottom .parent center .quotes {
-    font-size: 1.5vh;
+    font-size: var(--paragraph);
     display: block;
-    width: 90%;
+    width: 100%;
   }
 
 
@@ -1030,7 +1196,16 @@
   }
 
   #frame4 .review h1 {
-    font-size: calc(var(--title) - 25px);
+    font-size: calc(var(--title) - 30px);
+}
+
+#frame4 .parent-card .card .card-body ul li {
+  font-size: var(--paragraph);
+}
+
+#frame5 .text h1 {
+  font-size: calc(var(--title) - 30px);
+  width: 90%;
 }
 
 }
@@ -1038,33 +1213,23 @@
 @media screen and (max-width:  460px) {
   #frame1 .parent-content .left-content .preview .item1 img {
     display: block;
-    width: 42vh;
     height: 10vh;
     object-fit: cover;
   }
 }
 
 @media screen and (max-width: 440px) {
-  body {
-    margin: 0;
-    --title: 50px;
-    --sub-title: 18px;
-    --button: 16px;
-    --paragraph: 14px;
-  }
 
   #frame1 .title {
-    font-size: 50px;
+    font-size: calc(var(--title) - 10px);
   }
 
   #frame1 .btn-hp1,
   #frame1 .btn-hp2 {
-    font-size: 16px;
+    font-size: calc(var(--paragraph) + 2px);
   }
 
   #frame1 .parent-content .left-content .preview .item1 img {
-    display: block;
-    width: 40vh;
     height: 10vh;
     object-fit: cover;
   }
@@ -1079,25 +1244,32 @@
 @media screen and (max-width: 420px) {
   #frame1 .parent-content .left-content .preview .item1 img {
     display: block;
-    width: 38vh;
-    height: 10vh;
     object-fit: cover;
+  }
+
+  #frame5 .text h1 {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 393px) {
+  body {
+  --title: 58px;
+  --sub-title: 16px;
+  }
+
   #frame1 .title {
-    font-size: 52px;
+    font-size: calc(var(--title) - 10px);
     width: 100%;
   }
 
   #frame1 .sub-title {
-    font-size: 18px;
+    font-size: var(--sub-title);
   } 
 
   #frame1 .btn-hp1,
   #frame1 .btn-hp2 {
-    font-size: 16px;
+    font-size: var(--sub-title);
   }
 
   #frame1 .parent-content .left-content .parent-preview {
@@ -1107,6 +1279,13 @@
 
   #frame2 .rectangle .parent-content .right-content .box .body-box p {
     line-height: 2;
-    font-size: calc(1.6vh);
+    font-size: var(--paragraph);
+  }
+  
+}
+
+@media screen and (max-width: 350px) {
+  body {
+  --title: 55px;
   }
 }

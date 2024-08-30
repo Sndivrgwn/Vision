@@ -569,11 +569,11 @@ body {
 }
 
 #frame4 .parent-card .card .card-body p {
-  font-size: var(--paragraph);
+  font-size: var(--button);
 }
 
 #frame4 .parent-card .card .card-body ul li {
-  font-size: var(--paragraph);
+  font-size: var(--button);
 }
 
 #frame4 .parent-card .card .card-footer {
