@@ -840,6 +840,12 @@ body {
   width: 90%;
   height: 80%;
 }
+#frame6 .isiFrame6 .row .col #judulIsiTextKomponen {
+  font-size: 24px;
+}
+#frame6 .isiFrame6 .row .col #isiTextKomponen {
+  font-size: 18px;
+}
 #frame6 .isiFrame6 .row .col #isiTengahKomponen {
   height: 25vh;
   width: 20vw;

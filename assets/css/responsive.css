@@ -1,3 +1,12 @@
+@media screen and (max-width:1920px) {
+  #frame6 .isiFrame6 .row .col #judulIsiTextKomponen {
+    font-size: 32px;
+  }
+  #frame6 .isiFrame6 .row .col #isiTextKomponen {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   body {
     --button: 16px;
@@ -737,11 +746,9 @@
     width: 90%;
   }
 
-
   #frame5 .text h1 {
     text-align: center;
   }
-
 }
 
 @media screen and (max-width: 620px) {
