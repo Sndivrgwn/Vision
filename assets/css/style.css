@@ -909,6 +909,12 @@ body {
     width: 100%;
     margin-top: 7rem;
 }
+#footer .row .col #judulKiriFooter {
+  font-size: 20px;
+}
+#footer .row #judulTengahFooter {
+  font-size: 24px;
+}
 #footer .btn {
     color: #ffffff;
     background-color: #004fce;

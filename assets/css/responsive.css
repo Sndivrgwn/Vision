@@ -1,17 +1,79 @@
 @media screen and (min-width:1900px) {
-  body {
-    --title: 80px;
-  }
-
   #frame6 .text-center {
-    font-size: 80px;
+    font-size: 65px;
   }
   
   #frame6 .isiFrame6 .row .col #judulIsiTextKomponen {
     font-size: 40px;
   }
+
   #frame6 .isiFrame6 .row .col #isiTextKomponen {
     font-size: 28px;
+  }
+
+  #frame7 .row .col #judulPerbandingan {
+    font-size: 65px;
+    margin-top: 2rem;
+  }
+
+  #frame7 .row .col #kelompokForm {
+    margin-top: 2rem;
+  }
+
+  #frame7 .row .col #kelompokForm #bandingkanForm1 {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  #frame7 .row .col #kelompokForm #bandingkanForm {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  #frame7 .row .col #kelompokForm #buttonbandingkankiri {
+    height: 50px;
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  #frame7 .row .col .gambarBanding {
+    width: 43%;
+  }
+
+  #frame7 .row .col .d-flex .btn {
+    height: 50px;
+    padding-top: 0.7rem;
+    font-size: 18px;
+  }
+
+  #frame7 .row .col .d-flex #buttonbandingkan {
+    margin-top: 0.2rem;
+  }
+
+  #footer .row .col #judulKiriFooter {
+    font-size: 24px;
+  }
+
+  #footer .row .col .fw-light {
+    font-size: 24px;
+  }
+
+  #footer .row #judulTengahFooter {
+    font-size: 28px;
+  }
+
+  #footer .row .col #wandiPengertianFooter {
+    font-size: 24px;
+  }
+
+  #footer .row .col #wandiInputFooter {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  #footer .row .col #wandiButtonFooter {
+    height: 50px;
+    font-size: 18px;
   }
 }
 
