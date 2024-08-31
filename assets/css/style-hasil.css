@@ -115,7 +115,6 @@ div.ovel-screen {
   }
 }
 
-
 @media only screen and (max-width: 1024px) {
   .konten .data-1 {
     width: 50%;
@@ -141,7 +140,6 @@ div.ovel-screen {
 }
 
 @media only screen and (max-width: 1023px) {
-
   .title {
     font-size: 32px;
   }
@@ -166,11 +164,9 @@ div.ovel-screen {
     margin: 0;
     width: 100%;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
-
   .konten {
     flex-direction: column;
   }
@@ -188,7 +184,7 @@ div.ovel-screen {
   }
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width: 425px) {
   .title {
     font-size: 16px;
   }
@@ -213,13 +209,12 @@ div.ovel-screen {
     width: 100%;
   }
 
-  .carousel-item  img{
+  .carousel-item img {
     width: 25px;
   }
-
 }
 
-@media only screen and (max-width:300px) {
+@media only screen and (max-width: 300px) {
   .title {
     font-size: 20px;
   }

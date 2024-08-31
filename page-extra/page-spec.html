@@ -11,6 +11,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -21,137 +24,89 @@
     <!-- Vision Spec start -->
     <section-spec>
       <!-- Navbar - Spec start -->
-      <!-- <nav class="navbar navbar-expand-lg mx-5 mt-3 mb-4">
-        <div class="container-fluid">
-          <div
-            class="collapse d-flex justify-content-center align-items-center navbar-collapse"
-            id="navbarNavAltMarkup"
-          >
-            <div
-              class="navbar-nav d-flex justify-content-center align-items-center gap-1"
-            >
-              <a
-                class="nav-link active fw-semibold"
-                aria-current="page"
-                href="#"
-                >Beranda</a
-              >
-              <a class="nav-link fw-semibold" href="#">VR</a>
-              <a class="nav-link fw-semibold" href="#">Bandingkan</a>
-              <a class="nav-link fw-semibold" href="#">Panduan</a>
-              <a href="nav-link"
-                ><img
-                  width="20px"
-                  height="20px"
-                  src="../assets/icon/btn-search.png"
-                  alt="btn-search"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </nav> -->
+      <nav class="navbar nav text-dark p-2 pt-5">
+        <div class="nav-button" id="navButton">☰</div>
+        <ul
+          class="nav-content d-flex justify-content-center align-items-center gap-4 w-auto bg-white p-2 ps-4 pe-4 rounded rounded-5"
+        >
+          <li class="nav-item active"><a href="../index.html">Beranda</a></li>
+          <li class="nav-item">
+            <a href="page-bandingkan.html">Bandingkan</a>
+          </li>
+          <li class="nav-item"><a href="page-panduan.html">Panduan</a></li>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </ul>
+      </nav>
       <!-- Navbar - Spec end -->
 
-      <div id="content">
+      <div id="content" class="pt-2 pb-5">
         <!-- Content Spec -->
       </div>
 
       <!-- Footer - Spec start -->
-      <!-- <footer style="margin-top: 7rem">
-        <div
-          class="d-flex justify-content-between align-content-center mx-5 mb-2"
-        >
-          <div class="explore">
-            <ol style="list-style: none" class="">
-              <p class="fw-bold fst-italic">Explore</p>
-              <li>
-                <a href="#" class="text-black text-decoration-none lh-lg"
-                  >Beranda</a
-                >
+      <div id="footer">
+        <div class="row ps-5" id="footer">
+          <div class="col">
+            <ul class="fw-light">
+              <li
+                class="list-group-item fw-bold fst-italic"
+                id="judulKiriFooter"
+              >
+                Explore
               </li>
-              <li>
-                <a href="#" class="text-black text-decoration-none lh-lg">VR</a>
-              </li>
-              <li>
-                <a href="#" class="text-black text-decoration-none lh-lg"
-                  >Bandingkan</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-black text-decoration-none lh-lg"
-                  >Panduan</a
-                >
-              </li>
-            </ol>
+              <li class="p-1 list-group-item">Beranda</li>
+              <li class="p-1 list-group-item">VR</li>
+              <li class="p-1 list-group-item">Bandingkan</li>
+              <li class="p-1 list-group-item">Panduan</li>
+            </ul>
           </div>
-          <div>
-            <div class="title">
-              <h4 class="fs-5 fw-bold">Vision</h4>
-              <p class="lh-base fw-medium">
-                Virtual Reality atau biasa kita sebut VR adalah <br />
-                suatu teknologi yang memungkinkan manusia <br />
-                untuk melihat dunia yang berbeda.
-              </p>
-              <div class="position-relative">
-                <input
-                  type="text"
-                  class="position-absolute py-2 px-4 w-100 rounded-2 border-0"
-                  style="background-color: rgb(240, 240, 240)"
-                  placeholder="Masukan email..."
-                />
-                <a href="#" class="position-absolute end-0"
-                  ><button
-                    style="width: 100px; height: 40px"
-                    class="btn button-footer-panduan"
-                  >
+          <div class="col">
+            <ul>
+              <li class="list-group-item fw-bold" id="judulTengahFooter">
+                Vision
+              </li>
+              <li class="p-1 list-group-item" id="wandiPengertianFooter">
+                Virtual Reality atau biasa kita sebut VR adalah suatu teknologi
+                yang memungkinkan manusia untuk melihat dunia yang berbeda.
+              </li>
+              <li class="list-group-item position-relative">
+                <div class="d-flex fbutton">
+                  <input
+                    id="wandiInputFooter"
+                    type="text"
+                    placeholder="Masukan Pesan"
+                    class="form-control rounded-3"
+                  />
+                  <button class="btn rounded-3" id="wandiButtonFooter">
                     Kirim
-                  </button></a
-                >
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col gambar">
+            <img src="../assets/img/Rectangle 84.png" id="wandiGambarFooter" />
+          </div>
+          <div class="d-flex justify-content-center">
+            <hr clas="" style="width: 95%" />
+          </div>
+          <div class="container">
+            <div class="row bottom">
+              <div class="col-sm-5 col-md-5 ms-5 fw-medium cp">
+                <p class="copyright fs-6">
+                  © Copyright 2024 by The Visionaries
+                </p>
+              </div>
+              <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 text-end">
+                <img src="../assets/img/instagram.svg" />
+                <img src="../assets/img/facebook.svg" class="mx-2" />
+                <img src="../assets/img/linkedin.svg" class="me-2" />
+                <img src="../assets/img/twitter.svg" />
               </div>
             </div>
           </div>
-          <div>
-            <img
-              width="350px"
-              src="../assets/img/thank-you.png"
-              alt=""
-              srcset=""
-            />
-          </div>
         </div>
-        <center>
-          <hr style="width: 93%" />
-        </center>
-        <div class="d-flex justify-content-between align-items-center mx-5">
-          <p>© Copyright 2024 by The Visionaries</p>
-          <div class="d-flex">
-            <a href="#"
-              ><img
-                width="50px"
-                src="../assets/icon/Facebook.png"
-                alt="Facebook"
-            /></a>
-            <a href="#"
-              ><img
-                width="50px"
-                src="../assets/icon/Instagram.png"
-                alt="Instagram.png"
-            /></a>
-            <a href="#"
-              ><img
-                width="50px"
-                src="../assets/icon/LinkedIn.png"
-                alt="LinkedIn.png"
-            /></a>
-            <a href="#"
-              ><img
-                width="50px"
-                src="../assets/icon/TwitterX.png"
-                alt="TwitterX.png"
-            /></a>
-          </div>
-        </div>
-      </footer> -->
+      </div>
       <!-- Footer - Spec end -->
     </section-spec>
     <!-- Vision Spec end -->
