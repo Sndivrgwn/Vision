@@ -625,6 +625,7 @@
     font-size: 25vh;
     left: -25vh;
     top: 250vh;
+    display: none;
     transform: rotate(90deg);
     width: 100%;
   }
@@ -1002,25 +1003,7 @@
 #frame5 .center .right .info .card .content p {
   font-size: var(--paragraph);
   width: 100%;
-}
-
-#footer .row, #footer .row .ms-5 {
-  display: block;
-  margin-left: 0 !important;
-}
-
-#footer .col #wandiPengertianFooter {
-  display: none;
-}
-
-#footer .fbutton {
-  margin-left: -15%;
-}
-
-#footer .col .d-flex #wandiButtonFooter {
-  position: absolute;
-  left: 50%;
-}
+} 
 
 }
 
@@ -1033,6 +1016,12 @@
     transform: rotate(90deg);
     width: 100%;
 }
+}
+
+@media screen and (max-height: 700px) and (max-width: 620px) {
+  #frame3 .middle .text-back {
+    display: none;
+  }
 }
 
 @media screen and (min-height: 1171px) and (max-width: 620px) {

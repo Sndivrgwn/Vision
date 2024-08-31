@@ -930,6 +930,11 @@ body {
   position: absolute;
   left: 67.2%;
 }
+
+#footer .copyright {
+  font-size: 24px;
+}
+
 #footer .col #wandiGambarFooter {
   width: 27vw;
 }

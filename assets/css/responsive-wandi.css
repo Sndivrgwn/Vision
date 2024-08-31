@@ -1,0 +1,156 @@
+@media only screen and (max-width: 700px) {
+    #frame6 .isiFrame6 .kumpulan-gambar .gambar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }   
+
+    #frame6 .isiFrame6 .row .col #isiTengahKomponen {
+        height: 35vh;
+        width: 55vw;
+        margin-left: -35%;
+    }
+
+    #frame7 .row .col #judulPerbandingan {
+        font-size: 35px;
+        width: 300%;
+    }
+
+    #frame7 .row .col #kelompokForm {
+        padding: 0  !important;
+    }
+
+    #frame7 .row .col #kelompokForm #bandingkanForm1 {
+        height: 30px;
+        width: 70vw;
+    }
+
+    #frame7 .row .col #kelompokForm #bandingkanForm {
+        height: 30px;
+        width: 70vw;
+    }
+
+    #frame7 .row .col #kelompokForm #buttonbandingkankiri {
+        font-size: 18px;
+        margin-left: 35% !important;
+        height: 30px;
+        margin-top: 15% !important;
+        width: auto;
+        padding: 0 20%;
+    }
+
+    #frame7 .input-bandingkan {
+        flex-direction: column;
+    }
+
+    #frame7 .row .col .gambarBanding img {
+        width: 50%;
+        height: 200px;
+        margin: 0   !important;
+    }
+
+    #frame7 .row .col .gambarBanding:nth-child(1) {
+        display: none;
+    }
+
+    #frame6 .isiFrame6 .row .col #judulIsiTextKomponen {
+        font-size: 24px;
+        margin-top: 15%;
+        padding-inline-start: 1rem;
+    }
+
+    #frame7 .bawah {
+        display: flex;
+    }
+
+    #frame7 .parent-content {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    #footer .row .col #wandiPengertianFooter {
+        font-size: 14px;
+        display: none;
+    }
+
+    #footer .col #wandiGambarFooter {
+        width: 27vw;
+        display: none;
+    }
+
+    #footer .gambar {
+        display: none;
+    }
+
+    #footer .col .d-flex #wandiButtonFooter {
+        position: absolute;
+        left: 47.2%;
+    }
+
+    #footer .bottom {
+        display: flex;
+        margin-bottom: 10%;
+    }
+
+    #footer .copyright {
+        width: fit-content;
+        margin-left: 5%;
+        font-size: 16px;
+    }
+
+    #footer .cp {
+        margin: 0 !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .offset-sm-2 {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #frame6 .isiFrame6 .kumpulan-gambar .gambar {
+        width: 90%;
+    }   
+
+    #frame6 .judul {
+        font-size: 30px;
+    }
+
+    #frame6 .isiFrame6 .row .col #isiTextKomponen {
+        font-size: 16px;
+        padding-inline-start: 1rem;
+    }
+
+    #frame7 .row .col #judulPerbandingan {
+        font-size: 30px;
+        width: 300%;
+    }
+
+    #frame7 .row .col #kelompokForm #buttonbandingkankiri {
+        margin-left: 60% !important;
+        margin-top: 15% !important;
+    }
+
+    #footer .row #judulTengahFooter {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 393px) {
+    #frame6 .judul{
+        font-size: 28px;
+    }
+
+    #frame7 .row .col #judulPerbandingan {
+        font-size: 28px;
+        width:fit-content;
+    }
+
+    #frame7 .row .col #kelompokForm #buttonbandingkankiri {
+        margin-left: 100% !important;
+        margin-top: 15% !important;
+    }
+}
