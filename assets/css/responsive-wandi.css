@@ -102,6 +102,11 @@
     #footer .cp {
         margin: 0 !important;
     }
+
+    #footer #footer {
+        padding: 0 !important;
+        padding-left: 5%;
+    }
 }
 
 @media (min-width: 576px) {
