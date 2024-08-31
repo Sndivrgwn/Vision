@@ -1,9 +1,17 @@
-@media screen and (max-width:1920px) {
+@media screen and (min-width:1900px) {
+  body {
+    --title: 80px;
+  }
+
+  #frame6 .text-center {
+    font-size: 80px;
+  }
+  
   #frame6 .isiFrame6 .row .col #judulIsiTextKomponen {
-    font-size: 32px;
+    font-size: 40px;
   }
   #frame6 .isiFrame6 .row .col #isiTextKomponen {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 

@@ -836,15 +836,21 @@ body {
   height: 3vh;
   margin-left: 3rem;
 }
+#frame6 .text-center {
+  font-weight: 700;
+  font-size: calc(var(--title) - 35px);
+}
 #frame6 .isiFrame6 .row .col .row-cols-2 .col .border{
   width: 90%;
   height: 80%;
 }
 #frame6 .isiFrame6 .row .col #judulIsiTextKomponen {
   font-size: 24px;
+  padding-inline-start: 1rem;
 }
 #frame6 .isiFrame6 .row .col #isiTextKomponen {
   font-size: 18px;
+  padding-inline-start: 1rem;
 }
 #frame6 .isiFrame6 .row .col #isiTengahKomponen {
   height: 25vh;
