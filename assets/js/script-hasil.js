@@ -18,29 +18,29 @@ function renderData(data) {
       item.spesifikasi.forEach((spec, i) => {
         if (i < 1) {
           spesifikasiHTML += `           
-            <div class="d-flex justify-content-center  align-items-start gap-4">
+            <div class="konten m-4 d-flex justify-content-center  align-items-start gap-4">
                <div
-                 class="w-50 ms-5 gap-4 d-flex justify-content-center align-items-center flex-column"
+                 class="data-1 gap-4 d-flex justify-content-center align-items-center flex-column"
                >
                  <div class="grafik">
                    <img src="../assets/img/img-bandingkan/grafik.png" width="400px" alt="" />
                  </div>
-                 <div class="stroge p-4 w-100 px-5">
+                 <div class="stroge p-4 w-100 md:px-5">
                    <div class="judul fw-semibold">
                      <p class="fs-6 fw-semibold">STORAGE</p>
                    </div>
                    <div class="kobtainer d-flex justify-content-between gap-2">
                      <div class="judul-text text-start">
-                       <p class="fs-2 m-0 fw-semibold">${
+                       <p class="md:fs-2 m-0 fw-semibold">${
                          data[index + 0].spesifikasi[0].storage
                        }</p>
                        <p style="font-size: 10px">
                          NVME 4X4, ULTRA SPEED READ & WRITE
                        </p>
                      </div>
-                     <p class="fs-2 fw-semibold">V</p>
+                     <p class="md:fs-2 fw-semibold">V</p>
                      <div class="judul-text text-end">
-                       <p class="fs-2 m-0 fw-semibold">${
+                       <p class="md:fs-2 m-0 fw-semibold">${
                          data[index + 1].spesifikasi[0].storage
                        }</p>
                        <p style="font-size: 10px">
@@ -49,7 +49,7 @@ function renderData(data) {
                      </div>
                    </div>
                  </div>
-                 <div class="vga w-100 p-4 px-5">
+                 <div class="vga w-100 p-4 md:px-5">
                    <div class="text-start">
                      <p class="fs-6 fw-semibold">VGA</p>
                    </div>
@@ -128,7 +128,7 @@ function renderData(data) {
                    </div>
                  </div>
                  <div class="Batenmer w-100 d-flex gap-3">
-                   <div class="baterai-screen">
+                   <div class="baterai-screen md:w-50">
                      <div class="title p-4 pb-0">
                        <p class="fs-6 fw-semibold">BATTERY</p>
                      </div>
@@ -160,7 +160,7 @@ function renderData(data) {
                          </div>
                        </div>
                        <div
-                         class="screen d-flex justify-content-end align-items-end gap-2"
+                         class="screen d-flex justify-content-between align-items-end gap-2"
                        >
                          <div class="ovel-screen"></div>
                          <div class="text-end p-4 pb-0">
@@ -205,7 +205,7 @@ function renderData(data) {
                        </div>
                      </div>
                    </div>
-                   <div class="memory p-4">
+                   <div class="memory md:w-50 p-4">
                      <div class="judul fw-semibold">
                        <p class="fs-6 fw-semibold">MEMORY</p>
                      </div>
@@ -287,7 +287,7 @@ function renderData(data) {
                    </div>
                  </div>
                </div>
-               <div class="w-50 me-5">
+               <div class="data-2">
                  <div class="prosesor w-100">
                    <div class="container pb-5" style="font-size: 12px ; background-color: #FDF1F1;">
                      <div class="row px-4 pb-3 pt-4">
@@ -343,7 +343,7 @@ function renderData(data) {
                      <p class="fs-6 fw-semibold m-0">OPERASI SISTEM</p>
                      <p style="font-size: 10px; ">Kecepatan dan Responsivitas UI</p>
                    </div>
-                   <div class="merah p-5 py-0">
+                   <div class="merah md:p-5 p-3 py-0">
                      <p>${data[index + 0].spesifikasi[0].os}</p>
                      <div class="bg-white rounded-pill">
                        <div class="d-flex rounded-pill justify-content-center text-white bg-danger align-content-center text-center" style="width: 95%;">
@@ -351,7 +351,7 @@ function renderData(data) {
                        </div>  
                      </div>
                    </div>
-                   <div class="merah p-5 py-0">
+                   <div class="merah md:p-5 p-3 py-0">
                      <p class="pt-3">${data[index + 1].spesifikasi[0].os}</p>
                      <div class="bg-white rounded-pill">
                        <div class="d-flex rounded-pill justify-content-center text-white bg-info align-content-center text-center" style="width: 90%;">
@@ -380,8 +380,8 @@ function renderData(data) {
                                }</p>
                              </div>
                            </div>
-                           <div class="d-flex px-5 justify-content-center align-items-center">
-                             <div class="row gx-5 gy-3 p-5 d-flex justify-content-center align-items-center">
+                           <div class="d-flex md:px-5 justify-content-center align-items-center">
+                             <div class="row gx-5 gy-3 md:p-5 p-3 d-flex justify-content-center align-items-center">
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
                                  <p class="mb-0 fw-semibold">${
@@ -433,8 +433,8 @@ function renderData(data) {
                                }</p>
                              </div>
                            </div>
-                           <div class="d-flex px-5 justify-content-center align-items-center">
-                             <div class="row gx-5 p-5 gy-3 d-flex justify-content-center align-items-center">
+                           <div class="d-flex md:px-5 justify-content-center align-items-center">
+                             <div class="row gx-5 md:p-5 p-3 gy-3 d-flex justify-content-center align-items-center">
                                <div class="col-6 align-items-center d-flex p-2">
                                  <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
                                  <p class="mb-0 fw-semibold">${
@@ -477,12 +477,12 @@ function renderData(data) {
                        </div>
                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                          data-bs-slide="prev">
-                         <span class="" aria-hidden="true"><img src="../assets/icon/angle-left.png" alt=""></span>
+                         <span class="visually-hidden" aria-hidden="true"><img src="../assets/icon/angle-left.png" class="w-50 md:w-100" alt=""></span>
                          <span class="visually-hidden">Previous</span>
                        </button>
                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                          data-bs-slide="next">
-                         <span class="" aria-hidden="true"><img src="../assets/icon/angle-left.png" style="transform: rotate(180deg);" alt=""></span>
+                         <span class="visually-hidden" aria-hidden="true"><img src="../assets/icon/angle-left.png" class="w-50 md:w-100" style="transform: rotate(180deg);" alt=""></span>
                          <span class="visually-hidden">Next</span>
                        </button>
                      </div>
@@ -497,7 +497,7 @@ function renderData(data) {
       isiHTML += `
         <div>
           <div
-            class="title fs-2 text-center d-flex justify-content-center align-items-center gap-2 text-uppercase fw-semibold"
+            class="title md:fs-2 text-center d-flex justify-content-center align-items-center gap-2 text-uppercase fw-semibold"
           >
             <p>${data[index + 0].nama_produk}</p>
             <p>VS</p>

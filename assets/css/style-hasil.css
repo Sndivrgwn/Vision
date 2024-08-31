@@ -30,3 +30,217 @@ div.ovel-screen {
   justify-content: between;
   align-items: center;
 }
+
+@media only screen and (min-width: 1920px) {
+  .konten .data-1 {
+    width: 50%;
+  }
+
+  .konten .data-2 {
+    width: 50%;
+  }
+
+  .grafik img {
+    width: 400px;
+  }
+  .baterai-screen {
+    width: 50%;
+  }
+
+  .memory {
+    width: 50%;
+  }
+  .title {
+    font-size: 32px;
+  }
+
+  .judul-text p {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 1919px) {
+  .konten .data-1 {
+    width: 50%;
+  }
+
+  .konten .data-2 {
+    width: 50%;
+  }
+
+  .grafik img {
+    width: 400px;
+  }
+  .baterai-screen {
+    width: 50%;
+  }
+
+  .memory {
+    width: 50%;
+  }
+  .title {
+    font-size: 32px;
+  }
+
+  .judul-text p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .konten .data-1 {
+    width: 50%;
+  }
+
+  .konten .data-2 {
+    width: 50%;
+  }
+
+  .grafik img {
+    width: 400px;
+  }
+  .baterai-screen {
+    width: 50%;
+  }
+
+  .memory {
+    width: 50%;
+  }
+  .title {
+    font-size: 32px;
+  }
+
+  .judul-text p {
+    font-size: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .konten .data-1 {
+    width: 50%;
+  }
+
+  .konten .data-2 {
+    width: 50%;
+  }
+  .baterai-screen {
+    width: 50%;
+  }
+
+  .memory {
+    width: 50%;
+  }
+  .title {
+    font-size: 32px;
+  }
+
+  .judul-text p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+
+  .title {
+    font-size: 32px;
+  }
+
+  .judul-text p {
+    font-size: 24px;
+  }
+
+  .konten {
+    flex-direction: column;
+  }
+
+  .konten .data-1 {
+    width: 100%;
+  }
+
+  .konten .data-2 {
+    width: 100%;
+  }
+
+  .konten .data-2 .prosesor {
+    margin: 0;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .konten {
+    flex-direction: column;
+  }
+
+  .konten .data-1 {
+    width: 100%;
+  }
+
+  .konten .data-2 {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:425px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .judul-text p {
+    font-size: 16px;
+  }
+
+  .grafik img {
+    width: 300px;
+  }
+
+  .Batenmer {
+    flex-direction: column;
+  }
+
+  .baterai-screen {
+    width: 100%;
+  }
+
+  .memory {
+    width: 100%;
+  }
+
+  .carousel-item  img{
+    width: 25px;
+  }
+
+}
+
+@media only screen and (max-width:300px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .grafik img {
+    width: 300px;
+  }
+
+  .judul-text p {
+    font-size: 16px;
+  }
+
+  .Batenmer {
+    flex-direction: column;
+  }
+
+  .baterai-screen {
+    width: 100%;
+  }
+
+  .memory {
+    width: 100%;
+  }
+}
