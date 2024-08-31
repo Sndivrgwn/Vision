@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive-wandi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
 </head>
@@ -35,13 +36,13 @@
                 <p class="sub-title ">Virtual Reality</p>
                 <h1 class="title">Lihat Dunia Berbeda</h1>
                 <div class="btn-hp d-flex gap-2">
-                    <button class="btn btn-hp1">Lihat VR</button>
-                    <button class="btn btn-hp2 text-dark">Bandingkan</button>
+                    <button class="btn btn-hp1"><a href="#frame3" class="text-light">Lihat VR</a></button>
+                    <button class="btn btn-hp2 text-dark"><a href="page-extra/page-bandingkan.html">Bandingkan</a></button>
                 </div>
                 <div class="parent-preview">
                     <hr>
-                    <div class="preview align-items-center gap-3">
-                    <div class="item1">
+                    <div class="preview align-items-center gap-3 slider-container">
+                    <div class="item1 slider">
                         <img src="assets/img/Group 139.png" alt="">
                         <button class="teks1 border-0 rounded rounded-4 pe-3 ps-3">Kacamata VR</button>
                     </div>
@@ -139,7 +140,7 @@
                         <h1>VRONE PLUS</h1>
                         <p>VRONE</p>
                         <center>
-                            <button>Lihat VR <i class="fa-solid fa-angle-right"></i></button>
+                            <button><a class="text-light" href="page-extra/page-spec.html">Lihat VR <i class="fa-solid fa-angle-right"></i></a></button>        
                         </center>
                     </div>
                     <div class="card">
@@ -147,7 +148,7 @@
                         <h1>VRONE PLUS</h1>
                         <p>VRONE</p>
                         <center>
-                            <button>Lihat VR <i class="fa-solid fa-angle-right"></i></button>
+                            <button><a class="text-light" href="page-extra/page-spec.html">Lihat VR <i class="fa-solid fa-angle-right"></i></a></button>        
                         </center>
                     </div>
                 </div>
@@ -160,7 +161,7 @@
                     </div>
                     <div class="quote mt-5 me-5">
                         <center>
-                            <b>“The metaverse has become the newest macro goal 
+                            <b class="quotes">“The metaverse has become the newest macro goal 
                                 for many of the world’s tech giant”</b>
                                 <br>
                             <i>Matthew Ball</i>
@@ -347,43 +348,43 @@
         </section>
         <!-- Start Komponen -->
         <div id="frame6">
-            <p class="text-center fs-1 fw-bold py-5">Kenali Komponen VR</p>
+            <p class="text-center py-5 judul">Kenali Komponen VR</p>
             <div class="float-end me-5">
               <div id="dekorasiKomponen1"></div>
-              <div class="mt-1 ms-5" id="dekorasiKomponen2"></div>
+              <div class="mt-1" id="dekorasiKomponen2"></div>
             </div>
             <div class="isiFrame6">
-              <div class="row" style="width: 100%;">
-                <div class="col">
+              <div class="row row-cols-2 row-cols-lg-3 justify-content-center" style="width: 100%;">
+                <div class="col kumpulan-gambar">
                   <!-- dawadaw -->
-                   <div class="row row-cols-2 mx-5">
+                   <div class="row row-cols-2 mx-5 gambar">
                     <div class="col">
-                      <img src="assets/img/controller.png" class="border rounded-4">
+                      <img src="assets/img/controller.png" class="border rounded-4" id="kotakKomponen1">
                     </div>
                     <div class="col">
-                      <img src="assets/img/komponen.png" class="border rounded-4">
+                      <img src="assets/img/komponen.png" class="border rounded-4" id="kotakKomponen2">
                     </div>
                     <div class="col">
-                      <img src="assets/img/ikatKepala.png" class="border rounded-4 mt-3">
+                      <img src="assets/img/ikatKepala.png" class="border rounded-4" id="kotakKomponen3">
                     </div>
                     <div class="col">
-                      <img src="assets/img/mesin.jpeg" class="border rounded-4 mt-3">
+                      <img src="assets/img/mesin.png" class="border rounded-4" id="kotakKomponen4">
                     </div>
                    </div>
                   <!-- dawadaw -->
                 </div>
-                <div class="col my-auto">
-                  <img src="assets/img/vrkomponen.png" id="wandiKomponenTengah">
+                <div class="col my-auto text-center main-image  ">
+                  <img src="assets/img/vrkomponen.png" id="isiTengahKomponen">
                 </div>
                 <div class="col float-start my-auto">
-                  <p class="fw-semibold fs-4">Kacamata VR</p>
-                  <p>Layar pada VR adalah salah satu komponen yang sangat penting, karena dengan layar VR kita dapat melihat duina virtual yang digabungkan dengan dunia nyata. Layar pada VR ada beberapa tipe, salah satunya layar tipe amoled yang memberikan tampilan lebih berwarna, tajam dan beresolusi tinggi </p>
+                  <p id="judulIsiTextKomponen" class="fw-semibold">Kacamata VR</p>
+                  <p id="isiTextKomponen">Layar VR penting karena memungkinkan melihat dunia virtual dengan tampilan warna tajam dan resolusi tinggi. </p>
                 </div>
               </div>
             </div>
             <div class="ms-5 mt-5">
               <div id="dekorasiKomponen1"></div>
-              <div class="mt-1 ms-5" id="dekorasiKomponen2"></div>
+              <div class="mt-1" id="dekorasiKomponen2"></div>
             </div>
           </div>
         <!-- End Komponen  -->
@@ -391,9 +392,9 @@
           <!-- Start Halaman Banding -->
         <div id="frame7">
           <img src="assets/img/head-vr.png" id="gambartesting" class="mt-5 w-100" />
-          <div class="row container-fluid mt-5">
+          <div class="row parent-content container-fluid mt-5">
             <div class="col ms-4 adaaja">
-              <p class="fw-bold lh-base" id="judulPerbandingan">
+              <p class="fw-bold lh-base judul" id="judulPerbandingan">
                 Bandingkan Dengan Yang Lain
               </p>
               <div id="kelompokForm" class="p-5">
@@ -403,7 +404,7 @@
                   type="text"
                   placeholder="Nama produk"
                 />
-                <div class="d-flex mt-2">
+                <div class="d-flex input-bandingkan mt-2">
                   <input
                     id="bandingkanForm"
                     class="form-control"
@@ -411,7 +412,7 @@
                     placeholder="Nama produk"
                   />
                   <button
-                    class="mx-3 rounded btn fw-semibold text-center"
+                    class="my-auto rounded btn fw-semibold justify-content-center align-self-center text-center"
                     id="buttonbandingkankiri"
                   >
                     Bandingkan
@@ -424,19 +425,19 @@
               </div>
             </div>
             <div class="col">
-              <div class="d-flex">
-                <div class="gambarBanding">
-                  <img src="assets/img/Rectangle 173.png" class="border-bottom rounded-4 mb-3" />
+              <div class="d-flex justify-content-center">
+                <div class="gambarBanding atas">
+                  <img src="assets/img/Rectangle 173.png" class="border-bottom rounded-4 mb-3 a" />
                   <img src="assets/img\/download 3.png" class="border-bottom rounded-4" />
                 </div>
-                <div class="gambarBanding">
-                  <img src="assets/img/Rectangle 175.png" class="border-bottom rounded-4 mb-3" />
+                <div class="gambarBanding bawah">
+                  <img src="assets/img/Rectangle 175.png" class="border-bottom rounded-4 mb-3 a" />
                   <img src="assets/img/download 5.png" class="border-bottom rounded-4" />
                 </div>
               </div>
               <div class="d-flex justify-content-center mt-3">
                 <button class="btn d-flex justify-content-center align-self-center">
-                  Semua Produk
+                  <a href="page-extra/page-bandingkan.html" class="text-light">Semua Produk</a>
                   <img src="assets/img/chevron-right (1).svg" id="buttonbandingkan" />
                 </button>
               </div>
@@ -446,50 +447,52 @@
           <!-- End Halaman Banding -->
       
           <!-- Start Halaman Footer -->
-          <div class="row ps-5" id="footer">
-            <div class="col">
-              <ul class="fw-light">
-                <li class="list-group-item fw-bold fst-italic fs-5">Explore</li>
-                <li class="p-1 list-group-item">Beranda</li>
-                <li class="p-1 list-group-item">VR</li>
-                <li class="p-1 list-group-item">Bandingkan</li>
-                <li class="p-1 list-group-item">Panduan</li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="list-group-item fw-bold fs-4">Vision</li>
-                <li class="p-1 list-group-item" id="wandiPengertianFooter">
-                  Virtual Reality atau biasa kita sebut VR adalah suatu teknologi yang
-                  memungkinkan manusia untuk melihat dunia yang berbeda.
-                </li>
-                <li class="list-group-item position-relative">
-                  <div class="d-flex">
-                    <input id="wandiInputFooter" type="text" placeholder="Masukan Pesan" class="form-control rounded-3"/>
-                    <button class="btn rounded-3" id="wandiButtonFooter">Kirim</button>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <img src="assets/img/Rectangle 84.png" id="wandiGambarFooter" />
-            </div>
-            <div class="d-flex justify-content-center">
-              <hr clas="" style="width: 95%;">
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-5 col-md-5 ms-5 fw-medium">© Copyright 2024 by The Visionaries </div>
-                <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 text-end">
-                  <img src="assets/img/instagram.svg">
-                  <img src="assets/img/facebook.svg" class="mx-2">
-                  <img src="assets/img/linkedin.svg" class="me-2">
-                  <img src="assets/img/twitter.svg">
+           <div id="footer">
+               <div class="row ps-5" id="footer">
+                   <div class="col">
+                    <ul class="fw-light">
+                        <li class="list-group-item fw-bold fst-italic" id="judulKiriFooter">Explore</li>
+                        <li class="p-1 list-group-item">Beranda</li>
+                        <li class="p-1 list-group-item">VR</li>
+                        <li class="p-1 list-group-item">Bandingkan</li>
+                        <li class="p-1 list-group-item">Panduan</li>
+                    </ul>
+                    </div>
+                    <div class="col">
+                    <ul>
+                        <li class="list-group-item fw-bold" id="judulTengahFooter">Vision</li>
+                        <li class="p-1 list-group-item" id="wandiPengertianFooter">
+                        Virtual Reality atau biasa kita sebut VR adalah suatu teknologi yang
+                        memungkinkan manusia untuk melihat dunia yang berbeda.
+                        </li>
+                        <li class="list-group-item position-relative">
+                        <div class="d-flex fbutton">
+                            <input id="wandiInputFooter" type="text" placeholder="Masukan Pesan" class="form-control rounded-3"/>
+                            <button class="btn rounded-3" id="wandiButtonFooter">Kirim</button>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col gambar">
+                        <img src="assets/img/Rectangle 84.png" id="wandiGambarFooter" />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                    <hr clas="" style="width: 95%;">
+                    </div>
+                    <div class="container">
+                        <div class="row bottom">
+                            <div class="col-sm-5 col-md-5 ms-5 fw-medium cp"><p class="copyright">© Copyright 2024 by The Visionaries</p> </div>
+                            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 text-end">
+                                <img src="assets/img/instagram.svg">
+                                <img src="assets/img/facebook.svg" class="mx-2">
+                                <img src="assets/img/linkedin.svg" class="me-2">
+                                <img src="assets/img/twitter.svg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <!-- End Halaman -->
+        <!-- End Halaman -->
            <script src="assets/js/script.js"></script>
            <script src="assets/js/img-slide.js"></script>
 </body>
