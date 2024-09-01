@@ -853,7 +853,7 @@ body {
   padding-inline-start: 1rem;
 }
 #frame6 .isiFrame6 .row .col #isiTextKomponen {
-  font-size: 18px;
+  font-size: var(--button)   !important;
   padding-inline-start: 1rem;
 }
 #frame6 .isiFrame6 .row .col #isiTengahKomponen {

@@ -433,7 +433,7 @@
 
 @media screen and (max-width: 1024px) {
   .navbar {
-    margin-left: 5%;
+    margin-left: 5% !important;
     --sub-title: 2vh;
     --title: 3vh;
   }
