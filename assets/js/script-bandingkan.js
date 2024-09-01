@@ -201,9 +201,6 @@ function btnName(id) {
 function toggleBanding() {
   const optionaddBanding = document.getElementById("optionaddBanding");
   optionaddBanding.classList.toggle("active");
-
-  
-
 }
 
 function sliderBtn(id) {
