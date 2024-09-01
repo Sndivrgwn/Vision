@@ -5,11 +5,17 @@ div.baterai-screen,
 div.memory,
 div.os,
 div.fitur {
-  background-color: #efefef;
+  background-color: #fdfdfd;
+  border: 1px solid black;
 }
 
 div.kotak-name-b {
-  background-color: #43a0c8;
+  background-color: #004fce;
+}
+
+.bg-orange {
+  background-color: orange !important;
+  color: #111;
 }
 
 div.kotak-name-m {
@@ -19,12 +25,17 @@ div.kotak-name-m {
 div.ovel-screen {
   width: 120px;
   height: 150px;
-  background-color: #d9d9d9;
+  background-color: orange;
   border-top-right-radius: 100px;
 }
 
+.prosesor .container {
+  background-color: #fdfdfd !important;
+  border: 1px solid black;
+}
+
 .tbody tr {
-  background-color: #d9d9d9;
+  background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: between;
@@ -184,7 +195,7 @@ div.ovel-screen {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
   .title {
     font-size: 16px;
   }
@@ -212,6 +223,7 @@ div.ovel-screen {
   .carousel-item img {
     width: 25px;
   }
+
 }
 
 @media only screen and (max-width: 300px) {

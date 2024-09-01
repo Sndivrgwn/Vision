@@ -16,6 +16,7 @@
 /* Content - bandingkan start */
 div.konten-items {
   width: 48.6%;
+  cursor: pointer;
 }
 
 div.konten-items img.position-absolute {

@@ -1,0 +1,54 @@
+@media only screen and (max-width: 700px) {
+
+    #footer .row .col #wandiPengertianFooter {
+        font-size: 14px;
+        display: none;
+    }
+
+    #footer .col #wandiGambarFooter {
+        width: 27vw;
+        display: none;
+    }
+
+    #footer .gambar {
+        display: none;
+    }
+
+    #footer .col .d-flex #wandiButtonFooter {
+        position: absolute;
+        left: 47.2%;
+    }
+
+    #footer .bottom {
+        display: flex;
+        margin-bottom: 10%;
+    }
+
+    #footer .copyright {
+        width: fit-content;
+        margin-left: 5%;
+        font-size: 16px;
+    }
+
+    #footer .cp {
+        margin: 0 !important;
+    }
+
+    #footer #footer {
+        padding: 0 !important;
+        padding-left: 5%;
+    }
+}
+
+@media (min-width: 576px) {
+    .offset-sm-2 {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #footer .row #judulTengahFooter {
+        font-size: 20px;
+    }
+}

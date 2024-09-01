@@ -18,6 +18,10 @@ body {
   height: 865px;
 }
 
+#frame1 .nav {
+  margin-left: 0%;
+}
+
 #frame1 .parent-content {
   display: flex;
 }

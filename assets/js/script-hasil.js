@@ -56,16 +56,16 @@ function renderData(data) {
                    <div style="font-size: 12px">
                      <table class="table table-borderless text-center">
                        <thead>
-                         <tr style="background-color: #efefef">
-                           <td style="background-color: #efefef" scope="col"></td>
-                           <td scope="col" style="background-color: #efefef">
+                         <tr style="background-color: #004fce" class="text-light">
+                           <td style="background-color: #004fce" class="text-light" scope="col"></td>
+                           <td scope="col" style="background-color: #004fce" class="text-light">
                              CLOCK SPEED
                            </td>
-                           <td scope="col" style="background-color: #efefef">
+                           <td scope="col" style="background-color: #004fce" class="text-light">
                              VRAM
                            </td>
-                           <td scope="col" style="background-color: #efefef">DDR</td>
-                           <td scope="col" style="background-color: #efefef">
+                           <td scope="col" style="background-color: #004fce" class="text-light">DDR</td>
+                           <td scope="col" style="background-color: #004fce" class="text-light">
                              OVERALL
                            </td>
                          </tr>
@@ -73,16 +73,16 @@ function renderData(data) {
                        <tbody>
                          <tr>
                            <td
-                             style="background-color: #d9d9d9"
+                             style="background-color: #fafafa"
                              class="fs-6 fw-semibold"
                              scope="row"
                            >
                            ${data[index + 0].spesifikasi[0].vga}
                            </td>
-                           <td style="background-color: #c1c1c1">2330Mhz</td>
-                           <td style="background-color: #d9d9d9">24GB</td>
-                           <td style="background-color: #c1c1c1">DDR6</td>
-                           <td style="background-color: #d9d9d9; width: 35%; ">
+                           <td style="background-color: #efefef">2330Mhz</td>
+                           <td style="background-color: #fafafa">24GB</td>
+                           <td style="background-color: #efefef">DDR6</td>
+                           <td style="background-color: #fafafa; width: 35%; ">
                              <div class="text-start">
                                <p>72 POINT</p>
                                <div class="bg-white my-2 me-4 rounded-pill">
@@ -99,23 +99,23 @@ function renderData(data) {
                          </tr>
                          <tr>
                            <td
-                             style="background-color: #d9d9d9"
+                             style="background-color: #fafafa"
                              class="fs-6 fw-semibold"
                              scope="row"
                            >
                            ${data[index + 1].spesifikasi[0].vga}
                            </td>
-                           <td style="background-color: #c1c1c1">2330Mhz</td>
-                           <td style="background-color: #d9d9d9">24GB</td>
-                           <td style="background-color: #c1c1c1">DDR6</td>
-                           <td style="background-color: #d9d9d9; width: 35%;"  > 
+                           <td style="background-color: #efefef">2330Mhz</td>
+                           <td style="background-color: #fafafa">24GB</td>
+                           <td style="background-color: #efefef">DDR6</td>
+                           <td style="background-color: #fafafa; width: 35%;"  > 
                              <div class="text-start">
                                <p>78 POINT</p>
                                <div class="bg-white my-2 me-4 rounded-pill">
-                                 <div class="d-flex rounded-pill justify-content-center text-white bg-info align-content-center text-center" style="width: ${
+                                 <div class="d-flex rounded-pill justify-content-center text-white bg-orange align-content-center text-center" style="width: ${
                                    data[index + 1].spesifikasi[0].overal
                                  };">
-                                   <p class="p-0 m-0" >${
+                                   <p class="p-0 m-0 text-dark" >${
                                      data[index + 1].spesifikasi[0].overal
                                    }</p>
                                  </div>
@@ -215,14 +215,14 @@ function renderData(data) {
                      >
                        <thead>
                          <tr>
-                           <th scope="col" style="background-color: #efefef">
+                           <th scope="col" style="background-color: #fff">
                              <div class="kotak-name-m text-center rounded-pill">
                                <p class="px-3 m-0 text-white">${
                                  data[index + 0].nama_produk
                                }</p>
                              </div>
                            </th>
-                           <th scope="col" style="background-color: #efefef">
+                           <th scope="col" style="background-color: #fff">
                              <div class="kotak-name-b text-center rounded-pill">
                                <p class="px-3 m-0 text-white">${
                                  data[index + 1].nama_produk
@@ -233,34 +233,34 @@ function renderData(data) {
                        </thead>
                        <tbody class="container">
                          <tr class="row pb-2">
-                           <td class="col" style="background-color: #d9d9d9">
+                           <td class="col" style="background-color: #fafafa">
                              DDR5
                            </td>
-                           <td class="col" style="background-color: #d9d9d9">
+                           <td class="col" style="background-color: #fafafa">
                              DDR5X
                            </td>
                          </tr>
                          <tr class="row pb-2">
-                           <td class="col" style="background-color: #d9d9d9">
+                           <td class="col" style="background-color: #fafafa">
                            ${data[index + 0].spesifikasi[0].memory}
                            </td>
-                           <td class="col" style="background-color: #d9d9d9">
+                           <td class="col" style="background-color: #fafafa">
                            ${data[index + 1].spesifikasi[0].memory}
                            </td>
                          </tr>
                          <tr class="row pb-2">
-                           <td class="col" style="background-color: #d9d9d9">
+                           <td class="col" style="background-color: #fafafa">
                              DUAL CHANNEL
                            </td>
-                           <td class="col" style="background-color: #d9d9d9">
+                           <td class="col" style="background-color: #fafafa">
                              DUAL CHANNEL
                            </td>
                          </tr>
                          <tr class="row pb-2">
-                           <td class="col" style="background-color: #d9d9d9">
+                           <td class="col" style="background-color: #fafafa">
                              3200Mhz
                            </td>
-                           <td class="col" style="background-color: #d9d9d9">
+                           <td class="col" style="background-color: #fafafa">
                              2800Mhz
                            </td>
                          </tr>
@@ -276,8 +276,8 @@ function renderData(data) {
                            <td class="col" style="background-color: #efefef">
                              <p class="m-0" style="background-color: #efefef">78 percent</p>
                              <div class="bg-white my-2 rounded-pill">
-                               <div class="d-flex rounded-pill justify-content-center text-white bg-info align-content-center text-center" style="width: 78%;">
-                                 <p class="p-0 m-0" >78%</p>
+                               <div class="d-flex rounded-pill justify-content-center text-white bg-orange align-content-center text-center" style="width: 78%;">
+                                 <p class="p-0 m-0 text-dark" >78%</p>
                                </div>
                              </div>
                            </td>
@@ -306,16 +306,18 @@ function renderData(data) {
                          </div>
                        </div>
                      </div>
-                     <div class="row px-4 py-2" style="background-color: #C1C1C1;">
+                     <div class="row px-4 py-2" style="background-color: #efefef;">
                        <div class="col">
                          <p class="m-0">${
                            data[index + 0].spesifikasi[0].prosesor
                          }</p>
+                          <img src="../assets/img/vr/vr1.png" alt="kocak" style="width: 100px; height: 100px;" class="mt-4" >
                        </div>
                        <div class="col">
                          <p class="m-0">${
                            data[index + 0].spesifikasi[0].prosesor
                          }</p>
+                          <img src="../assets/img/vr/vr2.png" alt="kocak" style="width: 100px; height: 100px;" class="mt-4" >
                        </div>
                      </div>
                      <div class="row px-4 pt-3 pb-5">
@@ -354,8 +356,8 @@ function renderData(data) {
                    <div class="merah md:p-5 p-3 py-0">
                      <p class="pt-3">${data[index + 1].spesifikasi[0].os}</p>
                      <div class="bg-white rounded-pill">
-                       <div class="d-flex rounded-pill justify-content-center text-white bg-info align-content-center text-center" style="width: 90%;">
-                         <p class="p-0 m-0" >90%</p>
+                       <div class="d-flex rounded-pill justify-content-center text-white bg-orange align-content-center text-center" style="width: 90%;">
+                         <p class="p-0 m-0 text-dark" >90%</p>
                        </div>
                      </div>
                    </div>
@@ -427,8 +429,8 @@ function renderData(data) {
                                <p class="fs-6 fw-semibold m-0">FITUR</p>
                              </div>
                              <div
-                               class="bg-info py-1 px-4 rounded-pill d-flex justify-content-center text-center align-items-center">
-                               <p class="m-0 text-white">${
+                               class="bg-orange py-1 px-4 rounded-pill d-flex justify-content-center text-center align-items-center">
+                               <p class="m-0 text-dark">${
                                  data[index + 1].nama_produk
                                }</p>
                              </div>
