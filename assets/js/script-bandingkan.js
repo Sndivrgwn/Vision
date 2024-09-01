@@ -217,3 +217,11 @@ window.addEventListener("scroll", () => {
     bandingElement.classList.remove("sticky");
   }
 });
+
+var cards = document.querySelectorAll('.konten-items');
+
+cards.forEach(function(card) {
+  card.addEventListener('click', function() {
+    window.location.href = '/page-extra/page-spec.html';
+  });
+});
