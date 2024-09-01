@@ -14,7 +14,7 @@
         "lebar": "16 x 9 x 25 cm",
         "vga": "RTX 4090",
         "overal": "72%",
-        "img": "../assets/img/img-bandingkan/vision-pro.png",
+        "img": "../assets/img/Rectangle 173.png",
         "display": [
           {
             "resolusi": "3840x2160",
@@ -49,7 +49,7 @@
         "lebar": "16 x 9 x 25 cm",
         "vga": "RX 7900X",
         "overal": "78%",
-        "img": "../assets/img/img-bandingkan/lenovo.png",
+        "img": "../assets/img/Rectangle 176.png",
         "display": [
           {
             "resolusi": "2560x1440",
@@ -85,7 +85,7 @@
         "lebar": "16 x 9 x 25 cm",
         "vga": "RTX 4090",
         "overal": "80%",
-        "img": "../assets/img/img-bandingkan/Meta3.png",
+        "img": "../assets/img/Rectangle 175.png",
         "display": [
           {
             "resolusi": "2064x2208",

@@ -9,17 +9,20 @@ function fetchData() {
     });
 }
 
+const key = localStorage.getItem('key');
+console.log(key)
+
 function renderData(data) {
   let dataHTML = "";
 
   data.forEach((item, index) => {
-    if (index < 1) {
+    if (index == key) {
       let spesifikasiHTML = "";
       item.spesifikasi.forEach((spec, i) => {
         if (i < 1) {
           spesifikasiHTML += `           
               <div class="content-spec d-flex justify-content-between align-content-center">
-              <img src="../assets/img/img-spec/banner.png" class="img-carousel-banner" alt="" />
+              <img src="${spec.img}" class="img-carousel-banner" alt="" />
               <div class="content-spec-carousel">
                 <div
                   id="carouselExampleIndicators"
