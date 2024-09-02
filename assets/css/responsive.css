@@ -1369,6 +1369,10 @@
   width: 90%;
 }
 
+#kelompokForm .form-control {
+  padding: 2% 15%;
+}
+
 }
 
 @media screen and (max-width:  460px) {

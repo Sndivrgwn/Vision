@@ -9,11 +9,15 @@ function fetchData() {
     });
 }
 
+let key1 = localStorage.getItem('key1')
+let key2 = localStorage.getItem('key2')
+
+
 function renderData(data) {
   let isiHTML = "";
 
   data.forEach((item, index) => {
-    if (index < 1) {
+    if (index == 1  ) {
       let spesifikasiHTML = "";
       item.spesifikasi.forEach((spec, i) => {
         if (i < 1) {

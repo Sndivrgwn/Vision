@@ -398,27 +398,30 @@
                 Bandingkan Dengan Yang Lain
               </p>
               <div id="kelompokForm" class="p-5">
-                <input
-                  id="bandingkanForm1"
-                  class="form-control"
-                  type="text"
-                  placeholder="Nama produk"
-                />
+                <select id="bandingkanForm1" class="form-control">
+                  <option value="" disabled selected>Pilih produk</option>
+                  <option value="Apple Vision Pro">Apple Vision Pro</option>
+                  <option value="Meta Quest 3">Meta Quest 3</option>
+                  <option value="Lenovo Mirage Solo">Lenovo Mirage Solo</option>
+                  <option value="HTC Vive Focus 3">HTC Vive Focus 3</option>
+                  <option value="Pico 4">Pico 4</option>
+                  <option value="Meta Quest Pro">Meta Quest Pro</option>
+                </select>
                 <div class="d-flex input-bandingkan mt-2">
-                  <input
-                    id="bandingkanForm"
-                    class="form-control"
-                    type="text"
-                    placeholder="Nama produk"
-                  />
-                  <button
-                    class="my-auto rounded btn fw-semibold justify-content-center align-self-center text-center"
-                    id="buttonbandingkankiri"
-                  >
+                  <select id="bandingkanForm" class="form-control">
+                    <option value="" selected>Pilih produk</option>
+                    <option value="Apple Vision Pro">Apple Vision Pro</option>
+                    <option value="Meta Quest 3">Meta Quest 3</option>
+                    <option value="Lenovo Mirage Solo">Lenovo Mirage Solo</option>
+                    <option value="HTC Vive Focus 3">HTC Vive Focus 3</option>
+                    <option value="Pico 4">Pico 4</option>
+                    <option value="Meta Quest Pro">Meta Quest Pro</option>
+                  </select>
+                  <button class="my-auto rounded btn fw-semibold justify-content-center align-self-center text-center" id="buttonbandingkankiri">
                     Bandingkan
                   </button>
                 </div>
-              </div>
+              </div>              
               <div class="mt-5">
                 <div id="dekorasiBandingkan1"></div>
                 <div class="mt-1" id="dekorasiBandingkan2"></div>
@@ -500,6 +503,9 @@
            <script src="assets/data/data.js"></script>
            <script>
             localStorage.removeItem('key')
+
+            localStorage.removeItem('key1')
+            localStorage.removeItem('key2')
           </script>
 
 </body>
