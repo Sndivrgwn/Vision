@@ -977,7 +977,7 @@
 }
 
 #frame4 .parent-card .card .card-body h1 {
-  font-size: calc(var(--sub-title) + var(--paragraph));
+  font-size: calc(var(--sub-title) + var(--paragraph) - 8px);
 }
 
 #frame4 .parent-card .card .card-body p {
