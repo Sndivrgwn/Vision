@@ -79,6 +79,16 @@
   .spec {
     padding: 4rem;
   }
+  .carousel-item p {
+    font-size: 24px;
+  }
+
+  .carousel-item p.fw-semibold {
+    font-size: 30px;
+  }
+  .tittle h1 {
+    font-size: 64px;
+  }
 }
 @media only screen and (max-width: 1800px) {
   .content-spec-carousel {
@@ -93,6 +103,16 @@
   }
   .spec {
     padding: 4rem;
+  }
+  .carousel-item p {
+    font-size: 24px;
+  }
+
+  .carousel-item p.fw-semibold {
+    font-size: 30px;
+  }
+  .tittle h1 {
+    font-size: 64px;
   }
 }
 @media only screen and (max-width: 1600px) {
@@ -109,6 +129,16 @@
   .spec {
     padding: 4rem;
   }
+  .carousel-item p {
+    font-size: 24px;
+  }
+
+  .carousel-item p.fw-semibold {
+    font-size: 30px;
+  }
+  .tittle h1 {
+    font-size: 64px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .content-spec-carousel {
@@ -123,6 +153,16 @@
   }
   .spec {
     padding: 4rem;
+  }
+  .carousel-item p {
+    font-size: 24px;
+  }
+
+  .carousel-item p.fw-semibold {
+    font-size: 30px;
+  }
+  .tittle h1 {
+    font-size: 64px;
   }
 }
 @media only screen and (max-width: 1366px) {
