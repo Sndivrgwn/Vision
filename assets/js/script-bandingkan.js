@@ -10,6 +10,8 @@
   }
 
   function renderData(data) {
+
+
     let dataHTML = "";
     let filterModeColorSet = new Set();
     let filterModeBeratSet = new Set();
@@ -177,19 +179,29 @@
   window.onload = fetchData;
 
   function btnName(id) {
+
+      fetch("/assets/data/data.js")
+        .then((response) => response.json())
+        .then((data) => {
+              
     const namaProduk = id;
-    const key1Previous = localStorage.getItem("key1");
+    const key1Previous = localStorage.getItem("produk1");
+
 
     const produkDipilih = JSON.parse(localStorage.getItem("produkDipilih")) || [];
     produkDipilih.push(namaProduk);
     localStorage.setItem("produkDipilih", JSON.stringify(produkDipilih));
 
-    localStorage.setItem("key1", namaProduk);
+    produk = data.find(produk => produk.nama_produk == namaProduk)
+
+    console.log(produk)
+
+    localStorage.setItem("produk1", JSON.stringify(produk));
 
     if (!key1Previous) {
-        localStorage.setItem("key2", "");
+        localStorage.setItem("produk2", "");
     } else {
-        localStorage.setItem("key2", key1Previous);
+        localStorage.setItem("produk2", key1Previous);
     }
 
     // Update produk list element
@@ -208,8 +220,12 @@
     } else {
       console.error("Data ID 'optionaddBanding' tidak ditemukan");
     }
-}
-
+        })
+        .catch((error) => {
+          console.error("Terjadi kesalahan:", error);
+        });
+    }
+  
 
 
 
