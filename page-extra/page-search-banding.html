@@ -18,6 +18,35 @@
     <title>Vision Banding</title>
 </head>
 <style>
+        @keyframes slideIn {
+        from {
+          transform: translateY(25%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+  
+      .memory.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+      .baterai-screen.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+      /* .screen.animate {
+        animation: slideIn 1s ease-in forwards;
+      } */
+      .os.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+      .fitur.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+      .vga.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
   @media only screen and (max-width: 480px) {
   .nav {
       position: fixed;
@@ -175,7 +204,35 @@
       </div>
     <!-- footer -->
 </body>
-
+<script>
+        window.addEventListener('scroll', function() {
+        const memoryElement = document.querySelector('.memory');
+        const vgaElement = document.querySelector('.vga');
+        const BatenmerElement = document.querySelector('.baterai-screen');
+        // const screenElement = document.querySelector('.screen');
+        const osElement = document.querySelector('.os');
+        const fiturElement = document.querySelector('.fitur');
+        
+        if (memoryElement.getBoundingClientRect().top < window.innerHeight) {
+          memoryElement.classList.add('animate');
+        } 
+        if (vgaElement.getBoundingClientRect().top < window.innerHeight) {
+          vgaElement.classList.add('animate');
+        }
+        if (BatenmerElement.getBoundingClientRect().top < window.innerHeight) {
+          BatenmerElement.classList.add('animate');
+        }
+        // if (screenElement.getBoundingClientRect().top < window.innerHeight) {
+        //   screenElement.classList.add('animate');
+        // }
+        if (osElement.getBoundingClientRect().top < window.innerHeight) {
+          osElement.classList.add('animate');
+        }
+        if (fiturElement.getBoundingClientRect().top < window.innerHeight) {
+          fiturElement.classList.add('animate');
+        }
+      });
+</script>
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
