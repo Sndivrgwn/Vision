@@ -112,7 +112,7 @@ function displayComparison(product1, product2) {
                            <td style="background-color: #fafafa; width: 35%; ">
                              <div class="text-start">
                                <p>72 POINT</p>
-                               <div class="bg-white my-2 me-4 rounded-pill">
+                               <div class="bg-white my-2 lg:me-4 rounded-pill">
                                  <div class="d-flex rounded-pill justify-content-center text-white bg-danger align-content-center text-center" style="width: ${specs1.overal};">
                                    <p class="p-0 m-0" >${specs1.overal}</p>
                                  </div>
@@ -134,7 +134,7 @@ function displayComparison(product1, product2) {
                            <td style="background-color: #fafafa; width: 35%;"  > 
                              <div class="text-start">
                                <p>78 POINT</p>
-                               <div class="bg-white my-2 me-4 rounded-pill">
+                               <div class="bg-white my-2 lg:me-4 rounded-pill">
                                  <div class="d-flex rounded-pill justify-content-center text-white bg-orange align-content-center text-center" style="width: ${specs2.overal};">
                                    <p class="p-0 m-0 text-dark" >${specs2.overal}</p>
                                  </div>
