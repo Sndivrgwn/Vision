@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     displayComparison(produk1, produk2);
   } else {
     alert("Tidak ada data produk yang ditemukan.");
-    window.location.href = "index.html";
+    window.location.href = "../../index.html";
   }
 });
 

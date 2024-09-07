@@ -17,6 +17,7 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Vision Banding</title>
+<<<<<<< HEAD
   </head>
   <style>
     @media only screen and (max-width: 480px) {
@@ -25,6 +26,141 @@
         z-index: 999;
         width: 100%; /* Adjust width as needed */
       }
+=======
+</head>
+<style>
+      @keyframes slideIn {
+        from {
+          transform: translateY(25%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .memory.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+      .baterai-screen.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+      .os.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+      .fitur.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+      .vga.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+      /* .memory{
+        transform: translateY(20%);
+        transition:  1s ease;
+        opacity: 0;
+      }
+      .memory.show{
+        transform: translateY(0%);
+        opacity: 1;
+      } */
+  @media only screen and (min-width: 1900px) {
+    .memory.animate {
+        animation: none;
+      }
+      .baterai-screen.animate {
+        animation: none;
+      }
+      .os.animate {
+        animation: none;
+      }
+      .fitur.animate {
+        animation: none;
+      }
+      .vga.animate {
+        animation: none;
+      }
+  }
+  @media only screen and (min-width: 1400px) {
+    .vga.animate {
+        animation: none;
+      }
+      .os.animate {
+        animation: none;
+      }
+  }
+  @media only screen and (min-width: 1024px) {
+    .vga.animate {
+        animation: none;
+      }
+  }
+  @media only screen and (max-width: 768px) {
+    .vga.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+    .prosesor.animate {
+      animation: slideIn 1s ease-in forwards;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+  .nav {
+      position: fixed;
+      z-index: 999;
+      width: 100%; /* Adjust width as needed */
+    }
+    
+    .nav-button {
+      background-color: #fff;
+      color: black;
+      border-radius: 50%;
+      width: 10vw; /* Adjust width based on viewport */
+      height: 10vw; /* Maintain aspect ratio */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 2vw; /* Adjust font size based on viewport */
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: -40px;
+      left: 10px;
+      z-index: 1000;
+    }
+    
+    .nav-content {
+      position: absolute;
+      top: -3vw; /* Adjust based on nav-button height */
+      left: 15px;
+      right: 0;
+      width: 80% !important;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 0 0 10px 10px !important;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border: 1px solid black;
+    }
+    
+    .nav-content a {
+      color: black;
+      text-decoration: none;
+    }
+    
+    .nav-content li {
+      list-style-type: none;
+      font-weight: bold;
+    }
+    
+    .nav-content .active {
+      border-bottom: 2px solid orange;
+    }
+    
+    .nav-content.open {
+      transform: scaleY(1);
+    }
+>>>>>>> e6ca9fe8a95ddf9473508cdaaa17e20b48ea8751
 
       .nav-button {
         background-color: #fff;
@@ -83,8 +219,24 @@
         margin-top: 15%;
       }
     }
+<<<<<<< HEAD
   </style>
   <body class="overflow-x-hidden">
+=======
+
+    .vga.animate {
+      animation: none;
+    }
+    .prosesor.animate {
+      animation: slideIn 1s ease-in forwards;
+    }
+}
+</style>
+<body>
+
+  
+
+>>>>>>> e6ca9fe8a95ddf9473508cdaaa17e20b48ea8751
     <!-- Navbar -->
     <nav
     class="navbar nav text-dark p-2 pt-5"
@@ -131,6 +283,7 @@
                   <li class="p-1 list-group-item">Panduan</li>
               </ul>
           </div>
+<<<<<<< HEAD
 
           <div class="col" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
               <ul>
@@ -190,3 +343,83 @@
   <script src="../assets/js/hasil-search.js"></script>
   <script src="../assets/js/img-slide.js"></script>
 </html>
+=======
+          <div class="col">
+            <ul>
+              <li class="list-group-item fw-bold" id="judulTengahFooter">
+                Vision
+              </li>
+              <li class="p-1 list-group-item" id="wandiPengertianFooter">
+                Virtual Reality atau biasa kita sebut VR adalah suatu teknologi
+                yang memungkinkan manusia untuk melihat dunia yang berbeda.
+              </li>
+              <li class="list-group-item position-relative">
+                <div class="d-flex fbutton">
+                  <input
+                    id="wandiInputFooter"
+                    type="text"
+                    placeholder="Masukan Pesan"
+                    class="form-control rounded-3"
+                  />
+                  <button class="btn rounded-3" id="wandiButtonFooter">
+                    Kirim
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col gambar">
+            <img src="../assets/img/Rectangle 84.png" id="wandiGambarFooter" />
+          </div>
+          <div class="d-flex justify-content-center">
+            <hr clas="" style="width: 95%" />
+          </div>
+          <div class="container">
+            <div class="row bottom">
+              <div class="col-sm-5 col-md-5 ms-5 fw-medium cp">
+                <p class="copyright fs-6">
+                  © Copyright 2024 by The Visionaries
+                </p>
+              </div>
+              <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 text-end">
+                <img src="../assets/img/instagram.svg" />
+                <img src="../assets/img/facebook.svg" class="mx-2" />
+                <img src="../assets/img/linkedin.svg" class="me-2" />
+                <img src="../assets/img/twitter.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- footer -->
+</body>
+<script>
+window.addEventListener('scroll', function() {
+  const elements = [
+    document.querySelector('.prosesor'),
+    document.querySelector('.memory'),
+    document.querySelector('.vga'),
+    document.querySelector('.baterai-screen'),
+    document.querySelector('.os'),
+    document.querySelector('.fitur')
+  ];
+
+  elements.forEach(element => {
+    if (element.getBoundingClientRect().top < window.innerHeight) {
+      element.classList.add('animate');
+    } else {
+      element.classList.remove('animate');
+    }
+  });
+});
+
+</script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"
+></script>
+<script src="../assets/js/hasil-search.js"></script>
+<script src="../assets/js/img-slide.js"></script>
+</html>
+>>>>>>> e6ca9fe8a95ddf9473508cdaaa17e20b48ea8751
