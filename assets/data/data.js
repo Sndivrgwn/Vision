@@ -30,6 +30,11 @@
           "Video passthrough",
           "Sensor canggih untuk pelacakan presisi",
           "Kemampuan AR dan VR"
+        ],
+        "sensor": [
+          "Tatapan mata",
+          "Gestur Tangan",
+          "Giroskop"
         ]
       }
     ]
@@ -66,6 +71,10 @@
           "Kamera depan untuk pelacakan ruangan",
           "Kontroler VR Daydream terintegrasi",
           "Pengaturan IPD (Interpupillary Distance) yang dapat disesuaikan"
+        ],
+        "sensor": [
+          "Tatapan mata",
+          "Gestur Tangan"
         ]
       }
     ]
@@ -100,6 +109,10 @@
             "Kamera eksternal untuk pelacakan lingkungan dan AR",
             "Kontroler Touch Pro dengan haptic feedback",
             "Pengaturan IPD (Interpupillary Distance) yang dapat disesuaikan"
+        ],
+        "sensor": [
+          "Tatapan mata",
+          "Gestur Tangan"
         ]
       }
     ]
@@ -134,6 +147,10 @@
             "Kamera eksternal untuk pelacakan ruangan",
             "Pengaturan IPD (Interpupillary Distance) yang dapat disesuaikan",
             "Audio terintegrasi dengan mikrofon dan speaker"
+        ],
+        "sensor": [
+          "Gestur Tangan",
+          "Giroskop"
         ]
       }
     ]
@@ -169,6 +186,10 @@
             "Kamera depan untuk pelacakan ruangan",
             "Pengaturan IPD (Interpupillary Distance) yang dapat disesuaikan",
             "Audio built-in dengan jack 3.5mm untuk headphone eksternal"
+        ],
+        "sensor": [
+          "Gestur Tangan",
+          "Giroskop"
         ]
       }
     ]
@@ -205,6 +226,11 @@
             "Pengaturan IPD (Interpupillary Distance) yang dapat disesuaikan",
             "Audio built-in dengan jack 3.5mm untuk headphone eksternal",
             "Fitur mixed reality dengan kamera pasca"
+        ],
+        "sensor": [
+          "Tatapan mata",
+          "Gestur Tangan",
+          "Giroskop"
         ]
       }
     ]

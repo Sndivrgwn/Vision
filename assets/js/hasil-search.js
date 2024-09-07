@@ -282,7 +282,7 @@ function displayComparison(product1, product2) {
                </div>
                <div class="data-2">
                  <div class="prosesor w-100">
-                   <div class="container pb-5" style="font-size: 12px ; background-color: #FDF1F1;">
+                   <div class="container m-0 pb-5" style="font-size: 12px ; background-color: #FDF1F1;">
                      <div class="row px-4 pb-3 pt-4">
                        <div class="col d-flex justify-content-center">
                          <div class="kotak-name-m text-center rounded-pill">

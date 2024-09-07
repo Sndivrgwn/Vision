@@ -1,9 +1,13 @@
+let globalData;
+
 function fetchData() {
   fetch("/assets/data/data.js")
     .then((response) => response.json())
     .then((data) => {
+      globalData = data;
       renderData(data);
-      addFilterListeners(data); // Tambahkan listener setelah data di-render
+      addFilterListeners(data);
+      filterDataBySensors(data);
     })
     .catch((error) => {
       console.error("Terjadi kesalahan:", error);
@@ -41,7 +45,7 @@ function renderData(data) {
                 <img src="../assets/icon/resolusi.png" alt="resolusi"> 
                 <p class="m-0 w-100">${spec.display[0].resolusi}</p>
               </div>
-              <div class="col gap-2 d-flex justify-content-center align-items-center">
+              <div class="col gap-2 mt-1 d-flex justify-content-center align-items-center">
                 <img src="../assets/icon/bg-icon.png" alt="bg"> 
                 <p class="m-0 w-100">${spec.color}</p>
               </div>
@@ -180,8 +184,8 @@ function applyFilters(data) {
   const selectedStorage = document.getElementById("storage").value;
   const selectedOs = document.getElementById("os").value;
 
-  let filteredData = data.filter(item => {
-    return item.spesifikasi.some(spec => {
+  let filteredData = data.filter((item) => {
+    return item.spesifikasi.some((spec) => {
       return (
         (selectedColor === "" || spec.color === selectedColor) &&
         (selectedBerat === "" || spec.berat === selectedBerat) &&
@@ -198,92 +202,118 @@ function applyFilters(data) {
 }
 
 function addFilterListeners(data) {
-  const filters = ["warna", "berat", "baterai", "lebar", "ram", "storage", "os"];
-  filters.forEach(filter => {
+  const filters = [
+    "warna",
+    "berat",
+    "baterai",
+    "lebar",
+    "ram",
+    "storage",
+    "os",
+  ];
+  filters.forEach((filter) => {
     const filterElement = document.getElementById(filter);
     if (filterElement) {
       filterElement.addEventListener("change", () => applyFilters(data));
     }
   });
 }
-  window.onload = fetchData;
+window.onload = fetchData;
 
-  function btnName(id) {
+function btnName(id) {
+  fetch("/assets/data/data.js")
+    .then((response) => response.json())
+    .then((data) => {
+      const namaProduk = id;
+      const key1Previous = localStorage.getItem("produk1");
 
-      fetch("/assets/data/data.js")
-        .then((response) => response.json())
-        .then((data) => {
-              
-    const namaProduk = id;
-    const key1Previous = localStorage.getItem("produk1");
+      const produkDipilih =
+        JSON.parse(localStorage.getItem("produkDipilih")) || [];
+      produkDipilih.push(namaProduk);
+      localStorage.setItem("produkDipilih", JSON.stringify(produkDipilih));
 
+      produk = data.find((produk) => produk.nama_produk == namaProduk);
 
-    const produkDipilih = JSON.parse(localStorage.getItem("produkDipilih")) || [];
-    produkDipilih.push(namaProduk);
-    localStorage.setItem("produkDipilih", JSON.stringify(produkDipilih));
+      console.log(produk);
 
-    produk = data.find(produk => produk.nama_produk == namaProduk)
+      localStorage.setItem("produk1", JSON.stringify(produk));
 
-    console.log(produk)
-
-    localStorage.setItem("produk1", JSON.stringify(produk));
-
-    if (!key1Previous) {
+      if (!key1Previous) {
         localStorage.setItem("produk2", "");
-    } else {
+      } else {
         localStorage.setItem("produk2", key1Previous);
-    }
+      }
 
-    const produkListElement = document.getElementById("optionaddBanding");
-    if (produkListElement) {
-      const produkListHTML = produkDipilih
-        .slice(-2)
-        .map((produk) => {
-          return `          
+      const produkListElement = document.getElementById("optionaddBanding");
+      if (produkListElement) {
+        const produkListHTML = produkDipilih
+          .slice(-2)
+          .map((produk) => {
+            return `          
             <p class="p-1 pt-3">${produk}</p>
             <hr class="text-white">
               `;
-        })
-        .join("");
-      produkListElement.innerHTML = produkListHTML;
-    } else {
-      console.error("Data ID 'optionaddBanding' tidak ditemukan");
-    }
-        })
-        .catch((error) => {
-          console.error("Terjadi kesalahan:", error);
-        });
-    }
-  
+          })
+          .join("");
+        produkListElement.innerHTML = produkListHTML;
+      } else {
+        console.error("Data ID 'optionaddBanding' tidak ditemukan");
+      }
+    })
+    .catch((error) => {
+      console.error("Terjadi kesalahan:", error);
+    });
+}
 
+function toggleBanding() {
+  const optionaddBanding = document.getElementById("optionaddBanding");
+  optionaddBanding.classList.toggle("active");
+}
 
+let activeSensors = {
+  "Tatapan mata": false,
+  "Gestur Tangan": false,
+  "Giroskop": false,
+};
 
-  function toggleBanding() {
-    const optionaddBanding = document.getElementById("optionaddBanding");
-    optionaddBanding.classList.toggle("active");
-  }
+function sliderBtn(id, sensorType) {
+  const sliderBtn = document.getElementById(id);
+  sliderBtn.classList.toggle("active");
+  activeSensors[sensorType] = sliderBtn.classList.contains("active");
+  filterDataBySensors(globalData);
+}
 
+function filterDataBySensors(data) {
+  let filteredData = data.filter((item) => {
+    return item.spesifikasi.some((spec) => {
+      let mata =
+        !activeSensors["Tatapan mata"] || spec.sensor.includes("Tatapan mata");
+      let tangan =
+        !activeSensors["Gestur Tangan"] ||
+        spec.sensor.includes("Gestur Tangan");
+      let giroskop =
+        !activeSensors["Giroskop"] || spec.sensor.includes("Giroskop");
 
-  function sliderBtn(id) {
-    const sliderBtn = document.getElementById(id);
-    sliderBtn.classList.toggle("active");
-  }
-
-  const bandingElement = document.getElementById("add-banding");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY >= 200) {
-      bandingElement.classList.add("sticky");
-    } else {
-      bandingElement.classList.remove("sticky");
-    }
-  });
-
-  var cards = document.querySelectorAll('.konten-items');
-
-  cards.forEach(function(card) {
-    card.addEventListener('click', function() {
-      window.location.href = '/page-extra/page-spec.html';
+      return mata && tangan && giroskop;
     });
   });
+  renderData(filteredData);
+}
 
+const bandingElement = document.getElementById("add-banding");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 200) {
+    bandingElement.classList.add("sticky");
+  } else {
+    bandingElement.classList.remove("sticky");
+  }
+});
+
+var cards = document.querySelectorAll(".konten-items");
+
+cards.forEach(function (card) {
+  card.addEventListener("click", function () {
+    window.location.href = "/page-extra/page-spec.html";
+  });
+});
