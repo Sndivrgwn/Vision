@@ -43,6 +43,15 @@
       .vga.animate {
         animation: slideIn 1s ease-in forwards;
       }
+      /* .memory{
+        transform: translateY(20%);
+        transition:  1s ease;
+        opacity: 0;
+      }
+      .memory.show{
+        transform: translateY(0%);
+        opacity: 1;
+      } */
   @media only screen and (min-width: 1900px) {
     .memory.animate {
         animation: none;
@@ -77,6 +86,9 @@
     .vga.animate {
         animation: slideIn 1s ease-in forwards;
       }
+    .prosesor.animate {
+      animation: slideIn 1s ease-in forwards;
+    }
   }
   @media only screen and (max-width: 480px) {
   .nav {
@@ -144,6 +156,9 @@
 
     .vga.animate {
       animation: none;
+    }
+    .prosesor.animate {
+      animation: slideIn 1s ease-in forwards;
     }
 }
 </style>
@@ -240,29 +255,25 @@
     <!-- footer -->
 </body>
 <script>
-        window.addEventListener('scroll', function() {
-        const memoryElement = document.querySelector('.memory');
-        const vgaElement = document.querySelector('.vga');
-        const BatenmerElement = document.querySelector('.baterai-screen');
-        const osElement = document.querySelector('.os');
-        const fiturElement = document.querySelector('.fitur');
-        
-        if (memoryElement.getBoundingClientRect().top < window.innerHeight) {
-          memoryElement.classList.add('animate');
-        } 
-        if (vgaElement.getBoundingClientRect().top < window.innerHeight) {
-          vgaElement.classList.add('animate');
-        }
-        if (BatenmerElement.getBoundingClientRect().top < window.innerHeight) {
-          BatenmerElement.classList.add('animate');
-        }
-        if (osElement.getBoundingClientRect().top < window.innerHeight) {
-          osElement.classList.add('animate');
-        }
-        if (fiturElement.getBoundingClientRect().top < window.innerHeight) {
-          fiturElement.classList.add('animate');
-        }
-      });
+window.addEventListener('scroll', function() {
+  const elements = [
+    document.querySelector('.prosesor'),
+    document.querySelector('.memory'),
+    document.querySelector('.vga'),
+    document.querySelector('.baterai-screen'),
+    document.querySelector('.os'),
+    document.querySelector('.fitur')
+  ];
+
+  elements.forEach(element => {
+    if (element.getBoundingClientRect().top < window.innerHeight) {
+      element.classList.add('animate');
+    } else {
+      element.classList.remove('animate');
+    }
+  });
+});
+
 </script>
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
