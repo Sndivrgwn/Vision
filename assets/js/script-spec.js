@@ -21,9 +21,9 @@ function renderData(data) {
       item.spesifikasi.forEach((spec, i) => {
         if (i < 1) {
           spesifikasiHTML += `           
-              <div class="content-spec d-flex justify-content-between align-content-center">
-              <img src="${spec.img}" class="img-carousel-banner" alt="" />
-              <div class="content-spec-carousel">
+              <div class="content-spec d-flex justify-content-between align-content-center" data-aos="zoom-in" data-aos-duration="1000">
+              <img src="${spec.img}" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" class="img-carousel-banner" alt="" />
+              <div class="content-spec-carousel" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                 <div
                   id="carouselExampleIndicators"
                   class="carousel slide"
@@ -147,7 +147,7 @@ function renderData(data) {
                             </svg>
                           </div>
                           <div class="w-50">
-                            <p>Random Access Memory (RAM)</p>
+                            <p>Random Access Memory</p>
                             <div
                               class="d-flex justify-content-center align-content-center"
                             >
@@ -506,6 +506,7 @@ function renderData(data) {
                       type="button"
                       data-bs-target="#carouselExampleIndicators"
                       data-bs-slide="prev"
+                      data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"
                     >
                       <span aria-hidden="true"
                         ><img src="../assets/icon/next.png" width="50px" alt=""
@@ -517,6 +518,7 @@ function renderData(data) {
                       type="button"
                       data-bs-target="#carouselExampleIndicators"
                       data-bs-slide="next"
+                      data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"
                     >
                       <span aria-hidden="true"
                         ><img
@@ -536,7 +538,8 @@ function renderData(data) {
       });
 
       dataHTML += `
-        <div class="mb-4">
+      <div data-aos="fade-up" data-aos-duration="1000">
+        <div class="mb-4" data-aos="zoom-in" data-aos-duration="1000">
           <div class="tittle d-flex justify-content-end align-items-center me-5">
             <h1 class="fw-semibold">${item.nama_produk}</h1>
             <div class="icon-panduan-title">
@@ -551,6 +554,7 @@ function renderData(data) {
           </div>
         </div>
         ${spesifikasiHTML}
+        </div>
         `;
     }
   });

@@ -13,21 +13,22 @@
     />
     <link rel="stylesheet" href="../assets/css/navbar.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/footer.css" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <style>
     @media only screen and (max-width: 480px) {
-    .nav {
+      .nav {
         position: fixed;
         z-index: 999;
         width: 100%; /* Adjust width as needed */
       }
-      
+
       .nav-button {
         background-color: #fff;
         color: black;
@@ -45,7 +46,7 @@
         left: 10px;
         z-index: 1000;
       }
-      
+
       .nav-content {
         position: absolute;
         top: 12vw; /* Adjust based on nav-button height */
@@ -62,41 +63,53 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         border: 1px solid black;
       }
-      
+
       .nav-content a {
         color: black;
         text-decoration: none;
       }
-      
+
       .nav-content li {
         list-style-type: none;
         font-weight: bold;
       }
-      
+
       .nav-content .active {
         border-bottom: 2px solid orange;
       }
-      
+
       .nav-content.open {
         transform: scaleY(1);
       }
-}
+    }
   </style>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Vision Spec start -->
     <section-spec>
       <!-- Navbar - Spec start -->
-      <nav class="navbar nav text-dark p-2 pt-5">
+      <nav
+        class="navbar nav text-dark p-2 pt-5"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+      >
         <div class="nav-button" id="navButton">☰</div>
         <ul
           class="nav-content d-flex justify-content-center align-items-center gap-4 w-auto bg-white p-2 ps-4 pe-4 rounded rounded-5"
         >
-          <li class="nav-item active"><a href="../index.html">Beranda</a></li>
-          <li class="nav-item">
+          <li
+            class="nav-item active"
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+          >
+          <a href="../index.html">Beranda</a>
+          </li>
+          <li class="nav-item" data-aos="zoom-in" data-aos-duration="1000">
             <a href="page-bandingkan.html">Bandingkan</a>
           </li>
-          <li class="nav-item"><a href="page-panduan.html">Panduan</a></li>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <li class="nav-item" data-aos="zoom-in-left" data-aos-duration="1000">
+            <a href="page-panduan.html">Panduan</a>
+          </li>
+          <i class="fa-solid fa-magnifying-glasswed"></i>
         </ul>
       </nav>
       <!-- Navbar - Spec end -->
@@ -106,69 +119,61 @@
       </div>
 
       <!-- Footer - Spec start -->
-      <div id="footer">
-        <div class="row ps-5" id="footer">
-          <div class="col">
-            <ul class="fw-light">
-              <li
-                class="list-group-item fw-bold fst-italic"
-                id="judulKiriFooter"
-              >
-                Explore
-              </li>
-              <li class="p-1 list-group-item">Beranda</li>
-              <li class="p-1 list-group-item">VR</li>
-              <li class="p-1 list-group-item">Bandingkan</li>
-              <li class="p-1 list-group-item">Panduan</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li class="list-group-item fw-bold" id="judulTengahFooter">
-                Vision
-              </li>
-              <li class="p-1 list-group-item" id="wandiPengertianFooter">
-                Virtual Reality atau biasa kita sebut VR adalah suatu teknologi
-                yang memungkinkan manusia untuk melihat dunia yang berbeda.
-              </li>
-              <li class="list-group-item position-relative">
-                <div class="d-flex fbutton">
-                  <input
-                    id="wandiInputFooter"
-                    type="text"
-                    placeholder="Masukan Pesan"
-                    class="form-control rounded-3"
-                  />
-                  <button class="btn rounded-3" id="wandiButtonFooter">
-                    Kirim
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col gambar">
-            <img src="../assets/img/Rectangle 84.png" id="wandiGambarFooter" />
-          </div>
-          <div class="d-flex justify-content-center">
-            <hr clas="" style="width: 95%" />
-          </div>
-          <div class="container">
-            <div class="row bottom">
-              <div class="col-sm-5 col-md-5 ms-5 fw-medium cp">
-                <p class="copyright fs-6">
-                  © Copyright 2024 by The Visionaries
-                </p>
-              </div>
-              <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 text-end">
-                <img src="../assets/img/instagram.svg" />
-                <img src="../assets/img/facebook.svg" class="mx-2" />
-                <img src="../assets/img/linkedin.svg" class="me-2" />
-                <img src="../assets/img/twitter.svg" />
-              </div>
+      <div id="footer" data-aos="fade-up" data-aos-duration="1500">
+        <div class="row ps-5">
+            <div class="col" data-aos="fade-right" data-aos-duration="1200">
+                <ul class="fw-light">
+                    <li class="list-group-item fw-bold fst-italic" id="judulKiriFooter">Explore</li>
+                    <li class="p-1 list-group-item">Beranda</li>
+                    <li class="p-1 list-group-item">VR</li>
+                    <li class="p-1 list-group-item">Bandingkan</li>
+                    <li class="p-1 list-group-item">Panduan</li>
+                </ul>
             </div>
-          </div>
+
+            <div class="col" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <ul>
+                    <li class="list-group-item fw-bold" id="judulTengahFooter">Vision</li>
+                    <li class="p-1 list-group-item" id="wandiPengertianFooter">
+                        Virtual Reality atau biasa kita sebut VR adalah suatu teknologi yang
+                        memungkinkan manusia untuk melihat dunia yang berbeda.
+                    </li>
+                    <li class="list-group-item position-relative">
+                        <div class="d-flex fbutton">
+                            <input id="wandiInputFooter" type="text" placeholder="Masukan Pesan"
+                                class="form-control rounded-3 animate-input" />
+                            <button class="btn rounded-3 animate-btn" id="wandiButtonFooter" data-aos="fade-up"
+                                data-aos-duration="1500" data-aos-delay="500">
+                                Kirim
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col gambar" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <img src="../assets/img/Rectangle 84.png" id="wandiGambarFooter" class="animate-img" />
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <hr style="width: 95%;" data-aos="fade-up" data-aos-duration="1000" />
+            </div>
+
+            <div class="container">
+                <div class="row bottom">
+                    <div class="col-sm-5 col-md-5 ms-5 fw-medium cp">
+                        <p class="copyright">© Copyright 2024 by The Visionaries</p>
+                    </div>
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 text-end social-icons">
+                        <img src="../assets/img/instagram.svg" class="animate-icon">
+                        <img src="../assets/img/facebook.svg" class="mx-2 animate-icon">
+                        <img src="../assets/img/linkedin.svg" class="me-2 animate-icon">
+                        <img src="../assets/img/twitter.svg" class="animate-icon">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
       <!-- Footer - Spec end -->
     </section-spec>
     <!-- Vision Spec end -->
@@ -180,11 +185,15 @@
     ></script>
     <script src="../assets/js/script-spec.js"></script>
     <script src="../assets/js/img-slide.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      localStorage.removeItem('key')
+        AOS.init();
+    </script>
+    <script>
+      localStorage.removeItem("key");
 
-      localStorage.removeItem('produk1')
-      localStorage.removeItem('produk2')
+      localStorage.removeItem("produk1");
+      localStorage.removeItem("produk2");
     </script>
   </body>
 </html>
