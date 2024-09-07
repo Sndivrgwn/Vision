@@ -18,7 +18,7 @@
     <title>Vision Banding</title>
 </head>
 <style>
-        @keyframes slideIn {
+      @keyframes slideIn {
         from {
           transform: translateY(25%);
           opacity: 0;
@@ -28,16 +28,12 @@
           opacity: 1;
         }
       }
-  
       .memory.animate {
         animation: slideIn 1s ease-in forwards;
       }
       .baterai-screen.animate {
         animation: slideIn 1s ease-in forwards;
       }
-      /* .screen.animate {
-        animation: slideIn 1s ease-in forwards;
-      } */
       .os.animate {
         animation: slideIn 1s ease-in forwards;
       }
@@ -47,6 +43,41 @@
       .vga.animate {
         animation: slideIn 1s ease-in forwards;
       }
+  @media only screen and (min-width: 1900px) {
+    .memory.animate {
+        animation: none;
+      }
+      .baterai-screen.animate {
+        animation: none;
+      }
+      .os.animate {
+        animation: none;
+      }
+      .fitur.animate {
+        animation: none;
+      }
+      .vga.animate {
+        animation: none;
+      }
+  }
+  @media only screen and (min-width: 1400px) {
+    .vga.animate {
+        animation: none;
+      }
+      .os.animate {
+        animation: none;
+      }
+  }
+  @media only screen and (min-width: 1024px) {
+    .vga.animate {
+        animation: none;
+      }
+  }
+  @media only screen and (max-width: 768px) {
+    .vga.animate {
+        animation: slideIn 1s ease-in forwards;
+      }
+  }
   @media only screen and (max-width: 480px) {
   .nav {
       position: fixed;
@@ -109,6 +140,10 @@
 
     .title {
       margin-top: 15%;
+    }
+
+    .vga.animate {
+      animation: none;
     }
 }
 </style>
@@ -209,7 +244,6 @@
         const memoryElement = document.querySelector('.memory');
         const vgaElement = document.querySelector('.vga');
         const BatenmerElement = document.querySelector('.baterai-screen');
-        // const screenElement = document.querySelector('.screen');
         const osElement = document.querySelector('.os');
         const fiturElement = document.querySelector('.fitur');
         
@@ -222,9 +256,6 @@
         if (BatenmerElement.getBoundingClientRect().top < window.innerHeight) {
           BatenmerElement.classList.add('animate');
         }
-        // if (screenElement.getBoundingClientRect().top < window.innerHeight) {
-        //   screenElement.classList.add('animate');
-        // }
         if (osElement.getBoundingClientRect().top < window.innerHeight) {
           osElement.classList.add('animate');
         }
