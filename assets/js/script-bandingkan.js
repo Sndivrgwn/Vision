@@ -71,7 +71,7 @@ function renderData(data) {
 
     dataHTML += `
         <div class="konten-items rounded-2 border position-relative d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          <img class="position-absolute top-0 start-0 rounded-circle" width="30px" id="${item.nama_produk}" onclick="btnName('${item.nama_produk}')" src="../assets/icon/plus-bandingkan.png" alt="${item.nama_produk}">      
+          <img class="position-absolute top-0 start-0 rounded-circle" width="30px" id="${item.nama_produk}" onclick="btnName('${item.nama_produk}')" src="../assets/icon/plus-bandingkan.svg" alt="${item.nama_produk}">      
           ${imgHTML}
           <div class="w-75 m-3 text-start">
             <h4 class="fw-semibold mb-4">${item.nama_produk}</h4>

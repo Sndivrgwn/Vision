@@ -70,6 +70,15 @@ div.container-desain {
   display: block;
 }
 
+.konten-items img.rounded-circle {
+  background-color: #004fce; 
+  padding: 0.3rem;
+}
+
+.konten-items img.rounded-circle:hover {
+  background-color: gray;
+}
+
 /* Content - bandingkan end */
 
 /* footer - bandingkan start */
