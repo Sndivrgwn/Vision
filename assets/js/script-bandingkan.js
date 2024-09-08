@@ -241,11 +241,15 @@ function btnName(id) {
         localStorage.setItem("produk2", key1Previous);
       }
 
-      // Change the background color of the clicked button
       const buttonElement = document.getElementById(namaProduk);
-      if (buttonElement) {
-        buttonElement.classList.add("gray-background");
+      if (key1Previous.nama_produk == namaProduk) {
+        if (buttonElement) {
+          buttonElement.classList.add("gray-background");
+        }
+      } else {
+          buttonElement.classList.remove('gray-background');
       }
+
 
       const produkListElement = document.getElementById("optionaddBanding");
       if (produkListElement) {

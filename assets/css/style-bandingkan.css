@@ -16,6 +16,11 @@
 body {
   overflow-x: hidden;
 }
+
+.gray-background {
+  filter: grayscale(1);
+} 
+
 /* Content - bandingkan start */
 div.konten-items {
   width: 48.6%;
