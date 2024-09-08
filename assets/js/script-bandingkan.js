@@ -232,10 +232,7 @@ function btnName(id) {
       produkDipilih.push(namaProduk);
       localStorage.setItem("produkDipilih", JSON.stringify(produkDipilih));
 
-      produk = data.find((produk) => produk.nama_produk == namaProduk);
-
-      console.log(produk);
-
+      const produk = data.find((produk) => produk.nama_produk === namaProduk);
       localStorage.setItem("produk1", JSON.stringify(produk));
 
       if (!key1Previous) {
@@ -244,15 +241,21 @@ function btnName(id) {
         localStorage.setItem("produk2", key1Previous);
       }
 
+      // Change the background color of the clicked button
+      const buttonElement = document.getElementById(namaProduk);
+      if (buttonElement) {
+        buttonElement.classList.add("gray-background");
+      }
+
       const produkListElement = document.getElementById("optionaddBanding");
       if (produkListElement) {
         const produkListHTML = produkDipilih
           .slice(-2)
           .map((produk) => {
-            return `          
-            <p class="p-1 pt-3">${produk}</p>
-            <hr class="text-white">
-              `;
+            return `
+              <p class="p-1 pt-3">${produk}</p>
+              <hr class="text-white">
+            `;
           })
           .join("");
         produkListElement.innerHTML = produkListHTML;

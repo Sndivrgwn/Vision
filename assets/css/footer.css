@@ -36,7 +36,7 @@
   }
 
   .footer .bottom p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .footer .data-desc-2 button:hover {
@@ -58,11 +58,11 @@
     width: 30%;
   }
   .footer .data-desc-1 ul li {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .footer .data-desc-2 ul li {
-    font-size: 20px;
+    font-size: 16px;
   }
   .footer .data-desc-2 ul li.judul-desc {
     font-size: 24px;
