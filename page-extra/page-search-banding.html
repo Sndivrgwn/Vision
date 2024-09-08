@@ -15,6 +15,73 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <title>Vision Banding</title>
 </head>
+<style>
+    @media only screen and (max-width: 480px) {
+    .nav {
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      /* Adjust width as needed */
+    }
+
+    .nav-button {
+      background-color: #fff;
+      color: black;
+      border-radius: 50%;
+      width: 10vw;
+      /* Adjust width based on viewport */
+      height: 10vw;
+      /* Maintain aspect ratio */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 2vw;
+      /* Adjust font size based on viewport */
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: -50px;
+      left: 10px;
+      z-index: 1000;
+    }
+
+    .nav-content {
+      position: absolute;
+      top: -4vw;
+      /* Adjust based on nav-button height */
+      left: 15px;
+      right: 0;
+      width: 80% !important;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 0 0 10px 10px !important;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border: 1px solid black;
+    }
+
+    .nav-content a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .nav-content li {
+      list-style-type: none;
+      font-weight: bold;
+    }
+
+    .nav-content .active {
+      border-bottom: 2px solid orange;
+    }
+
+    .nav-content.open {
+      transform: scaleY(1);
+    }
+  }
+</style>
 <body class="overflow-x-hidden">
   <!-- Navbar -->
   <nav class="navbar nav text-dark p-2 pt-5">
@@ -41,56 +108,59 @@
 
   <!-- footer -->
   <div class="footer pt-5" data-aos="fade-up" data-aos-duration="1000">
-    <div class="desc d-flex justify-content-between gap-5 p-3">
-      <div class="data-desc-1">
-        <ul class="fw-light">
-          <li class="list-group-item fw-bold fst-italic judul-desc">Explore</li>
-          <li class="p-1 list-group-item">Beranda</li>
-          <li class="p-1 list-group-item">VR</li>
-          <li class="p-1 list-group-item">Bandingkan</li>
-          <li class="p-1 list-group-item">Panduan</li>
-        </ul>
-      </div>
+    <div class="desc d-flex justify-content-between p-3">
+        <div class="data-desc-1">
+            <ul class="fw-light">
+                <li class="list-group-item fw-bold fst-italic judul-desc">Explore</li>
+                <div class="grid">
+                    <li class="p-1  list-group-item"><a href="../index.html#frame1">Beranda</a> </li>
+                    <li class="p-1 list-group-item"><a href="../index.html#frame1">VR</a> </li>
+                    <li class="p-1 list-group-item"><a href="page-bandingkan.html">Bandingkan</a> </li>
+                    <li class="p-1 list-group-item"><a href="page-panduan.html">Panduan</a> </li>
+                </div>
+            </ul>
+        </div>
 
-      <div class="data-desc-2">
-        <ul>
-          <li class="list-group-item fw-bold judul-desc">Vision</li>
-          <li class="p-1 list-group-item">
-            Virtual Reality atau biasa kita sebut VR adalah suatu teknologi yang
-            memungkinkan manusia untuk melihat dunia yang berbeda.
-          </li>
-          <li class="list-group-item position-relative">
-            <div class="d-flex fbutton">
-              <input type="text" placeholder="Masukan Pesan" class="form-control rounded-3 animate-input" />
-              <button class="btn rounded-3 animate-btn">
-                Kirim
-              </button>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <div class="data-desc-2">
+            <ul>
+                <li class="list-group-item fw-bold judul-desc">Vision</li>
+                <li class="p-1 list-group-item">
+                    Virtual Reality atau biasa kita sebut VR adalah suatu teknologi yang
+                    memungkinkan manusia untuk melihat dunia yang berbeda.
+                </li>
+                <li class="list-group-item position-relative">
+                    <div class="d-flex fbutton">
+                        <input type="text" placeholder="Masukan Pesan"
+                            class="form-control rounded-3 animate-input" />
+                        <button class="btn rounded-3 animate-btn">
+                            Kirim
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-      <div class="data-desc-3">
-        <img src="../assets/img/Rectangle 84.png" width="300px" class="animate-img" />
-      </div>
+        <div class="data-desc-3">
+            <img src="../assets/img/Rectangle 84.png" width="300px" class="animate-img" />
+        </div>
 
     </div>
     <div class="d-flex justify-content-center">
-      <hr style="width: 95%;" />
+        <hr style="width: 95%;" />
     </div>
 
     <div class="footer-cp">
-      <div class="bottom">
-        <p class="copyright">© Copyright 2024 by The Visionaries</p>
-        <div class="social-icons">
-          <img src="../assets/img/instagram.svg" class="animate-icon">
-          <img src="../assets/img/facebook.svg" class="mx-2 animate-icon">
-          <img src="../assets/img/linkedin.svg" class="me-2 animate-icon">
-          <img src="../assets/img/twitter.svg" class="animate-icon">
+        <div class="bottom">
+            <p class="copyright">© Copyright 2024 by The Visionaries</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/itclubsmkn5bdg/"><img src="../assets/img/instagram.svg" class="animate-icon"></a>              
+                <img src="../assets/img/facebook.svg" class="mx-2 animate-icon">
+                <img src="../assets/img/linkedin.svg" class="me-2 animate-icon">
+                <img src="../assets/img/twitter.svg" class="animate-icon">
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
   <!-- footer -->
 </body>
 <script>
