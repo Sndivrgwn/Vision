@@ -70,7 +70,7 @@ function renderData(data) {
     });
 
     dataHTML += `
-        <div class="konten-items rounded-2 border position-relative d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="konten-items rounded-2 border position-relative d-flex justify-content-center align-items-center">
           <img class="position-absolute top-0 start-0 rounded-circle" width="30px" id="${item.nama_produk}" onclick="btnName('${item.nama_produk}')" src="../assets/icon/plus-bandingkan.svg" alt="${item.nama_produk}">      
           ${imgHTML}
           <div class="w-75 m-3 text-start">
@@ -273,7 +273,7 @@ function toggleBanding() {
 let activeSensors = {
   "Tatapan mata": false,
   "Gestur Tangan": false,
-  "Giroskop": false,
+  Giroskop: false,
 };
 
 function sliderBtn(id, sensorType) {
@@ -303,7 +303,7 @@ function filterDataBySensors(data) {
 const bandingElement = document.getElementById("add-banding");
 
 function handleScroll() {
-  const scrollYThreshold = window.innerWidth <= 768 ? 1600 : 200; 
+  const scrollYThreshold = window.innerWidth <= 768 ? 1600 : 200;
 
   if (window.scrollY >= scrollYThreshold) {
     bandingElement.classList.add("sticky");

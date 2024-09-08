@@ -1,279 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vision banding</title>
+    <link rel="stylesheet" href="../assets/css/style-bandingkan.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  </head>
+  <style>
+    @media only screen and (max-width: 480px) {
+      .nav {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        margin: 1rem;
+        /* Adjust width as needed */
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vision banding</title>
-  <link rel="stylesheet" href="../assets/css/style-bandingkan.css" />
-  <link rel="stylesheet" href="../assets/css/navbar.css" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../assets/css/footer.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      .nav-button {
+        background-color: #fff;
+        color: black;
+        border-radius: 50%;
+        width: 10vw;
+        /* Adjust width based on viewport */
+        height: 10vw;
+        /* Maintain aspect ratio */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 2vw;
+        /* Adjust font size based on viewport */
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        top: -50px;
+        left: 10px;
+        z-index: 1000;
+      }
 
+      .nav-content {
+        position: absolute;
+        top: -4vw;
+        /* Adjust based on nav-button height */
+        left: 15px;
+        right: 0;
+        width: 80% !important;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 0 0 10px 10px !important;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border: 1px solid black;
+      }
 
-</head>
-<style>
-  @media only screen and (max-width: 480px) {
-    .nav {
-      position: fixed;
-      z-index: 999;
-      width: 100%;
-      margin: 1rem;
-      /* Adjust width as needed */
+      .nav-content a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .nav-content li {
+        list-style-type: none;
+        font-weight: bold;
+      }
+
+      .nav-content .active {
+        border-bottom: 2px solid orange;
+      }
+
+      .nav-content.open {
+        transform: scaleY(1);
+      }
     }
+  </style>
 
-    .nav-button {
-      background-color: #fff;
-      color: black;
-      border-radius: 50%;
-      width: 10vw;
-      /* Adjust width based on viewport */
-      height: 10vw;
-      /* Maintain aspect ratio */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      font-size: 2vw;
-      /* Adjust font size based on viewport */
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      position: absolute;
-      top: -50px;
-      left: 10px;
-      z-index: 1000;
-    }
+  <body class="overflow-x-hidden">
+    <section-bandingkan>
+      <!-- Navbar - Bandingkan start -->
+      <nav class="navbar nav text-dark p-2 pt-5">
+        <div class="nav-button" id="navButton">☰</div>
+        <ul
+          class="nav-content d-flex justify-content-center align-items-center gap-4 w-auto bg-white p-2 ps-4 pe-4 rounded rounded-5"
+        >
+          <li class="nav-item active">
+            <a href="../index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a href="page-bandingkan.html">Bandingkan</a>
+          </li>
+          <li class="nav-item">
+            <a href="page-panduan.html">Panduan</a>
+          </li>
+          <i class="fa-solid fa-magnifying-glasswed"></i>
+        </ul>
+      </nav>
+      <!-- Navbar - Bandingkan end -->
 
-    .nav-content {
-      position: absolute;
-      top: -4vw;
-      /* Adjust based on nav-button height */
-      left: 15px;
-      right: 0;
-      width: 80% !important;
-      display: flex;
-      flex-direction: column;
-      background-color: #fff;
-      border-radius: 0 0 10px 10px !important;
-      transform: scaleY(0);
-      transform-origin: top;
-      transition: transform 0.3s ease-in-out;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      border: 1px solid black;
-    }
+      <!-- Content - Bandingkan start -->
+      <div
+        class="konten-bandingkan overflow-hidden d-flex justify-content-center position-relative gap-2 m-5"
+      >
+        <div class="filter d-flex flex-column gap-3">
+          <div class="w-100 container-desain p-3 rounded-2">
+            <h1 class="fs-4 fw-semibold mb-2 text-white">Desain</h1>
+            <div class="gap-1 d-flex flex-column">
+              <div class="dropdown">
+                <select id="warna" class="form-select"></select>
+              </div>
 
-    .nav-content a {
-      color: black;
-      text-decoration: none;
-    }
+              <div class="dropdown">
+                <select id="berat" class="form-select"></select>
+              </div>
 
-    .nav-content li {
-      list-style-type: none;
-      font-weight: bold;
-    }
+              <div class="dropdown">
+                <select id="baterai" class="form-select"></select>
+              </div>
 
-    .nav-content .active {
-      border-bottom: 2px solid orange;
-    }
-
-    .nav-content.open {
-      transform: scaleY(1);
-    }
-  }
-</style>
-
-<body class="overflow-x-hidden">
-  <section-bandingkan>
-    <!-- Navbar - Bandingkan start -->
-    <nav class="navbar nav text-dark p-2 pt-5" data-aos="zoom-in-up" data-aos-duration="1000">
-      <div class="nav-button" id="navButton">☰</div>
-      <ul
-        class="nav-content d-flex justify-content-center align-items-center gap-4 w-auto bg-white p-2 ps-4 pe-4 rounded rounded-5">
-        <li class="nav-item active" data-aos="zoom-in-right" data-aos-duration="1000">
-          <a href="../index.html">Beranda</a>
-        </li>
-        <li class="nav-item" data-aos="zoom-in" data-aos-duration="1000">
-          <a href="page-bandingkan.html">Bandingkan</a>
-        </li>
-        <li class="nav-item" data-aos="zoom-in-left" data-aos-duration="1000">
-          <a href="page-panduan.html">Panduan</a>
-        </li>
-        <i class="fa-solid fa-magnifying-glasswed"></i>
-      </ul>
-    </nav>
-    <!-- Navbar - Bandingkan end -->
-
-    <!-- Content - Bandingkan start -->
-    <div class="konten-bandingkan overflow-hidden d-flex justify-content-center position-relative gap-2 m-5" data-aos="fade-up"
-      data-aos-duration="1000">
-      <div class="filter d-flex flex-column gap-3" data-aos="fade-right" data-aos-duration="1000">
-        <div class="w-100 container-desain p-3 rounded-2" data-aos="flip-up" data-aos-duration="1000"
-          data-aos-delay="200">
-          <h1 class="fs-4 fw-semibold mb-2 text-white">Desain</h1>
-          <div class="gap-1 d-flex flex-column">
-            <div class="dropdown">
-              <select id="warna" class="form-select"></select>
+              <div class="dropdown">
+                <select id="lebar" class="form-select"></select>
+              </div>
             </div>
+          </div>
 
-            <div class="dropdown">
-              <select id="berat" class="form-select"></select>
+          <div class="w-100 container-desain p-3 rounded-2">
+            <h1 class="fs-4 fw-semibold mb-2 text-white">Kinerja</h1>
+            <div class="gap-1 d-flex flex-column">
+              <div class="dropdown">
+                <select id="ram" class="form-select"></select>
+              </div>
+
+              <div class="dropdown">
+                <select id="storage" class="form-select"></select>
+              </div>
+
+              <div class="dropdown">
+                <select id="os" class="form-select"></select>
+              </div>
             </div>
+          </div>
 
-            <div class="dropdown">
-              <select id="baterai" class="form-select"></select>
-            </div>
-
-            <div class="dropdown">
-              <select id="lebar" class="form-select"></select>
+          <div class="w-100 container-desain p-3 rounded-2">
+            <h1 class="fs-4 fw-semibold mb-2 text-white">Sensor</h1>
+            <div class="gap-1 d-flex flex-column">
+              <div
+                class="rounded-2 slider-btn bg-white d-flex justify-content-between align-items-center p-2"
+              >
+                <p class="m-0">Tatapan mata</p>
+                <button
+                  class="btn-mode d-flex btn border-secondary justify-content-start p-0 rounded-pill align-items-center position-relative"
+                  style="width: 40px; height: 20px"
+                  data-sensor="Tatapan mata"
+                  onclick="sliderBtn('circle-btn-mata', 'Tatapan mata')"
+                >
+                  <div
+                    class="bg-white position-absolute rounded-pill"
+                    style="height: 20px; width: 20px"
+                    id="circle-btn-mata"
+                  ></div>
+                </button>
+              </div>
+              <div
+                class="rounded-2 slider-btn bg-white d-flex justify-content-between align-items-center p-2"
+              >
+                <p class="m-0">Gestur Tangan</p>
+                <button
+                  class="btn-mode d-flex btn border-secondary justify-content-start p-0 rounded-pill align-items-center position-relative"
+                  style="width: 40px; height: 20px"
+                  data-sensor="Gestur Tangan"
+                  onclick="sliderBtn('circle-btn-tangan', 'Gestur Tangan')"
+                >
+                  <div
+                    class="bg-white position-absolute rounded-pill"
+                    style="height: 20px; width: 20px"
+                    id="circle-btn-tangan"
+                  ></div>
+                </button>
+              </div>
+              <div
+                class="rounded-2 slider-btn bg-white d-flex justify-content-between align-items-center p-2"
+              >
+                <p class="m-0">Giroskop</p>
+                <button
+                  class="btn-mode d-flex btn border-secondary justify-content-start p-0 rounded-pill align-items-center position-relative"
+                  style="width: 40px; height: 20px"
+                  data-sensor="Giroskop"
+                  onclick="sliderBtn('circle-btn-giro', 'Giroskop')"
+                >
+                  <div
+                    class="bg-white position-absolute rounded-pill"
+                    style="height: 20px; width: 20px"
+                    id="circle-btn-giro"
+                  ></div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="w-100 container-desain p-3 rounded-2" data-aos="flip-right" data-aos-duration="1000"
-          data-aos-delay="200">
-          <h1 class="fs-4 fw-semibold mb-2 text-white">Kinerja</h1>
-          <div class="gap-1 d-flex flex-column">
-            <div class="dropdown">
-              <select id="ram" class="form-select"></select>
-            </div>
-
-            <div class="dropdown">
-              <select id="storage" class="form-select"></select>
-            </div>
-
-            <div class="dropdown">
-              <select id="os" class="form-select"></select>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-100 container-desain p-3 rounded-2" data-aos="flip-down" data-aos-duration="1000"
-          data-aos-delay="200">
-          <h1 class="fs-4 fw-semibold mb-2 text-white">Sensor</h1>
-          <div class="gap-1 d-flex flex-column">
-            <div class="rounded-2 slider-btn bg-white d-flex justify-content-between align-items-center p-2">
-              <p class="m-0">Tatapan mata</p>
-              <button
-                class="btn-mode d-flex btn border-secondary justify-content-start p-0 rounded-pill align-items-center position-relative"
-                style="width: 40px; height: 20px" data-sensor="Tatapan mata"
-                onclick="sliderBtn('circle-btn-mata', 'Tatapan mata')">
-                <div class="bg-white position-absolute rounded-pill" style="height: 20px; width: 20px"
-                  id="circle-btn-mata"></div>
-              </button>
-            </div>
-            <div class="rounded-2 slider-btn bg-white d-flex justify-content-between align-items-center p-2">
-              <p class="m-0">Gestur Tangan</p>
-              <button
-                class="btn-mode d-flex btn border-secondary justify-content-start p-0 rounded-pill align-items-center position-relative"
-                style="width: 40px; height: 20px" data-sensor="Gestur Tangan"
-                onclick="sliderBtn('circle-btn-tangan', 'Gestur Tangan')">
-                <div class="bg-white position-absolute rounded-pill" style="height: 20px; width: 20px"
-                  id="circle-btn-tangan"></div>
-              </button>
-            </div>
-            <div class="rounded-2 slider-btn bg-white d-flex justify-content-between align-items-center p-2">
-              <p class="m-0">Giroskop</p>
-              <button
-                class="btn-mode d-flex btn border-secondary justify-content-start p-0 rounded-pill align-items-center position-relative"
-                style="width: 40px; height: 20px" data-sensor="Giroskop"
-                onclick="sliderBtn('circle-btn-giro', 'Giroskop')">
-                <div class="bg-white position-absolute rounded-pill" style="height: 20px; width: 20px"
-                  id="circle-btn-giro"></div>
-              </button>
-            </div>
-          </div>
+        <div class="konten d-flex flex-wrap gap-4" id="data-container">
+          <!-- data informasi -->
         </div>
       </div>
-      <div class="konten d-flex flex-wrap gap-4" id="data-container" data-aos="fade-left" data-aos-duration="1000">
-        <!-- data informasi -->
+      <div
+        class="add-banding d- flex justify-content-center flex-column align-items-end"
+        id="add-banding"
+      >
+        <div
+          id="optionaddBanding"
+          class="p-1 w-100 rounded-top-2 text-center text-white"
+        ></div>
+        <button
+          onclick="toggleBanding()"
+          class="btn rounded-bottom-2 rounded-top-0 d-flex justify-content-between gap-2 align-content-center p-2"
+        >
+          <img src="../assets/icon/angle-up.png" width="20px" alt="" />
+          <a
+            id="productLink"
+            href="page-search-banding.html"
+            class="m-0 text-white text-decoration-none"
+          >
+            Bandingkan produk
+          </a>
+        </button>
       </div>
-    </div>
-    <div class="add-banding d- flex justify-content-center flex-column align-items-end" id="add-banding">
-      <div id="optionaddBanding" class="p-1 w-100 rounded-top-2 text-center text-white"></div>
-      <button onclick="toggleBanding()"
-        class="btn rounded-bottom-2 rounded-top-0 d-flex justify-content-between gap-2 align-content-center p-2">
-        <img src="../assets/icon/angle-up.png" width="20px" alt="" />
-        <a id="productLink" href="page-search-banding.html" class="m-0 text-white text-decoration-none">
-          Bandingkan produk
-        </a>
-      </button>
-    </div>
 
-    <!-- Content - Bandingkan end -->
+      <!-- Content - Bandingkan end -->
 
-    <!-- Footer - Spec start -->
-    <div class="footer pt-5" data-aos="fade-up" data-aos-duration="1000">
-      <div class="desc d-flex justify-content-between p-3">
+      <!-- Footer - Spec start -->
+      <div class="footer pt-5">
+        <div class="desc d-flex justify-content-between p-3">
           <div class="data-desc-1">
-              <ul class="fw-light">
-                  <li class="list-group-item fw-bold fst-italic judul-desc">Explore</li>
-                  <div class="grid">
-                      <li class="p-1 list-group-item"><a class="text-black text-decoration-none" href="../index.html#frame1">Beranda</a> </li>
-                      <li class="p-1 list-group-item"><a class="text-black text-decoration-none" href="../index.html#frame3">VR</a> </li>
-                      <li class="p-1 list-group-item"><a class="text-black text-decoration-none" href="page-bandingkan.html">Bandingkan</a> </li>
-                      <li class="p-1 list-group-item"><a class="text-black text-decoration-none" href="page-panduan.html">Panduan</a> </li>
-                  </div>
-              </ul>
+            <ul class="fw-light">
+              <li class="list-group-item fw-bold fst-italic judul-desc">
+                Explore
+              </li>
+              <div class="grid">
+                <li class="p-1 list-group-item">
+                  <a
+                    class="text-black text-decoration-none"
+                    href="../index.html#frame1"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="p-1 list-group-item">
+                  <a
+                    class="text-black text-decoration-none"
+                    href="page-bandingkan.html"
+                    >Bandingkan</a
+                  >
+                </li>
+                <li class="p-1 list-group-item">
+                  <a
+                    class="text-black text-decoration-none"
+                    href="page-panduan.html"
+                    >Panduan</a
+                  >
+                </li>
+              </div>
+            </ul>
           </div>
 
           <div class="data-desc-2">
-              <ul>
-                  <li class="list-group-item fw-bold judul-desc">Vision</li>
-                  <li class="p-1 list-group-item">
-                      Virtual Reality atau biasa kita sebut VR adalah suatu teknologi yang
-                      memungkinkan manusia untuk melihat dunia yang berbeda.
-                  </li>
-                  <li class="list-group-item position-relative">
-                      <div class="d-flex fbutton">
-                          <input type="text" placeholder="Masukan Pesan"
-                              class="form-control rounded-3 animate-input" />
-                          <button class="btn rounded-3 animate-btn">
-                              Kirim
-                          </button>
-                      </div>
-                  </li>
-              </ul>
+            <ul>
+              <li class="list-group-item fw-bold judul-desc">Vision</li>
+              <li class="p-1 list-group-item">
+                Virtual Reality atau biasa kita sebut VR adalah suatu teknologi
+                yang memungkinkan manusia untuk melihat dunia yang berbeda.
+              </li>
+              <li class="list-group-item position-relative">
+                <div class="d-flex fbutton">
+                  <input
+                    type="text"
+                    placeholder="Masukan Pesan"
+                    class="form-control rounded-3 animate-input"
+                  />
+                  <button class="btn rounded-3 animate-btn">Kirim</button>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <div class="data-desc-3">
-              <img src="../assets/img/Rectangle 84.png" width="300px" class="animate-img" />
+            <img
+              src="../assets/img/Rectangle 84.png"
+              width="300px"
+              class="animate-img"
+            />
           </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <hr style="width: 95%" />
+        </div>
 
-      </div>
-      <div class="d-flex justify-content-center">
-          <hr style="width: 95%;" />
-      </div>
-
-      <div class="footer-cp">
+        <div class="footer-cp">
           <div class="bottom">
-              <p class="copyright">© Copyright 2024 by The Visionaries</p>
-              <div class="social-icons">
-                  <a href="https://www.instagram.com/itclubsmkn5bdg/"><img src="../assets/img/instagram.svg" class="animate-icon"></a>              
-                  <img src="../assets/img/facebook.svg" class="mx-2 animate-icon">
-                  <img src="../assets/img/linkedin.svg" class="me-2 animate-icon">
-                  <img src="../assets/img/twitter.svg" class="animate-icon">
-              </div>
+            <p class="copyright">© Copyright 2024 by The Visionaries</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/itclubsmkn5bdg/"
+                ><img src="../assets/img/instagram.svg" class="animate-icon"
+              /></a>
+              <img src="../assets/img/facebook.svg" class="mx-2 animate-icon" />
+              <img src="../assets/img/linkedin.svg" class="me-2 animate-icon" />
+              <img src="../assets/img/twitter.svg" class="animate-icon" />
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-    <!-- Footer - Spec end -->
-  </section-bandingkan>
+      <!-- Footer - Spec end -->
+    </section-bandingkan>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-  </script>
-  <script src="../assets/js/script-bandingkan.js"></script>
-  <script src="../assets/js/img-slide.js"></script>
-  <script src="../assets/js/send-data-bandingkan.js"></script>
-  <script>
-    localStorage.removeItem("key");
-  </script>
-</body>
-
+  </script> -->
+    <script src="../assets/js/script-bandingkan.js"></script>
+    <script src="../assets/js/img-slide.js"></script>
+    <script src="../assets/js/send-data-bandingkan.js"></script>
+    <script>
+      localStorage.removeItem("key");
+    </script>
+  </body>
 </html>

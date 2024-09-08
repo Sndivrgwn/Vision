@@ -5,7 +5,7 @@ const kotakKomponen4 = document.getElementById("kotakKomponen4");
 const isiTengahKomponen = document.getElementById("isiTengahKomponen");
 const isiTextKomponen = document.getElementById("isiTextKomponen");
 const textKomponen = document.querySelector(".fw-semibold.fs-4");
-const judulText = document.getElementById('judulIsiTextKomponen');
+const judulText = document.getElementById("judulIsiTextKomponen");
 
 const deskripsi = {
   "controller.png": {
@@ -38,7 +38,7 @@ const deskripsi = {
 
       kotak.src = isiTengahKomponen.src;
       isiTengahKomponen.src = kotak.src.replace(tengahSrc, tempSrc);
-      
+
       const deskripsiTengah = deskripsi[tempSrc];
       if (deskripsiTengah) {
         isiTextKomponen.textContent = deskripsiTengah.text;
@@ -49,4 +49,3 @@ const deskripsi = {
     });
   }
 );
-

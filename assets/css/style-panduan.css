@@ -74,7 +74,6 @@ button.button-footer-panduan {
 
 /* responsive */
 @media only screen and (min-width: 1920px) {
-
   /* content responsive */
   .title h1 {
     font-size: 80px;
@@ -108,7 +107,6 @@ button.button-footer-panduan {
 }
 
 @media only screen and (max-width: 1800px) {
-
   /* content responsive */
   .tittle h1 {
     font-size: 64px;
@@ -126,7 +124,6 @@ button.button-footer-panduan {
     left: 20vh;
     top: 0;
   }
-
 
   div.kotak-biru-kanan {
     width: 15px;
@@ -141,7 +138,6 @@ button.button-footer-panduan {
 }
 
 @media only screen and (max-width: 1700px) {
-
   /* content responsive */
   .tittle h1 {
     font-size: 64px;
@@ -159,7 +155,6 @@ button.button-footer-panduan {
     left: 20vh;
     top: 0;
   }
-
 
   div.kotak-biru-kanan {
     width: 15px;
@@ -174,7 +169,6 @@ button.button-footer-panduan {
 }
 
 @media only screen and (max-width: 1600px) {
-
   /* content responsive */
   .tittle h1 {
     font-size: 64px;
@@ -192,7 +186,6 @@ button.button-footer-panduan {
     left: 20vh;
     top: 0;
   }
-
 
   div.kotak-biru-kanan {
     width: 15px;
@@ -207,7 +200,6 @@ button.button-footer-panduan {
 }
 
 @media only screen and (max-width: 1500px) {
-
   /* content responsive */
   .tittle h1 {
     font-size: 64px;
@@ -225,7 +217,6 @@ button.button-footer-panduan {
     left: 20vh;
     top: 0;
   }
-
 
   div.kotak-biru-kanan {
     width: 15px;
@@ -239,7 +230,6 @@ button.button-footer-panduan {
   }
 }
 @media only screen and (max-width: 1366px) {
-
   /* content responsive */
   .tittle h1 {
     font-size: 64px;
@@ -257,7 +247,6 @@ button.button-footer-panduan {
     left: 20vh;
     top: 0;
   }
-  
 
   div.kotak-biru-kanan {
     width: 15px;
@@ -272,7 +261,6 @@ button.button-footer-panduan {
 }
 
 @media only screen and (max-width: 1300px) {
-
   /* content responsive */
   div.kotak-biru-kiri {
     width: 15px;
@@ -312,7 +300,6 @@ button.button-footer-panduan {
   }
 }
 @media only screen and (max-width: 1200px) {
-
   /* content responsive */
   div.kotak-biru-kiri {
     width: 15px;
@@ -352,7 +339,6 @@ button.button-footer-panduan {
   }
 }
 @media only screen and (max-width: 1100px) {
-
   /* content responsive */
   div.kotak-biru-kiri {
     width: 15px;
@@ -392,7 +378,6 @@ button.button-footer-panduan {
   }
 }
 @media only screen and (max-width: 1024px) {
-
   /* content responsive */
   div.kotak-biru-kiri {
     width: 15px;
@@ -433,7 +418,6 @@ button.button-footer-panduan {
 }
 
 @media only screen and (max-width: 780px) {
-
   /* content responsive */
   div.kotak-biru-kiri {
     width: 15px;
@@ -475,13 +459,13 @@ button.button-footer-panduan {
   .carousel-caption::-webkit-scrollbar-track {
     background-color: transparent;
   }
-  .carousel-control-prev img,.carousel-control-next img {
+  .carousel-control-prev img,
+  .carousel-control-next img {
     width: 25px !important;
   }
 }
 
 @media only screen and (max-width: 779px) {
-
   /* content responsive */
   .carousel {
     position: relative;
@@ -529,7 +513,6 @@ button.button-footer-panduan {
 }
 
 @media only screen and (max-width: 650px) {
-
   /* content responsive */
   .carousel {
     position: relative;
@@ -548,7 +531,6 @@ button.button-footer-panduan {
 }
 
 @media only screen and (max-width: 550px) {
-
   /* content responsive */
   .carousel {
     position: relative;
@@ -589,7 +571,6 @@ button.button-footer-panduan {
 }
 
 @media only screen and (max-width: 350px) {
-
   /* content responsive */
   .carousel {
     position: relative;
@@ -636,7 +617,6 @@ button.button-footer-panduan {
   }
 }
 @media only screen and (max-width: 300px) {
-
   .carousel-caption {
     position: relative;
     overflow-y: none;

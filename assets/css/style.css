@@ -11,30 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-/* menghilangkan scrollbar */
-#frame1 {
-  overflow: hidden;
-}
-#frame2 {
-  overflow: hidden;
-}
-#frame3 {
-  overflow: hidden;
-}
-#frame4 {
-  overflow: hidden;
-}
-#frame5 {
-  overflow: hidden;
-}
-#frame6 {
-  overflow: hidden;
-}
-#frame7 {
-  overflow: hidden;
-}
-/* end */
-
 #frame1 {
   padding-bottom: 5%;
   position: relative;
@@ -183,12 +159,12 @@ body {
 
 .item1 img,
 .item1 .teks1 {
-  transition: opacity 0.5s ease-in-out; 
-  opacity: 1; 
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
 }
 
 .hidden {
-  opacity: 0; 
+  opacity: 0;
 }
 
 
@@ -282,7 +258,7 @@ body {
   filter: brightness(90%);
 }
 
-#frame2 .rectangle .parent-content .left-content .button .btn2 .fa-angle-right{
+#frame2 .rectangle .parent-content .left-content .button .btn2 .fa-angle-right {
   border-color: black;
 }
 
@@ -322,6 +298,7 @@ body {
   line-height: 2;
   font-size: calc(2.3vh);
 }
+
 #frame2 .rectangle .parent-content .right-content .box .body-box .swicth {
   right: 2rem;
   bottom: 1rem;
@@ -338,22 +315,22 @@ body {
   border-radius: 2rem;
 }
 
-  #frame2 .rectangle .parent-content .right-content .mini-image {
-    margin-top: 2rem;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-  }
+#frame2 .rectangle .parent-content .right-content .mini-image {
+  margin-top: 2rem;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
 
-  #frame2 .rectangle .parent-content .right-content .mini-image .image img {
-    width: 33vh;
-    height: 33vh;
-    border-radius: 30px;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  #frame2 .rectangle .parent-content .right-content .mini-image .image {
+#frame2 .rectangle .parent-content .right-content .mini-image .image img {
+  width: 33vh;
+  height: 33vh;
+  border-radius: 30px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+#frame2 .rectangle .parent-content .right-content .mini-image .image {
   display: flex;
   gap: 7%;
 }
@@ -368,7 +345,7 @@ body {
 
 .image-active {
   transform: translateX(0);
-} 
+}
 
 
 #frame3 {
@@ -422,9 +399,12 @@ body {
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 120%; /* Mengatur jarak tooltip dari ikon */
-  left: -50%; /* Menempatkan tooltip di posisi standar */
-  transform: translateX(-50%); /* Menjaga tooltip tetap di tengah */
+  bottom: 120%;
+  /* Mengatur jarak tooltip dari ikon */
+  left: -50%;
+  /* Menempatkan tooltip di posisi standar */
+  transform: translateX(-50%);
+  /* Menjaga tooltip tetap di tengah */
   opacity: 0;
   transition: opacity 0.3s;
   font-size: 2vh;
@@ -433,9 +413,12 @@ body {
 .tooltip-text::after {
   content: "";
   position: absolute;
-  top: 100%; /* Ujung segitiga di bawah tooltip */
-  right: 25%; /* Menempatkan ujung segitiga sekitar -45 derajat dari ikon */
-  transform: rotate(-45deg); /* Memutar segitiga kecil agar berposisi miring */
+  top: 100%;
+  /* Ujung segitiga di bawah tooltip */
+  right: 25%;
+  /* Menempatkan ujung segitiga sekitar -45 derajat dari ikon */
+  transform: rotate(-45deg);
+  /* Memutar segitiga kecil agar berposisi miring */
   border-width: 7px;
   border-style: solid;
   border-color: #333 transparent transparent transparent;
@@ -462,7 +445,7 @@ body {
 }
 
 #frame3 .middle .parent-card {
-  display: flex;    
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 20vh;
@@ -848,47 +831,57 @@ body {
   margin-left: 7vh;
   margin-top: 5.3vh;
 }
+
 #frame6 {
   background-image: url("/assets/img/backKomponen.png");
   /* background-size: cover; */
   /* height: 104vh; */
   background-repeat: no-repeat;
 }
+
 #frame6 #dekorasiKomponen1 {
   background-color: #ffa500;
   width: 6vw;
   height: 3vh;
 }
+
 #frame6 #dekorasiKomponen2 {
   background-color: #ffa500;
   width: 6vw;
   height: 3vh;
   margin-left: 3rem;
 }
+
 #frame6 .text-center {
   font-weight: 700;
   font-size: calc(var(--title) - 35px);
 }
-#frame6 .isiFrame6 .row .col .row-cols-2 .col .border{
+
+#frame6 .isiFrame6 .row .col .row-cols-2 .col .border {
   width: 90%;
   height: 80%;
 }
+
 #frame6 .isiFrame6 .row .col #judulIsiTextKomponen {
   font-size: 24px;
   padding-inline-start: 1rem;
 }
+
 #frame6 .isiFrame6 .row .col #isiTextKomponen {
-  font-size: var(--button)   !important;
+  font-size: var(--button) !important;
   padding-inline-start: 1rem;
 }
+
 #frame6 .isiFrame6 .row .col #isiTengahKomponen {
   height: 25vh;
   width: 20vw;
 }
+
 #frame7 .row .col #judulPerbandingan {
   width: 40vw;
   font-size: 50px;
 }
+
 #frame7 .row .col #kelompokForm input {
   border: none;
   background-color: #ffffff;
@@ -896,9 +889,11 @@ body {
   border: 1px solid #ADA7A7;
   font-weight: 500;
 }
+
 #kelompokForm #bandingkanForm {
   width: 25vw;
 }
+
 #kelompokForm #bandingkanForm1 {
   width: 34vw;
 }
@@ -907,9 +902,11 @@ body {
   height: 15vh;
   width: 100%;
 }
+
 #frame7 .row .adaaja {
   width: 30vw;
 }
+
 #frame7 .row .col #kelompokForm #buttonbandingkankiri {
   font-size: 14px;
   width: 7.8vw;
@@ -918,48 +915,59 @@ body {
   margin-right: 1rem;
   height: max-content;
 }
+
 #frame7 .row .adaaja #dekorasiBandingkan1 {
   width: 5vw;
   height: 2vh;
   background-color: #ffb324;
 }
+
 #frame7 .row .adaaja #dekorasiBandingkan2 {
   width: 7vw;
   height: 2vh;
   background-color: #ffa500;
 }
+
 #frame7 .btn {
-    color: #ffffff;
-    background-color: #004fce;
+  color: #ffffff;
+  background-color: #004fce;
 }
-#frame7 .row .col .gambarBanding img{
+
+#frame7 .row .col .gambarBanding img {
   width: 80%;
 }
 
 #frame7 img {
- object-fit: contain;
+  object-fit: contain;
 }
+
 #footer {
-    width: 100%;
-    margin-top: 7rem;
+  width: 100%;
+  margin-top: 7rem;
 }
+
 #footer .row .col #judulKiriFooter {
   font-size: 20px;
 }
+
 #footer .row #judulTengahFooter {
   font-size: 24px;
 }
+
 #footer .btn {
-    color: #ffffff;
-    background-color: #004fce;
+  color: #ffffff;
+  background-color: #004fce;
 }
+
 #footer .col #wandiPengertianFooter {
   width: 25vw;
 }
+
 #footer .col .d-flex #wandiInputFooter {
   width: 20vw;
   background-color: #d1d1d1;
 }
+
 #footer .col .d-flex #wandiButtonFooter {
   position: absolute;
   left: 67.2%;

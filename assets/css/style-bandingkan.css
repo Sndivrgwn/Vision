@@ -50,7 +50,7 @@ div.container-desain {
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 1rem 1.5rem; 
+  margin: 1rem 1.5rem;
 }
 
 .add-banding button {
@@ -75,7 +75,7 @@ div.container-desain {
 }
 
 .konten-items img.rounded-circle {
-  background-color: #004fce; 
+  background-color: #004fce;
   padding: 0.3rem;
 }
 
