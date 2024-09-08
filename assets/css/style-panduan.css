@@ -475,6 +475,9 @@ button.button-footer-panduan {
   .carousel-caption::-webkit-scrollbar-track {
     background-color: transparent;
   }
+  .carousel-control-prev img,.carousel-control-next img {
+    width: 25px !important;
+  }
 }
 
 @media only screen and (max-width: 779px) {
@@ -628,6 +631,16 @@ button.button-footer-panduan {
     position: relative;
     overflow-y: none;
     scrollbar-width: none;
+    bottom: 0;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 300px) {
+
+  .carousel-caption {
+    position: relative;
+    overflow-y: none;
+    scrollbar-width: thin;
     bottom: 0;
     height: 250px;
   }
