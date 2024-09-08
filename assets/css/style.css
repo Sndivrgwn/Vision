@@ -910,6 +910,10 @@ body {
 #frame7 .row .col .gambarBanding img{
   width: 80%;
 }
+
+#frame7 img {
+ object-fit: contain;
+}
 #footer {
     width: 100%;
     margin-top: 7rem;
