@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../assets/css/style-bandingkan.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/style-hasil.css" />
   <link rel="stylesheet" href="../assets/css/navbar.css" />
   <link rel="stylesheet" href="../assets/css/nav-responsive.css" />
@@ -280,59 +281,58 @@
   <!-- isikonten -->
 
   <!-- footer -->
-  <div id="footer">
-    <div class="row ps-5">
-      <div class="col">
-        <ul class="fw-light">
-          <li class="list-group-item fw-bold fst-italic" id="judulKiriFooter">Explore</li>
-          <li class="p-1 list-group-item">Beranda</li>
-          <li class="p-1 list-group-item">VR</li>
-          <li class="p-1 list-group-item">Bandingkan</li>
-          <li class="p-1 list-group-item">Panduan</li>
-        </ul>
-      </div>
-      <div class="col">
-        <ul>
-          <li class="list-group-item fw-bold" id="judulTengahFooter">
-            Vision
-          </li>
-          <li class="p-1 list-group-item" id="wandiPengertianFooter">
-            Virtual Reality atau biasa kita sebut VR adalah suatu teknologi
-            yang memungkinkan manusia untuk melihat dunia yang berbeda.
-          </li>
-          <li class="list-group-item position-relative">
-            <div class="d-flex fbutton">
-              <input id="wandiInputFooter" type="text" placeholder="Masukan Pesan" class="form-control rounded-3" />
-              <button class="btn rounded-3" id="wandiButtonFooter">
-                Kirim
-              </button>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="col gambar">
-        <img src="../assets/img/Rectangle 84.png" id="wandiGambarFooter" />
-      </div>
-      <div class="d-flex justify-content-center">
-        <hr clas="" style="width: 95%" />
-      </div>
-      <div class="container">
-        <div class="row bottom">
-          <div class="col-sm-5 col-md-5 ms-5 fw-medium cp">
-            <p class="copyright fs-6">
-              © Copyright 2024 by The Visionaries
-            </p>
-          </div>
-          <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 text-end">
-            <img src="../assets/img/instagram.svg" />
-            <img src="../assets/img/facebook.svg" class="mx-2" />
-            <img src="../assets/img/linkedin.svg" class="me-2" />
-            <img src="../assets/img/twitter.svg" />
-          </div>
+  <div class="footer" data-aos="fade-up" data-aos-duration="1000">
+    <div class="desc d-flex justify-content-between gap-5 p-3">
+        <div class="data-desc-1">
+            <ul class="fw-light">
+                <li class="list-group-item fw-bold fst-italic judul-desc">Explore</li>
+                <li class="p-1 list-group-item">Beranda</li>
+                <li class="p-1 list-group-item">VR</li>
+                <li class="p-1 list-group-item">Bandingkan</li>
+                <li class="p-1 list-group-item">Panduan</li>
+            </ul>
         </div>
-      </div>
+
+        <div class="data-desc-2">
+            <ul>
+                <li class="list-group-item fw-bold judul-desc">Vision</li>
+                <li class="p-1 list-group-item">
+                    Virtual Reality atau biasa kita sebut VR adalah suatu teknologi yang
+                    memungkinkan manusia untuk melihat dunia yang berbeda.
+                </li>
+                <li class="list-group-item position-relative">
+                    <div class="d-flex fbutton">
+                        <input type="text" placeholder="Masukan Pesan"
+                            class="form-control rounded-3 animate-input" />
+                        <button class="btn rounded-3 animate-btn">
+                            Kirim
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="data-desc-3">
+            <img src="../assets/img/Rectangle 84.png" width="300px" class="animate-img" />
+        </div>
+
     </div>
-  </div>
+    <div class="d-flex justify-content-center">
+        <hr style="width: 95%;" />
+    </div>
+
+    <div class="footer-cp">
+        <div class="bottom">
+            <p class="copyright">© Copyright 2024 by The Visionaries</p>
+            <div class="social-icons">
+                <img src="../assets/img/instagram.svg" class="animate-icon">
+                <img src="../assets/img/facebook.svg" class="mx-2 animate-icon">
+                <img src="../assets/img/linkedin.svg" class="me-2 animate-icon">
+                <img src="../assets/img/twitter.svg" class="animate-icon">
+            </div>
+        </div>
+    </div>
+</div>
   <!-- footer -->
 </body>
 <script>
