@@ -86,7 +86,7 @@ function renderData(data) {
   const containerFilterColor = document.getElementById("warna");
   if (containerFilterColor) {
     let filterModeHTML =
-      '<option value="" disabled selected>Select Color</option>';
+      '<option value="" disabled selected>Pilih Warna</option>';
     filterModeColorSet.forEach((color) => {
       filterModeHTML += `<option value="${color}">${color}</option>`;
     });
@@ -98,7 +98,7 @@ function renderData(data) {
   const containerFilterBerat = document.getElementById("berat");
   if (containerFilterBerat) {
     let filterModeHTML =
-      '<option value="" disabled selected>Select berat</option>';
+      '<option value="" disabled selected>Pilih berat</option>';
     filterModeBeratSet.forEach((berat) => {
       filterModeHTML += `<option value="${berat}">${berat}</option>`;
     });
@@ -110,7 +110,7 @@ function renderData(data) {
   const containerFilterBaterai = document.getElementById("baterai");
   if (containerFilterBaterai) {
     let filterModeHTML =
-      '<option value="" disabled selected>Select baterai</option>';
+      '<option value="" disabled selected>Pilih baterai</option>';
     filterModeBateraiSet.forEach((baterai) => {
       filterModeHTML += `<option value="${baterai}">${baterai}</option>`;
     });
@@ -122,7 +122,7 @@ function renderData(data) {
   const containerFilterLebar = document.getElementById("lebar");
   if (containerFilterLebar) {
     let filterModeHTML =
-      '<option value="" disabled selected>Select lebar</option>';
+      '<option value="" disabled selected>Pilih lebar</option>';
     filterModeLebarSet.forEach((lebar) => {
       filterModeHTML += `<option value="${lebar}">${lebar}</option>`;
     });
@@ -134,7 +134,7 @@ function renderData(data) {
   const containerFilterRam = document.getElementById("ram");
   if (containerFilterRam) {
     let filterModeHTML =
-      '<option value="" disabled selected>Select ram</option>';
+      '<option value="" disabled selected>Pilih ram</option>';
     filterModeRamSet.forEach((memory) => {
       filterModeHTML += `<option value="${memory}">${memory}</option>`;
     });
@@ -146,7 +146,7 @@ function renderData(data) {
   const containerFilterStorage = document.getElementById("storage");
   if (containerFilterStorage) {
     let filterModeHTML =
-      '<option value="" disabled selected>Select storage</option>';
+      '<option value="" disabled selected>Pilih storage</option>';
     filterModeStorageSet.forEach((storage) => {
       filterModeHTML += `<option value="${storage}">${storage}</option>`;
     });
@@ -158,7 +158,7 @@ function renderData(data) {
   const containerFilterOs = document.getElementById("os");
   if (containerFilterOs) {
     let filterModeHTML =
-      '<option value="" disabled selected>Select os</option>';
+      '<option value="" disabled selected>Pilih Sistem operasi</option>';
     filterModeOsSet.forEach((os) => {
       filterModeHTML += `<option value="${os}">${os}</option>`;
     });
