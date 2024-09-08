@@ -13,6 +13,9 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
 /* Content - bandingkan start */
 div.konten-items {
   width: 48.6%;
