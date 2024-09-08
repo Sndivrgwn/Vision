@@ -302,13 +302,19 @@ function filterDataBySensors(data) {
 
 const bandingElement = document.getElementById("add-banding");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= 200) {
+function handleScroll() {
+  const scrollYThreshold = window.innerWidth <= 768 ? 1600 : 200; 
+
+  if (window.scrollY >= scrollYThreshold) {
     bandingElement.classList.add("sticky");
   } else {
     bandingElement.classList.remove("sticky");
   }
-});
+}
+
+window.addEventListener("scroll", handleScroll);
+
+window.addEventListener("resize", handleScroll);
 
 var cards = document.querySelectorAll(".konten-items");
 
