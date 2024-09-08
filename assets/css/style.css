@@ -11,6 +11,30 @@ body {
   overflow-x: hidden;
 }
 
+/* menghilangkan scrollbar */
+#frame1 {
+  overflow: hidden;
+}
+#frame2 {
+  overflow: hidden;
+}
+#frame3 {
+  overflow: hidden;
+}
+#frame4 {
+  overflow: hidden;
+}
+#frame5 {
+  overflow: hidden;
+}
+#frame6 {
+  overflow: hidden;
+}
+#frame7 {
+  overflow: hidden;
+}
+/* end */
+
 #frame1 {
   padding-bottom: 5%;
   position: relative;
