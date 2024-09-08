@@ -1,4 +1,46 @@
 /* laptop and tablet */
+@media only screen and (min-width: 1920px) {
+  .footer .bottom {
+    padding: 0.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer .data-desc-2 {
+    width: 30%;
+  }
+  .footer .data-desc-1 ul li {
+    font-size: 20px;
+  }
+
+  .footer .data-desc-2 ul li {
+    font-size: 20px;
+  }
+  .footer .data-desc-2 ul li.judul-desc {
+    font-size: 24px;
+  }
+
+  .footer .desc .data-desc-2 input {
+    background-color: #d9d9d9;
+    color: #000;
+    font-size: 16px;
+  }
+
+  .footer .desc .data-desc-2 button {
+    background-color: #004fce;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .footer .bottom p {
+    font-size: 20px;
+  }
+
+  .footer .data-desc-2 button:hover {
+    background-color: #989898;
+  }
+}
+
 @media only screen and (max-width: 1920px) {
   .footer .bottom {
     padding: 0.5rem 3rem;

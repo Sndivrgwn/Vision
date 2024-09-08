@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const produk1 = JSON.parse(localStorage.getItem("produk1"));
   const produk2 = JSON.parse(localStorage.getItem("produk2"));
-
+  
   if (produk1 && produk2) {
     displayComparison(produk1, produk2);
   } else {
@@ -11,34 +11,41 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayComparison(product1, product2) {
-    const comparisonArea = document.getElementById("comparisonResult");
-    
-    // tampungan data detail
-    const specs1 = product1.spesifikasi[0];
-    const specs2 = product2.spesifikasi[0];
-    const screen1 = specs1.display[0];
-    const screen2 = specs2.display[0];
-    
-    const fiturToShow1 = specs1.fitur;
-    const fiturToShow2 = specs2.fitur;
-    
-      // Buat string HTML untuk elemen-elemen
-      const fitur1 = fiturToShow1.map((fitur, index) => `
+  const comparisonArea = document.getElementById("comparisonResult");
+  
+  // tampungan data detail
+  const specs1 = product1.spesifikasi[0];
+  const specs2 = product2.spesifikasi[0];
+  const screen1 = specs1.display[0];
+  const screen2 = specs2.display[0];
+  
+  const fiturToShow1 = specs1.fitur;
+  const fiturToShow2 = specs2.fitur;
+  
+  // Buat string HTML untuk elemen-elemen
+  const fitur1 = fiturToShow1
+  .map(
+    (fitur, index) => `
         <div class="col-6 align-items-center d-flex p-2">
           <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
           <p class="mb-0 fw-semibold">${fitur}</p>
         </div>
-      `).join('');
-      const fitur2 = fiturToShow2.map((fitur, index) => `
+      `
+  )
+  .join("");
+  const fitur2 = fiturToShow2
+  .map(
+    (fitur, index) => `
         <div class="col-6 align-items-center d-flex p-2">
           <img src="../assets/icon/check.png" alt="Checked" class="me-2 border rounded p-2">
           <p class="mb-0 fw-semibold">${fitur}</p>
         </div>
-      `).join('');
-
-
+      `
+  )
+  .join("");
+  
   comparisonArea.innerHTML = `
-
+  
         <div>
           <div
             class="title md:fs-2 text-center d-flex justify-content-center align-items-center gap-2 text-uppercase fw-semibold"
@@ -48,7 +55,7 @@ function displayComparison(product1, product2) {
             <p>${product2.nama_produk}</p>
           </div>
         </div>
-
+  
                 <div class="konten m-4 d-flex justify-content-center  align-items-start gap-4">
                <div
                  class="data-1 gap-4 d-flex justify-content-center align-items-center flex-column"
@@ -76,11 +83,83 @@ function displayComparison(product1, product2) {
                      </div>
                    </div>
                  </div>
+  
                  <div class="vga w-100 p-4 md:px-5">
                    <div class="text-start">
                      <p class="fs-6 fw-semibold">VGA</p>
                    </div>
-                   <div style="font-size: 12px">
+                         <div class="to-mobile" style="font-size: 12px">
+             <table class="table table-borderless">
+                <tr style="background-color: #004fce" class="text-light">
+                    <td style="background-color: #004fce" class="text-light" colspan="2">VGA</td>
+                </tr>
+                <tr style="background-color: #004fce;" class="text-light">
+                    <td style="background-color: #fafafa" class="fs-6 fw-semibold">
+                        ${specs1.vga}
+                    </td>
+                    <td style="background-color: #fafafa" class="fs-6 fw-semibold">
+                        ${specs2.vga}
+                    </td>
+                </tr>
+  
+                <tr>
+                    <td style="background-color: #004fce" class="text-light" colspan="2">
+                        CLOCK SPEED
+                    </td>
+                <tr style="background-color: #004fce;" class="text-light">
+                    <td style="background-color: #efefef">2330Mhz</td>
+                    <td style="background-color: #efefef">2330Mhz</td>
+                </tr>
+  
+                </tr>
+                <tr>
+                    <td style="background-color: #004fce" class="text-light" colspan="2">
+                        VRAM
+                    </td>
+                <tr>
+                    <td style="background-color: #fafafa">24GB</td>
+                    <td style="background-color: #fafafa">24GB</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td scope="col" style="background-color: #004fce" class="text-light" colspan="2">
+                        DDR
+                    </td>
+                <tr>
+                    <td style="background-color: #efefef">DDR6</td>
+                    <td style="background-color: #efefef">DDR6</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td scope="col" style="background-color: #004fce" class="text-light" colspan="2">
+                        OVERALL
+                    </td>
+                <tr>
+                          <td class="overal" style="background-color: #fafafa; width: 35%; ">
+                             <div class="text-start">
+                               <p>72 POINT</p>
+                               <div class="bg-white my-2 lg:me-4 rounded-pill">
+                                 <div class="d-flex rounded-pill justify-content-center text-white bg-danger align-content-center text-center" style="width: ${specs1.overal};">
+                                   <p class="p-0 m-0" >${specs1.overal}</p>
+                                 </div>
+                               </div>
+                             </div>
+                           </td>
+                           <td  class="overal" style="background-color: #fafafa; width: 35%;"  > 
+                             <div class="text-start">
+                               <p>78 POINT</p>
+                               <div class="bg-white my-2 lg:me-4 rounded-pill">
+                                 <div class="d-flex rounded-pill justify-content-center text-white bg-orange align-content-center text-center" style="width: ${specs2.overal};">
+                                   <p class="p-0 m-0 text-dark" >${specs2.overal}</p>
+                                 </div>
+                               </div>
+                             </div>
+                           </td>
+                </tr>
+                </tr>
+            </table>
+      </div>
+                   <div class="to-pc-tab" style="font-size: 12px ">
                      <table class="table table-borderless text-center">
                        <thead>
                          <tr style="background-color: #004fce" class="text-light">
@@ -297,7 +376,7 @@ function displayComparison(product1, product2) {
                      </div>
                      <div class="row px-4 py-2" style="background-color: #efefef;">
                        <div class="col">
-                         <p class="m-0">${product1  .nama_produk}</p>
+                         <p class="m-0">${product1.nama_produk}</p>
                           <img src="${specs1.img}" alt="kocak" style="width: 100px; height: 100px;" class="mt-4" >
                        </div>
                        <div class="col">
